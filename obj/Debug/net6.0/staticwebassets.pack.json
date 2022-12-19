@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\NimbApp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\Adminstyle.css",
+      "PackagePath": "staticwebassets\\css\\Adminstyle.css"
+    },
+    {
       "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\Authstyle.css",
       "PackagePath": "staticwebassets\\css\\Authstyle.css"
     },
@@ -15,6 +19,10 @@
     {
       "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\js\\adminscript.js",
+      "PackagePath": "staticwebassets\\js\\adminscript.js"
     },
     {
       "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\js\\site.js",

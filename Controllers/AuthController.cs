@@ -6,6 +6,10 @@ namespace NimbApp.Controllers
     {
         public IActionResult Login()
         {
+           return View();
+        }
+        public IActionResult Admin()
+        {
             return View();
         }
 
@@ -17,7 +21,7 @@ namespace NimbApp.Controllers
             {
                 if(authModel.UserName == "admin" && authModel.Password == "admin")
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("AdminPanel", "Admin");
                 }
                 return View();
             }

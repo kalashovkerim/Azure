@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8wIT2tGU6TmBFHVtn9QtifyEqkpBLdOHVA5kEZJfXFk=",
+  "Hash": "WpKTugB0nKkSufrFD1imXA30Q7TZlLn+NQxb3vRPnQk=",
   "Source": "NimbApp",
   "BasePath": "_content/NimbApp",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\NimbApp.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\Adminstyle.css",
+      "SourceId": "NimbApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\",
+      "BasePath": "_content/NimbApp",
+      "RelativePath": "css/Adminstyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Adminstyle.css"
     },
     {
       "Identity": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\Authstyle.css",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\js\\adminscript.js",
+      "SourceId": "NimbApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\",
+      "BasePath": "_content/NimbApp",
+      "RelativePath": "js/adminscript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\adminscript.js"
     },
     {
       "Identity": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\js\\site.js",
