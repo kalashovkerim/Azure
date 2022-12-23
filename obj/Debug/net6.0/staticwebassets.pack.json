@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\NimbApp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\Addstyle.css",
+      "PackagePath": "staticwebassets\\css\\Addstyle.css"
+    },
+    {
+      "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\Addstyle.css.map",
+      "PackagePath": "staticwebassets\\css\\Addstyle.css.map"
+    },
+    {
       "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\Adminstyle.css",
       "PackagePath": "staticwebassets\\css\\Adminstyle.css"
     },

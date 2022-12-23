@@ -1,0 +1,46 @@
+﻿@model User
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/css/Addstyle.css" rel="stylesheet" type="text/css" />
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form asp-controller="Admin" asp-action="UserAdd" class="bg">
+            <div class="header">
+                <label>Add user</label>
+            </div>
+            <div class="userdata">
+                <input asp-for="Name" class="propfield" placeholder="Name" value="Karim" />
+                <input asp-for="Surname" class="propfield" placeholder="Name" value="Kalashov" />
+                <input asp-for="Login" class="propfield" placeholder="Login" value="Kala_sq82" />
+                <input asp-for="Password" class="propfield" placeholder="Password" value="qwert123" />
+                <input asp-for="Number" class="propfield" placeholder="Number" value="+994519043437" />
+                <input asp-for="Address"  class="propfield" placeholder="Adress" value="Alesker Alekperov kuc 9A" />
+                <select asp-for="Position" class="propbox">
+                    <option value="" disabled selected>Select user's position</option>
+                    <option value="Chief">Chief</option>
+                    <option value="Storekeeper">Storekeeper</option>
+                    <option value="Seller">Seller</option>
+                    <option value="Economist">Economist</option>
+                </select>
+            </div>
+            <div class="controlbtns">
+                <button asp-controller="Admin" asp-action="AdminPanel" class="ctrl back"><p>Back</p></button>
+                <button type="submit" class="ctrl confirm"><p>Confirm</p></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

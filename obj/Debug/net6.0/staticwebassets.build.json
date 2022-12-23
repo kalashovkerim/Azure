@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WpKTugB0nKkSufrFD1imXA30Q7TZlLn+NQxb3vRPnQk=",
+  "Hash": "12Int89P8Cpa7CNnqe6n+q20J80X98rfE2oC992O2VU=",
   "Source": "NimbApp",
   "BasePath": "_content/NimbApp",
   "Mode": "Default",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\NimbApp.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\Addstyle.css",
+      "SourceId": "NimbApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\",
+      "BasePath": "_content/NimbApp",
+      "RelativePath": "css/Addstyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Addstyle.css"
+    },
+    {
+      "Identity": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\Addstyle.css.map",
+      "SourceId": "NimbApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\",
+      "BasePath": "_content/NimbApp",
+      "RelativePath": "css/Addstyle.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Addstyle.css.map"
     },
     {
       "Identity": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\Adminstyle.css",

@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NimbApp.Models;
+using System;
+
 namespace NimbApp.Controllers
 {
     public class AuthController : Controller
@@ -8,6 +10,7 @@ namespace NimbApp.Controllers
         {
            return View();
         }
+        
         public IActionResult Admin()
         {
             return View();
