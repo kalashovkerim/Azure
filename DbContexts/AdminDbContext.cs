@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using NimbApp.Models;
+using NimbApp.Models.Admin;
 
 namespace NimbApp.DbContexts;
 

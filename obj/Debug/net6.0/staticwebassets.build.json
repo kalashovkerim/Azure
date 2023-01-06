@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "12Int89P8Cpa7CNnqe6n+q20J80X98rfE2oC992O2VU=",
+  "Hash": "Fkvf5XbDoAWNsV5HMKoDDCnJ5FfP43Hyq0rS6Z9LH9M=",
   "Source": "NimbApp",
   "BasePath": "_content/NimbApp",
   "Mode": "Default",
@@ -168,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\adminscript.js"
+    },
+    {
+      "Identity": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\js\\edituser.js",
+      "SourceId": "NimbApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\",
+      "BasePath": "_content/NimbApp",
+      "RelativePath": "js/edituser.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\edituser.js"
     },
     {
       "Identity": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\js\\site.js",

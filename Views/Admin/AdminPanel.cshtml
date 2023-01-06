@@ -1,7 +1,9 @@
-﻿@*
+﻿@model IEnumerable<NimbApp.Models.Admin.User>
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+  
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -41,62 +43,30 @@
                 <div class="tbl-content">
                     <table cellpadding="0" cellspacing="0">
                         <tbody>
-                            <tr id="1">
-                                <td>Orxan</td>
-                                <td>James</td>
-                                <td>Kala_sq82</td>
-                                <td>qwert123</td>
-                                <td>+994519043437</td>
-                                <td>Alesker Alekperov kuc 9A</td>
-                                <td>Economist</td>
-                            </tr>
-                            <tr id="2">
-                                <td>Karim Kalashov</td>
-                                <td>James</td>
-                                <td>Kala_sq82</td>
-                                <td>qwert123</td>
-                                <td>+994519043437</td>
-                                <td>Alesker Alekperov kuc 9A</td>
-                                <td>Economist</td>
-                            </tr>
-                            <tr>
-                                <td>Karim Kalashov</td>
-                                <td>James</td>
-                                <td>Kala_sq82</td>
-                                <td>qwert123</td>
-                                <td>+994519043437</td>
-                                <td>Alesker Alekperov kuc 9A</td>
-                                <td>Economist</td>
-                            </tr>
-                            <tr>
-                                <td>Karim Kalashov</td>
-                                <td>James</td>
-                                <td>Kala_sq82</td>
-                                <td>qwert123</td>
-                                <td>+994519043437</td>
-                                <td>Alesker Alekperov kuc 9A</td>
-                                <td>Economist</td>
-                            </tr>
-                            <tr>
-                                <td>Karim Kalashov</td>
-                                <td>James</td>
-                                <td>Kala_sq82</td>
-                                <td>qwert123</td>
-                                <td>+994519043437</td>
-                                <td>Alesker Alekperov kuc 9A</td>
-                                <td>Economist</td>
-                            </tr>
+                            @{
+                               foreach(var user in Model){
+                                   <tr id=@user.Id>
+                                        <td>@Html.DisplayFor(us => user.Name)</td>
+                                        <td>@Html.DisplayFor(us => user.Surname)</td>
+                                        <td>@Html.DisplayFor(us => user.Login)</td>
+                                        <td>@Html.DisplayFor(us => user.Password)</td>
+                                        <td>@Html.DisplayFor(us => user.Number)</td>
+                                        <td>@Html.DisplayFor(us => user.Address)</td>
+                                        <td>@Html.DisplayFor(us => user.Position)</td>
+                                   </tr>
+                               }
+                            }
                         </tbody>
                     </table>
                 </div>
             </div>
             <form class="controlbtns">
-                <button asp-controller="Admin" asp-action="UserAdd" class="ctrl add"><p>Add</p></button>
-                <button class="ctrl Edit"><p>Edit</p></button>
-                <button class="ctrl Delete"><p>Delete</p></button>
+                    <button asp-controller="Admin" asp-action="UserAdd" class="ctrl add"><p>Add</p></button>
+                    <div class="ctrl Edit"><p>Edit</p></div>
+                    <div class="ctrl Delete"><p>Delete</p></div>
             </form>
         </div>
     </div>
 </body>
-<script defer src="~/js/adminscript.js"></script>
+<script defer src="/js/adminscript.js"></script>
 </html>

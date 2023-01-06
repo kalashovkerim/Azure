@@ -3,7 +3,7 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    
+
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -20,20 +20,20 @@
     <div class="container">
         <form asp-controller="Admin" asp-action="UserAdd" class="bg">
             <div class="header">
-                <label>User Add</label>
+                <label>User Edit</label>
             </div>
             <div class="userdata">
-                <input asp-for="Name" class="propfield" placeholder="Name"/>
+                <input asp-for="Name" class="propfield" placeholder="Name" />
                 <span asp-validation-for="Name" class="text-danger"></span>
                 <input asp-for="Surname" class="propfield" placeholder="Surname" />
                 <span asp-validation-for="Surname" class="text-danger"></span>
-                <input asp-for="Login" class="propfield" placeholder="Login"/>
+                <input asp-for="Login" class="propfield" placeholder="Login" />
                 <span asp-validation-for="Login" class="text-danger"></span>
-                <input asp-for="Password" class="propfield" placeholder="Password"/>
+                <input asp-for="Password" class="propfield" placeholder="Password" />
                 <span asp-validation-for="Password" class="text-danger"></span>
-                <input asp-for="Number" class="propfield" placeholder="Number"/>
+                <input asp-for="Number" class="propfield" placeholder="Number" />
                 <span asp-validation-for="Number" class="text-danger"></span>
-                <input asp-for="Address"  class="propfield" placeholder="Address"/>
+                <input asp-for="Address" class="propfield" placeholder="Address" />
                 <span asp-validation-for="Address" class="text-danger"></span>
                 <select asp-for="Position" class="propbox">
                     <option value="" disabled selected>Select user's position</option>
@@ -46,9 +46,10 @@
             </div>
             <div class="controlbtns">
                 <button asp-controller="Admin" asp-action="AdminPanel" class="ctrl back"><p>Back</p></button>
-                <button type="submit" class="ctrl confirm"><p>Confirm</p></button>
+                <button asp-controller="Admin" asp-action="UserEditConfirm" type="submit" class="ctrl confirm"><p>Confirm</p></button>
             </div>
         </form>
     </div>
 </body>
+<script defer src="/js/edituser.js"></script>
 </html>

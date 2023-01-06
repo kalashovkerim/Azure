@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\js\\adminscript.js"
     },
     {
+      "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\js\\edituser.js",
+      "PackagePath": "staticwebassets\\js\\edituser.js"
+    },
+    {
       "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using NimbApp.Models;
+using NimbApp.Models.Authorization;
 using System;
 
 namespace NimbApp.Controllers

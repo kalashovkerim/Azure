@@ -1,5 +1,8 @@
+using NimbApp.DbContexts;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddTransient<AdminDbContext>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -15,6 +18,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
 
 app.UseHttpsRedirection();
 
