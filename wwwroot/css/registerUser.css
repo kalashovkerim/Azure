@@ -1,0 +1,475 @@
+body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-45deg, #5492a8, #4b4f9b, #2f8f8f, #1475a5);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 20s ease infinite;
+    animation: gradient 20s ease infinite;
+    height: 100vh;
+}
+
+.container h1 {
+    text-align: center;
+    color: white;
+}
+
+.container .mb-3 .form-label {
+    height: 15px;
+}
+
+.container .registerForm {
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    background-color: rgba(255, 255, 255, 0.2549019608);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.container .userdata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    justify-content: space-around;
+}
+
+.container .btn-primary {
+    width: 500px;
+    height: 35px;
+    margin-top: 55px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #3fe6a0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+    .container .btn-primary:hover {
+        opacity: .8;
+    }
+
+
+.container .mb-3 .form-control {
+    width: 500px;
+    height: 40px;
+    border-radius: 2px;
+    border: 0px;
+    outline-color: rgb(90, 90, 90);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#main-statement {
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .container .registerForm {
+        width: 400px;
+        height: 550px;
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        background-color: rgba(255, 255, 255, 0.2549019608);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .userdata {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        justify-content: space-around;
+    }
+
+
+    .container .btn-primary {
+        width: 350px;
+        height: 35px;
+        margin-top: 55px;
+        border: 0;
+        border-radius: 10px;
+        background-color: #3fe6a0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .mb-3 .form-control {
+        width: 350px;
+        height: 40px;
+        border-radius: 2px;
+        border: 0px;
+        outline-color: rgb(90, 90, 90);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 600px) {
+    .container .registerForm {
+        width: 400px;
+        height: 550px;
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        background-color: rgba(255, 255, 255, 0.2549019608);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .userdata {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        justify-content: space-around;
+    }
+
+
+    .container .btn-primary {
+        width: 350px;
+        height: 35px;
+        margin-top: 55px;
+        border: 0;
+        border-radius: 10px;
+        background-color: #3fe6a0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .mb-3 .form-control {
+        width: 350px;
+        height: 40px;
+        border-radius: 2px;
+        border: 0px;
+        outline-color: rgb(90, 90, 90);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 650px) {
+    .container .registerForm {
+        width: 400px;
+        height: 550px;
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        background-color: rgba(255, 255, 255, 0.2549019608);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .userdata {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        justify-content: space-around;
+    }
+
+
+    .container .btn-primary {
+        width: 350px;
+        height: 35px;
+        margin-top: 55px;
+        border: 0;
+        border-radius: 10px;
+        background-color: #3fe6a0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .mb-3 .form-control {
+        width: 350px;
+        height: 40px;
+        border-radius: 2px;
+        border: 0px;
+        outline-color: rgb(90, 90, 90);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+}
+
+
+
+@media screen and (min-width: 650px) and (max-width: 700px) {
+    .container .registerForm {
+        width: 400px;
+        height: 550px;
+        position: absolute;
+        top: 15%;
+        left: 20%;
+        background-color: rgba(255, 255, 255, 0.2549019608);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .userdata {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        justify-content: space-around;
+    }
+
+
+    .container .btn-primary {
+        width: 350px;
+        height: 35px;
+        margin-top: 55px;
+        border: 0;
+        border-radius: 10px;
+        background-color: #3fe6a0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .mb-3 .form-control {
+        width: 350px;
+        height: 40px;
+        border-radius: 2px;
+        border: 0px;
+        outline-color: rgb(90, 90, 90);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .container .registerForm {
+        width: 400px;
+        height: 550px;
+        position: absolute;
+        top: 15%;
+        left: 22%;
+        background-color: rgba(255, 255, 255, 0.2549019608);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .userdata {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        justify-content: space-around;
+    }
+
+
+    .container .btn-primary {
+        width: 350px;
+        height: 35px;
+        margin-top: 55px;
+        border: 0;
+        border-radius: 10px;
+        background-color: #3fe6a0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .mb-3 .form-control {
+        width: 350px;
+        height: 40px;
+        border-radius: 2px;
+        border: 0px;
+        outline-color: rgb(90, 90, 90);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 900px) {
+    .container .registerForm {
+        width: 550px;
+        height: 550px;
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        background-color: rgba(255, 255, 255, 0.2549019608);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .userdata {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        justify-content: space-around;
+    }
+
+
+    .container .btn-primary {
+        width: 500px;
+        height: 35px;
+        margin-top: 55px;
+        border: 0;
+        border-radius: 10px;
+        background-color: #3fe6a0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .mb-3 .form-control {
+        width: 500px;
+        height: 40px;
+        border-radius: 2px;
+        border: 0px;
+        outline-color: rgb(90, 90, 90);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 950px) {
+    .container .registerForm {
+        width: 550px;
+        height: 550px;
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        background-color: rgba(255, 255, 255, 0.2549019608);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .userdata {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        justify-content: space-around;
+    }
+
+
+    .container .btn-primary {
+        width: 500px;
+        height: 35px;
+        margin-top: 55px;
+        border: 0;
+        border-radius: 10px;
+        background-color: #3fe6a0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .mb-3 .form-control {
+        width: 500px;
+        height: 40px;
+        border-radius: 2px;
+        border: 0px;
+        outline-color: rgb(90, 90, 90);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+}
+
+
+
+@media screen and (min-width: 950px) and (max-width: 1300px) {
+    .container .registerForm {
+        width: 550px;
+        height: 550px;
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        background-color: rgba(255, 255, 255, 0.2549019608);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .userdata {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        justify-content: space-around;
+    }
+
+
+    .container .btn-primary {
+        width: 500px;
+        height: 35px;
+        margin-top: 55px;
+        border: 0;
+        border-radius: 10px;
+        background-color: #3fe6a0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container .mb-3 .form-control {
+        width: 500px;
+        height: 40px;
+        border-radius: 2px;
+        border: 0px;
+        outline-color: rgb(90, 90, 90);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+
+    @media screen and (min-width: 1300px) and (max-width: 1415px) {
+        .container .registerForm {
+            width: 550px;
+            height: 550px;
+            position: absolute;
+            top: 15%;
+            left: 30%;
+            background-color: rgba(255, 255, 255, 0.2549019608);
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+        .container .userdata {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 500px;
+            justify-content: space-around;
+        }
+
+
+        .container .btn-primary {
+            width: 500px;
+            height: 35px;
+            margin-top: 55px;
+            border: 0;
+            border-radius: 10px;
+            background-color: #3fe6a0;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+        .container .mb-3 .form-control {
+            width: 500px;
+            height: 40px;
+            border-radius: 2px;
+            border: 0px;
+            outline-color: rgb(90, 90, 90);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+    }
+
+/*# sourceMappingURL=registerUser.css.map */

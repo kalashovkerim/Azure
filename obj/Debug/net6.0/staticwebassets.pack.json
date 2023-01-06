@@ -21,12 +21,44 @@
       "PackagePath": "staticwebassets\\css\\Authstyle.css"
     },
     {
+      "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\goods.css",
+      "PackagePath": "staticwebassets\\css\\goods.css"
+    },
+    {
+      "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\indexStyle.css",
+      "PackagePath": "staticwebassets\\css\\indexStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\indexStyle.css.map",
+      "PackagePath": "staticwebassets\\css\\indexStyle.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\registerUser.css",
+      "PackagePath": "staticwebassets\\css\\registerUser.css"
+    },
+    {
+      "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\registerUser.css.map",
+      "PackagePath": "staticwebassets\\css\\registerUser.css.map"
+    },
+    {
+      "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\registrCompany.css",
+      "PackagePath": "staticwebassets\\css\\registrCompany.css"
+    },
+    {
+      "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\registrCompany.css.map",
+      "PackagePath": "staticwebassets\\css\\registrCompany.css.map"
+    },
+    {
       "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\js\\Goods.js",
+      "PackagePath": "staticwebassets\\js\\Goods.js"
     },
     {
       "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\wwwroot\\js\\adminscript.js",

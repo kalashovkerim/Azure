@@ -1,0 +1,96 @@
+﻿@using NimbProjectApp.DbContexts;
+@using NimbProjectApp.Models.Storekeeper;
+@model IEnumerable<NimbProjectApp.Models.Storekeeper.Supplier>
+
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    IEnumerable<string>? categorList = ViewData["Categories"] as IEnumerable<string>;
+    IEnumerable<Good>? goodsList = ViewData["Goods"] as IEnumerable<Good>;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/goods.css">
+    <script defer src="/js/Goods.js"></script>
+    <title>Tovari</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Goods Panel</h1>
+        <hr>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <div class="search">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button class="btn btn-primary">Search</button>
+                    </div>
+                    <label for="lblBrendSelectId" class="lblBrend">Spisok postavshikov:</label>
+                    <br>
+                    <select class="lblBrendClass" id="lblBrendSelectId">
+                        @foreach(var item in Model)
+                        {
+                            <option value=@item.Name>@Html.DisplayFor(items => item.Name)</option>
+                        }
+                        <option value="All">All</option>
+                    </select>
+                    <br>
+                    <label for="lblCategorySelectId" class="lblCategory">Spisok category:</label>
+                    <br>
+                    <select class="lblCategoryClass" id="lblCategorySelectId">
+                        @if (categorList != null)
+                        {
+                            foreach (var item in categorList)
+                            {
+                                <option value=@(item)>@Html.DisplayFor(items => item)</option>
+                            }
+                        }
+                        <option value="All">All</option>
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                      <div class="userslist">
+                          <div class="tbl-header">
+                              <table cellpadding="0" cellspacing="0">
+                                  <thead>
+                                      <tr>
+                                          <th scope="col">Id</th>
+                                          <th scope="col">Name of goods</th>
+                                          <th scope="col">Price</th>
+                                          <th scope="col">Total in stock</th>
+                                      </tr>
+                                  </thead>
+                              </table>
+                          </div>
+                          <div class="tbl-content">
+                              <table cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                      @if (goodsList != null)
+                                      {
+                                          foreach (var item in goodsList)
+                                          {
+                                              <tr>
+                                                  <td>@Html.DisplayFor(items => item.Id)</td>
+                                                  <td>@Html.DisplayFor(items => item.Name)</td>
+                                                  <td>@Html.DisplayFor(items => item.Category)</td>
+                                                  <td>@Html.DisplayFor(items => item.Count)</td>
+                                              </tr>
+                                          }
+                                      }
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,OAAO;CAC5B;;AAED,AAAA,UAAU,CAAA;EACN,cAAc,EAAE,GAAG;CAOtB;;AARD,AAEI,UAFM,CAEN,EAAE,CAAA;EACE,UAAU,EAAE,MAAM;CACrB;;AAJL,AAKI,UALM,CAKN,QAAQ,CAAA;EACJ,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "registrCompany.scss"
+    ],
+    "names": [],
+    "file": "registrCompany.css"
+}

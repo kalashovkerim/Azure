@@ -1,8 +1,10 @@
 using NimbApp.DbContexts;
+using NimbProjectApp.DbContexts;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddTransient<AdminDbContext>();
+builder.Services.AddTransient<SellerDbFirstContext>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

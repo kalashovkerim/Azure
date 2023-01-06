@@ -1,0 +1,639 @@
+body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-45deg, #5492a8, #4b4f9b, #2f8f8f, #1475a5);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 20s ease infinite;
+    animation: gradient 20s ease infinite;
+    height: 100vh;
+}
+
+.container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+    .container h1 {
+        text-align: center;
+    }
+
+#main-statement {
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.search {
+    position: absolute;
+    top: 13%;
+    left: 65%;
+}
+
+    .search .form-control {
+        width: 400px;
+        border-radius: 2px;
+        border: 0px;
+        outline-color: rgb(90, 90, 90);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .search .btn {
+        width: 150px;
+        margin-top: 10px;
+        position: absolute;
+        right: 0%;
+        border: 0;
+        border-radius: 10px;
+        background-color: #3fe6a0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        height: 35px;
+    }
+
+        .search .btn:hover {
+            opacity: .8;
+        }
+
+.userscontrol {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2549019608);
+    height: 600px;
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: absolute;
+    top: 10%;
+}
+
+.userslist {
+    margin-top: 40px;
+    width: 800px;
+}
+
+    .userslist table {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    .userslist .tbl-header {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .userslist .tbl-content {
+        height: 300px;
+        overflow-x: auto;
+        margin-top: 0px;
+        /* border: 1px solid rgba(255, 255, 255, 0.3);*/
+    }
+
+    .userslist th {
+        padding: 20px 15px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .userslist td {
+        padding: 15px;
+        text-align: left;
+        vertical-align: middle;
+        font-weight: 300;
+        font-size: 12px;
+        color: #fff;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+    }
+
+.lblBrendClass {
+    width: 400px;
+    border-radius: 2px;
+    border: 0px;
+    outline-color: rgb(90, 90, 90);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-top: 5px;
+    height: 30px;
+}
+
+.lblCategoryClass {
+    width: 400px;
+    border-radius: 2px;
+    border: 0px;
+    outline-color: rgb(90, 90, 90);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-top: 5px;
+    height: 30px;
+}
+
+.firstCB {
+    position: absolute;
+    top: 25%;
+    left: 65%;
+}
+
+
+.secondCB {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+}
+
+.thirdCB {
+    position: absolute;
+    top: 45%;
+    left: 65%;
+}
+
+
+#soldButton {
+    position: absolute;
+    top: 55%;
+    width: 150px;
+    position: absolute;
+    right: 8%;
+    border: 0;
+    border-radius: 10px;
+    background-color: #3fe6a0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+    #soldButton:hover {
+        opacity: .8;
+    }
+
+.selected {
+    background-color: #2f8f8f;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+
+    .userscontrol {
+        position: absolute;
+        top: 65%;
+        left: 10%;
+        width: 400px;
+    }
+
+    .userslist {
+        margin-top: 40px;
+        width: 400px;
+    }
+
+    .search {
+        position: absolute;
+        top: 13%;
+        left: 10%;
+    }
+
+        .search .form-control {
+            width: 400px;
+        }
+
+        .search .btn {
+            width: 150px;
+        }
+
+    .firstCB {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+    }
+
+
+    .secondCB {
+        position: absolute;
+        top: 35%;
+        left: 10%;
+    }
+
+    .thirdCB {
+        position: absolute;
+        top: 45%;
+        left: 10%;
+    }
+
+
+    .lblBrendClass {
+        width: 400px;
+    }
+
+    .lblCategoryClass {
+        width: 400px;
+    }
+
+    #soldButton {
+        position: absolute;
+        top: 55%;
+        width: 150px;
+        position: absolute;
+        left: 52%;
+    }
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 700px) {
+
+    .userscontrol {
+        position: absolute;
+        top: 65%;
+        left: 15%;
+        width: 400px;
+    }
+
+    .userslist {
+        margin-top: 40px;
+        width: 400px;
+    }
+
+    .search {
+        position: absolute;
+        top: 13%;
+        left: 15%;
+    }
+
+        .search .form-control {
+            width: 400px;
+        }
+
+        .search .btn {
+            width: 150px;
+        }
+
+    .firstCB {
+        position: absolute;
+        top: 25%;
+        left: 15%;
+    }
+
+
+    .secondCB {
+        position: absolute;
+        top: 35%;
+        left: 15%;
+    }
+
+    .thirdCB {
+        position: absolute;
+        top: 45%;
+        left: 15%;
+    }
+
+
+    .lblBrendClass {
+        width: 400px;
+    }
+
+    .lblCategoryClass {
+        width: 400px;
+    }
+
+    #soldButton {
+        position: absolute;
+        top: 55%;
+        width: 150px;
+        position: absolute;
+        left: 52%;
+    }
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .userscontrol {
+        position: absolute;
+        top: 65%;
+        left: 15%;
+        width: 500px;
+    }
+
+    .userslist {
+        margin-top: 40px;
+        width: 500px;
+    }
+
+    .search {
+        position: absolute;
+        top: 13%;
+        left: 15%;
+    }
+
+        .search .form-control {
+            width: 500px;
+        }
+
+        .search .btn {
+            width: 150px;
+        }
+
+    .firstCB {
+        position: absolute;
+        top: 25%;
+        left: 15%;
+    }
+
+
+    .secondCB {
+        position: absolute;
+        top: 35%;
+        left: 15%;
+    }
+
+    .thirdCB {
+        position: absolute;
+        top: 45%;
+        left: 15%;
+    }
+
+
+    .lblBrendClass {
+        width: 500px;
+    }
+
+    .lblCategoryClass {
+        width: 500px;
+    }
+
+    #soldButton {
+        position: absolute;
+        top: 55%;
+        width: 200px;
+        position: absolute;
+        left: 47%;
+    }
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 950px) {
+    .userscontrol {
+        position: absolute;
+        top: 65%;
+        left: 20%;
+        width: 600px;
+    }
+
+    .userslist {
+        margin-top: 40px;
+        width: 600px;
+    }
+
+    .search {
+        position: absolute;
+        top: 13%;
+        left: 25%;
+    }
+
+        .search .form-control {
+            width: 500px;
+        }
+
+        .search .btn {
+            width: 200px;
+        }
+
+    .firstCB {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+    }
+
+
+    .secondCB {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+    }
+
+    .thirdCB {
+        position: absolute;
+        top: 45%;
+        left: 25%;
+    }
+
+
+    .lblBrendClass {
+        width: 500px;
+    }
+
+    .lblCategoryClass {
+        width: 500px;
+    }
+
+    #soldButton {
+        position: absolute;
+        top: 55%;
+        width: 200px;
+        position: absolute;
+        left: 52%;
+    }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1150px) {
+    .userscontrol {
+        position: absolute;
+        top: 65%;
+        left: 25%;
+        width: 600px;
+    }
+
+    .userslist {
+        margin-top: 40px;
+        width: 600px;
+    }
+
+    .search {
+        position: absolute;
+        top: 13%;
+        left: 30%;
+    }
+
+        .search .form-control {
+            width: 500px;
+        }
+
+        .search .btn {
+            width: 200px;
+        }
+
+    .firstCB {
+        position: absolute;
+        top: 25%;
+        left: 30%;
+    }
+
+
+    .secondCB {
+        position: absolute;
+        top: 35%;
+        left: 30%;
+    }
+
+    .thirdCB {
+        position: absolute;
+        top: 45%;
+        left: 30%;
+    }
+
+
+    .lblBrendClass {
+        width: 500px;
+    }
+
+    .lblCategoryClass {
+        width: 500px;
+    }
+
+    #soldButton {
+        position: absolute;
+        top: 55%;
+        width: 200px;
+        position: absolute;
+        left: 57%;
+    }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1300px) {
+    .userscontrol {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.2549019608);
+        height: 600px;
+        width: 550px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        position: absolute;
+        top: 10%;
+    }
+
+    .userslist {
+        margin-top: 40px;
+        width: 550px;
+    }
+
+    .search {
+        position: absolute;
+        top: 13%;
+        left: 65%;
+    }
+
+        .search .form-control {
+            width: 350px;
+            border-radius: 2px;
+            border: 0px;
+            outline-color: rgb(90, 90, 90);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+        .search .btn {
+            width: 120px;
+            margin-top: 10px;
+            position: absolute;
+            right: 0%;
+            border: 0;
+            border-radius: 10px;
+            background-color: #3fe6a0;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            height: 35px;
+        }
+
+
+    .lblBrendClass {
+        width: 350px;
+        border-radius: 2px;
+        border: 0px;
+        outline-color: rgb(90, 90, 90);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        margin-top: 5px;
+        height: 30px;
+    }
+
+    .lblCategoryClass {
+        width: 350px;
+        border-radius: 2px;
+        border: 0px;
+        outline-color: rgb(90, 90, 90);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        margin-top: 5px;
+        height: 30px;
+    }
+
+    #soldButton {
+        position: absolute;
+        top: 55%;
+        width: 120px;
+        position: absolute;
+        right: 8%;
+        border: 0;
+        border-radius: 10px;
+        background-color: #3fe6a0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+}
+
+
+@media screen and (min-width: 1300px) and (max-width: 1415px) {
+    .userscontrol {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.2549019608);
+        height: 600px;
+        width: 650px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        position: absolute;
+        top: 10%;
+    }
+
+    .userslist {
+        margin-top: 40px;
+        width: 650px;
+    }
+}

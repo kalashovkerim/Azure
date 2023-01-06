@@ -26,6 +26,10 @@ namespace NimbApp.Controllers
                 {
                     return RedirectToAction("AdminPanel", "Admin");
                 }
+                if (authModel.UserName == "seller" && authModel.Password == "seller")
+                {
+                    return RedirectToAction("SellerMain", "Seller");
+                }
                 return View();
             }
             return View();
