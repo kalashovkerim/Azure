@@ -1,0 +1,35 @@
+﻿@model AuthViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link href="~/css/Authorization/﻿Authstyle.css" rel="stylesheet" type="text/css" />
+
+<title>Authorization</title>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="bg">
+                <div class="header">
+                    <h1 class="nimbLabel">Nimb</h1>
+                </div>
+                <form asp-controller="Auth" asp-action="Login" method="post">
+                    <div class="loginpart">
+                        <label asp-for="UserName" class="loginLabel">Login:</label>
+                        <input required asp-for="UserName" class="loginfield" id="loginfield"></input>
+                    </div>
+                    <div class="passwordpart">
+                        <label asp-for="Password" class="passwordLabel">Password:</label>
+                        <input required asp-for="Password" class="passwordfield" id="passwordfield" type="password"></input>
+                    </div>
+                    <button class="signInbtn" value="Login" type="submit"><p>Sign In</p></button>
+                </form>
+            </div>
+        </div>
+        <div class="links">
+            <p class="ftext"><a href="">Terms</a>&emsp;<a href="">Privacy</a>&emsp;<a href="">Security</a> <br><br>© 2023 - Nimb, Inc.</p>
+        </div>
+    </div>
+</body>

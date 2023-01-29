@@ -1,0 +1,97 @@
+@font-face {
+    font-family: Inter-Medium;
+    src: url("../../resource/fonts/inter/Inter-Medium.ttf");
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url("../../resource/fonts/inter/Inter-Regular.ttf");
+}
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-45deg, #5492a8, #4b609b, #2f8f8f, #1475a5);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 20s ease infinite;
+  animation: gradient 20s ease infinite;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container .header p {
+  background-color: rgba(120, 255, 199, 0.4784313725);
+  width: 200px;
+  border-radius: 50px 0 10px 0;
+}
+
+.bg {
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.2549019608);
+  height: 600px;
+  width: 600px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.bg form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+input {
+  width: 350px;
+  height: 40px;
+  border-radius: 2px;
+  border: 0px;
+  outline-color: rgb(90, 90, 90);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+button {
+  text-align: center;
+  width: 180px;
+  height: 40px;
+  border: 0;
+  border-radius: 2px;
+  background-color: rgba(120, 255, 199, 0.4784313725);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+button p {
+  margin-top: 5px;
+}
+
+p {
+  color: white;
+  font-family: "Inter-Medium";
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}/*# sourceMappingURL=keeperstyle.css.map */

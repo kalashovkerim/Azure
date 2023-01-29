@@ -1,0 +1,39 @@
+﻿@using NimbRepository.Model.Storekeeper;
+@model Nimb.Models.ProductViewModel;
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    IEnumerable<Supplier>? supplierList = ViewData["Suppliers"] as IEnumerable<Supplier>;
+}
+<link href="~/css/Storekeeper/keeperproduct.css" rel="stylesheet">
+
+<body>
+    <div class="container">
+        <div class="bg">
+            <div class="header"><p>Add Product</p></div>
+            <form asp-controller="StoreKeeper" asp-action="AddProduct">
+                <select asp-for=SuppId id="suppselectid">
+                    <option selected>Choose provider</option>
+                    @foreach (var item in supplierList!)
+                    {
+                        <option value=@item.Id>@Html.DisplayFor(items => item.Name)</option>
+                    }
+                </select> 
+                <input asp-for="good.Name" placeholder="Name"/>
+                <span asp-validation-for="good.Name" class="text-danger"></span>
+                <input asp-for="good.Category" placeholder="Catergory" />
+                <span asp-validation-for="good.Category" class="text-danger"></span>
+                <textarea asp-for="good.Description" placeholder="Discription"></textarea>
+                <span asp-validation-for="good.Description" class="text-danger"></span>
+                <input asp-for="good.Price" placeholder="Price" />
+                <span asp-validation-for="good.Price" class="text-danger"></span>
+                <input asp-for="good.Count" type="number" placeholder="Count" />
+                <span asp-validation-for="good.Count" class="text-danger"></span>
+                <button class="confirmbtn" type="submit"><p>Confirm</p></button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script defer src="/js/keeper.js"></script>

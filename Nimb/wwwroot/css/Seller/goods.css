@@ -1,0 +1,68 @@
+body {
+  background-color: #83acca;
+}
+
+.container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container .lblBrendClass {
+  width: 350px;
+}
+
+.container .lblCategoryClass {
+  width: 350px;
+}
+
+.container .lblCategory {
+  padding-top: 10px;
+}
+
+.container .table-hover {
+  border: solid;
+  height: 350px;
+  width: 350px;
+  background-color: #5c9bc9;
+  overflow: auto;
+  display: inline-block;
+}
+
+.container .search {
+  position: relative;
+  -webkit-box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+          box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+  width: 350px;
+}
+
+.container .search input {
+  height: 60px;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4;
+}
+
+.container .search input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid blue;
+}
+
+.container .btn-primary{
+    width: 350px;
+}
+
+.container .search button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 50px;
+  width: 110px;
+  background: blue;
+}
+/*# sourceMappingURL=tovar.css.map */

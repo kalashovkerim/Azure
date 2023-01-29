@@ -1,0 +1,54 @@
+﻿@model NimbRepository.Model.Seller.Client
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Seller/registerUser.css">
+    <title>Registraciya</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registr User</h1>
+        <hr>
+        <form asp-controller="Seller" asp-action="RegisterUser" class="registerForm">
+            <div class="userdata">
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input asp-for="FirstName" type="text" class="form-control" id="firstName" placeholder="First Name">
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input asp-for="LastName" type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="patronymicName" class="form-label">Patronymic Name</label>
+                    <input asp-for="PatronymicName" type="text" class="form-control" id="patronymicName" placeholder="Patronymic Name">
+                    <span asp-validation-for="PatronymicName" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input asp-for="Number" type="number" class="form-control" id="phoneNumber" placeholder="Phone Number">
+                    <span asp-validation-for="Number" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input asp-for="EmailAddress" type="text" class="form-control" id="email" placeholder="Email address">
+                    <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Add</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
