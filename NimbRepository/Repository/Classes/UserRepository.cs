@@ -35,7 +35,6 @@ namespace NimbRepository.Repository.Classes
                 objFromDb.Number = obj.Number;
                 objFromDb.Address = obj.Address;
                 objFromDb.EmailAddress = obj.EmailAddress;
-                objFromDb.Password = obj.Password;
                 objFromDb.PatronymicName = obj.PatronymicName;
                 objFromDb.Position = obj.Position;
             }

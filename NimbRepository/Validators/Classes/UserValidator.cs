@@ -17,8 +17,8 @@ namespace NimbRepository.Validators.Classes
                 .Length(5, 15).WithMessage("First name is required.");
             RuleFor(x => x.LastName).NotNull().WithMessage("Last name is required.");
             RuleFor(x => x.PatronymicName).NotNull().WithMessage("Patronymic name is required.");
-            RuleFor(x => x.Login).NotNull().WithMessage("Login is required.");
-            RuleFor(x => x.Password).NotNull().WithMessage("Password is required.");
+            
+        
             RuleFor(x => x.Number)
                 .NotEmpty().WithMessage("Number is required.")
                 .Matches(@"^\d{10}$").WithMessage("Number must be 10 digits.");

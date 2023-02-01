@@ -18,7 +18,7 @@ namespace NimbRepository.Validators.Classes
 
             RuleFor(x => x.Number)
                 .NotEmpty().WithMessage("Number is required")
-                .Length(10, 12).WithMessage("Number must be between 10 and 12 characters");
+                .Length(5, 12).WithMessage("Number must be between 10 and 12 characters");
 
             RuleFor(x => x.EmailAddress)
                 .NotEmpty().WithMessage("Email address is required")

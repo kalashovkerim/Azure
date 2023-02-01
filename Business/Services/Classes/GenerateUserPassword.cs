@@ -14,9 +14,8 @@ namespace Business.Services.Classes
         {
             var rand = new Random();
             string password = "";
-            
-            
-            int length = rand.Next(4,6);
+
+            int length = 8;
             for (int i = 0; i < length; i++)
             {
                 password += chars[rand.Next(0, chars.Length)];

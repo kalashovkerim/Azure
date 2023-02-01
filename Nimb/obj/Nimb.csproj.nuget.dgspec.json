@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\Nimb\\Nimb.csproj": {}
+    "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Nimb\\Nimb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\Business\\Business.csproj": {
+    "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\Business\\obj\\",
+        "outputPath": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\NimbRepository\\NimbRepository.csproj": {
-                "projectPath": "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\NimbRepository\\NimbRepository.csproj"
+              "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\NimbRepository\\NimbRepository.csproj": {
+                "projectPath": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\NimbRepository\\NimbRepository.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\NimbRepository\\NimbRepository.csproj": {
+    "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\NimbRepository\\NimbRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\NimbRepository\\NimbRepository.csproj",
+        "projectUniqueName": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\NimbRepository\\NimbRepository.csproj",
         "projectName": "NimbRepository",
-        "projectPath": "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\NimbRepository\\NimbRepository.csproj",
+        "projectPath": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\NimbRepository\\NimbRepository.csproj",
         "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\NimbRepository\\obj\\",
+        "outputPath": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\NimbRepository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -150,14 +150,14 @@
         }
       }
     },
-    "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\Nimb\\Nimb.csproj": {
+    "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Nimb\\Nimb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\Nimb\\Nimb.csproj",
+        "projectUniqueName": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Nimb\\Nimb.csproj",
         "projectName": "Nimb",
-        "projectPath": "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\Nimb\\Nimb.csproj",
+        "projectPath": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Nimb\\Nimb.csproj",
         "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\Nimb\\obj\\",
+        "outputPath": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Nimb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -174,11 +174,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\Business\\Business.csproj"
+              "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Business\\Business.csproj"
               },
-              "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\NimbRepository\\NimbRepository.csproj": {
-                "projectPath": "C:\\Users\\kerim\\Downloads\\NimbApp (2)\\NimbApp\\NimbRepository\\NimbRepository.csproj"
+              "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\NimbRepository\\NimbRepository.csproj": {
+                "projectPath": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\NimbRepository\\NimbRepository.csproj"
               }
             }
           }

@@ -10,6 +10,8 @@ using FluentValidation;
 using System;
 using System.ComponentModel.DataAnnotations;
 using FluentValidation.AspNetCore;
+using Business.Services.Classes;
+
 
 namespace NimbApp.Controllers
 {
@@ -68,6 +70,16 @@ namespace NimbApp.Controllers
 
             if (result.IsValid)
             {
+                var login = GenerateUserLogin.FromName(user.FirstName);
+                var password = GenerateUserPassword.Generate();
+                var users = _unitOfwork!.User!.GetAll();
+
+                if (users!.Contains(users!.Where(us => us.Login == login).FirstOrDefault()))
+                {
+                    login = GenerateUserLogin.FromName(user.FirstName); // eto nado v cikl
+                }
+                user.Login = login;
+                user.Password = password;
                 _unitOfwork!.User!.Add(user);
 
                 _unitOfwork.Save();

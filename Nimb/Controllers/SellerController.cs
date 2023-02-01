@@ -23,7 +23,7 @@ namespace NimbProjectApp.Controllers
 
         public IActionResult SellerMain()
         {
-            return View();
+            return View(_unitOfwork.Client.GetAll());
         }
         
         public IActionResult RegisterCompany()
@@ -103,13 +103,6 @@ namespace NimbProjectApp.Controllers
 
             return View();
         }
-        public IActionResult GetUsers()
-        {
-            var clients = _unitOfwork.Client.GetAll();
-
-            ViewBag.Check = true;
-            return View("SellerMain", clients);
-        }
 
 
         [HttpPost]
@@ -120,7 +113,7 @@ namespace NimbProjectApp.Controllers
                 _unitOfwork.Client.Add(client);
                 _unitOfwork.Save();    
             }
-            return View("SellerMain");
+            return RedirectToAction("SellerMain", _unitOfwork.Client.GetAll());
         }
         public IActionResult SearchGood(string request)
         {
@@ -151,7 +144,7 @@ namespace NimbProjectApp.Controllers
                 _unitOfwork.Save();
             }
                 
-            return View("SellerMain");
+            return View("SellerMain", _unitOfwork.Client.GetAll());
         }
     }
 }
