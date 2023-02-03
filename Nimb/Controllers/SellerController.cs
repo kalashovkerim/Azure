@@ -38,7 +38,7 @@ namespace NimbProjectApp.Controllers
         public IActionResult Goods(string Name)
         {
 
-            var suppliers = _unitOfwork!.Supplier!.GetAll();
+            var suppliers = _unitOfwork.Supplier.GetAll();
 
 
             if (Name == null || Name == "All" || Name == "")
@@ -54,13 +54,12 @@ namespace NimbProjectApp.Controllers
         public IActionResult GetGoods(string Name, string Category)
         {
 
-
-            var currentsupp = _unitOfwork!.Supplier!.GetAll()!.Where(supp => supp.Name == Name).FirstOrDefault();
+            var currentsupp = _unitOfwork.Supplier.GetAll().Where(supp => supp.Name == Name).FirstOrDefault();
 
             //var goods = _context.Goods.Where(good => good.SupplierId == currentsupp.Id).Where(good => good.Category == Category).ToArray();
-            var goods = _unitOfwork!.Good!.GetAll()!.Where(good => good.SupplierId == currentsupp!.Id).Where(good => good.Category == Category).ToArray();
+            var goods = _unitOfwork.Good.GetAll().Where(good => good.SupplierId == currentsupp!.Id).Where(good => good.Category == Category).ToArray();
 
-            var goods2 = _unitOfwork!.Good!.GetAll()!.Where(good => good.SupplierId == currentsupp!.Id);
+            var goods2 = _unitOfwork.Good.GetAll().Where(good => good.SupplierId == currentsupp!.Id);
 
             var categories = goods2.Select(good => good.Category).ToArray();
 
@@ -77,26 +76,26 @@ namespace NimbProjectApp.Controllers
 
             ViewData["Categories"] = categories.Distinct();
 
-            return View("Goods", _unitOfwork!.Supplier!.GetAll()!);
+            return View("Goods", _unitOfwork.Supplier.GetAll()!);
         }
 
         public IActionResult GetCategories(string Name)
         {
 
-            var currentsupp = _unitOfwork!.Supplier!.GetAll()!.Where(supl => supl.Name == Name).FirstOrDefault();
+            var currentsupp = _unitOfwork.Supplier.GetAll().Where(supl => supl.Name == Name).FirstOrDefault();
 
 
             if (Name == null || Name == "All" || Name == "")
             {
-                ViewData["Goods"] = _unitOfwork!.Good!.GetAll();
+                ViewData["Goods"] = _unitOfwork.Good.GetAll()!;
             }
             else
             {
-                ViewData["Goods"] = _unitOfwork!.Good!.GetAll()!.Where(good => good.SupplierId == currentsupp.Id);
-                ViewData["Categories"] = _unitOfwork!.Good!.GetAll()!.Where(good => good.SupplierId == currentsupp.Id).Select(good => good.Category).ToArray().Distinct();
+                ViewData["Goods"] = _unitOfwork.Good.GetAll()!.Where(good => good.SupplierId == currentsupp.Id);
+                ViewData["Categories"] = _unitOfwork.Good.GetAll()!.Where(good => good.SupplierId == currentsupp.Id).Select(good => good.Category).ToArray().Distinct();
             }
 
-            return View("Goods", _unitOfwork!.Supplier!.GetAll()!);
+            return View("Goods", _unitOfwork.Supplier.GetAll()!);
         }
         public IActionResult GoodsSoldFirst()
         {
@@ -117,23 +116,23 @@ namespace NimbProjectApp.Controllers
         }
         public IActionResult SearchGood(string request)
         {
-            var goods = _unitOfwork!.Good!.GetAll();
-            var suppliers = _unitOfwork!.Supplier!.GetAll();
+            var goods = _unitOfwork.Good.GetAll();
+            var suppliers = _unitOfwork.Supplier.GetAll();
 
-            if (goods!.Contains(goods!.Where(good => good.Category.ToUpper() == request.ToUpper()).FirstOrDefault()))
+            if (goods.Contains(goods.Where(good => good.Category.ToUpper() == request.ToUpper()).FirstOrDefault()))
             {
-                ViewData["Goods"] = goods!.Where(good => good.Category.ToUpper() == request.ToUpper());
+                ViewData["Goods"] = goods.Where(good => good.Category.ToUpper() == request.ToUpper());
             }
-            else if (suppliers!.Contains(suppliers!.Where(supp => supp.Name.ToUpper() == request.ToUpper()).FirstOrDefault()))
+            else if (suppliers!.Contains(suppliers.Where(supp => supp.Name.ToUpper() == request.ToUpper()).FirstOrDefault()))
             {
-                var currentsupp = _unitOfwork!.Supplier!.GetAll()!.Where(supp => supp.Name.ToUpper() == request.ToUpper()).FirstOrDefault();
-                ViewData["Goods"] = goods!.Where(good => good.SupplierId == currentsupp!.Id);
+                var currentsupp = _unitOfwork.Supplier.GetAll().Where(supp => supp.Name.ToUpper() == request.ToUpper()).FirstOrDefault();
+                ViewData["Goods"] = goods.Where(good => good.SupplierId == currentsupp!.Id);
             }
             else
             {
                 // modal window error not found
             }
-            return View("Goods",_unitOfwork!.Supplier!.GetAll()!);
+            return View("Goods",_unitOfwork.Supplier.GetAll());
         }
         [HttpPost]
         public IActionResult RegisterCompany(Company client)

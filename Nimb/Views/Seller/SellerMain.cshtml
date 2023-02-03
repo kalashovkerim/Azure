@@ -76,11 +76,11 @@
                                     @foreach (var cleint in Model)
                                         {
                                             <tr>
-                                                <td>@Html.DisplayFor(cleints => cleint.Id)</td>
-                                                <td>@Html.DisplayFor(cleints => cleint.FirstName)</td>
-                                                <td>@Html.DisplayFor(cleints => cleint.LastName)</td>
-                                                <td>@Html.DisplayFor(cleints => cleint.PatronymicName)</td>
-                                                <td>@Html.DisplayFor(cleints => cleint.Number)</td>
+                                                <td>@cleint.Id</td>
+                                                <td>@cleint.FirstName</td>
+                                                <td>@cleint.LastName</td>
+                                                <td>@cleint.PatronymicName</td>
+                                                <td>@cleint.Number</td>
                                             </tr>
                                         }
                                 </tbody>

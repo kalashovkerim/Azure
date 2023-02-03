@@ -19,24 +19,33 @@ namespace NimbRepository.Repository.Classes
             _context = context;
         }
 
-        public Client? FindById(int id)
+        public Client FindById(int id)
         {
-            return _context!.Clients!.Find(id)!;
+            if(id > 0)
+            {
+                return _context.Clients.Find(id)!;
+            }
+            else
+            {
+                return _context.Clients.FirstOrDefault();
+            }
         }
 
-        public void Update(Client? obj)
+        public void Update(Client obj)
         {
-            var objFromDb = _context!.Clients!.FirstOrDefault(u => u.Id == obj.Id);
-
-            if (objFromDb != null)
+            var objFromDb = _context.Clients.FirstOrDefault(u => u.Id == obj.Id);
+            if (obj != null)
             {
+                if (objFromDb != null)
+                {
 
-                objFromDb.FirstName = obj.FirstName;
-                objFromDb.LastName = obj.LastName;
-                objFromDb.Number = obj.Number;
-                objFromDb.PatronymicName = obj.PatronymicName;
-                objFromDb.EmailAddress = obj.EmailAddress;
+                    objFromDb.FirstName = obj.FirstName;
+                    objFromDb.LastName = obj.LastName;
+                    objFromDb.Number = obj.Number;
+                    objFromDb.PatronymicName = obj.PatronymicName;
+                    objFromDb.EmailAddress = obj.EmailAddress;
 
+                }
             }
         }
 

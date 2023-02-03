@@ -19,25 +19,34 @@ namespace NimbRepository.Repository.Classes
             _context = context;
         }
 
-        public Good? FindById(int id)
+        public Good FindById(int id)
         {
-            return _context!.Goods!.Find(id)!;
+            if (id > 0)
+            {
+                return _context.Goods.Find(id)!;
+            }
+            else
+            {
+                return _context.Goods.FirstOrDefault();
+            }
         }
 
-        public void Update(Good? obj)
+        public void Update(Good obj)
         {
-            var objFromDb = _context!.Goods!.FirstOrDefault(u => u.Id == obj.Id);
-
-            if (objFromDb != null)
+            var objFromDb = _context.Goods!.FirstOrDefault(u => u.Id == obj.Id);
+            if (obj != null)
             {
+                if (objFromDb != null)
+                {
 
-                objFromDb.SupplierId = obj.SupplierId;
-                objFromDb.Name= obj.Name;
-                objFromDb.Price = obj.Price;
-                objFromDb.Count= obj.Count;
-                objFromDb.Category = obj.Category;
-                objFromDb.Description = obj.Description;
-                
+                    objFromDb.SupplierId = obj.SupplierId;
+                    objFromDb.Name = obj.Name;
+                    objFromDb.Price = obj.Price;
+                    objFromDb.Count = obj.Count;
+                    objFromDb.Category = obj.Category;
+                    objFromDb.Description = obj.Description;
+
+                }
             }
         }
 

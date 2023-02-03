@@ -914,3 +914,4 @@ C:\Users\kerim\source\repos\NimbApp\NimbApp\Nimb\obj\Debug\net6.0\refint\Nimb.dl
 C:\Users\kerim\source\repos\NimbApp\NimbApp\Nimb\obj\Debug\net6.0\Nimb.pdb
 C:\Users\kerim\source\repos\NimbApp\NimbApp\Nimb\obj\Debug\net6.0\Nimb.genruntimeconfig.cache
 C:\Users\kerim\source\repos\NimbApp\NimbApp\Nimb\obj\Debug\net6.0\ref\Nimb.dll
+C:\Users\kerim\source\repos\NimbApp\NimbApp\Nimb\bin\Debug\net6.0\BCrypt.Net.dll

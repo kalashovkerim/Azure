@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.CodeAnalysis.Scripting;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -20,8 +21,8 @@ namespace Business.Services.Classes
             {
                 password += chars[rand.Next(0, chars.Length)];
             }
-
-            return password;
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
+            return hashedPassword;
         }
     }
 }

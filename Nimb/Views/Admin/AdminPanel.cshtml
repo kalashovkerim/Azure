@@ -48,15 +48,15 @@
                             @{
                                foreach(var user in Model){
                                    <tr id=@user.Id>
-                                        <td>@Html.DisplayFor(us => user.FirstName)</td>
-                                        <td>@Html.DisplayFor(us => user.LastName)</td>
-                                        <td>@Html.DisplayFor(us => user.PatronymicName)</td>
-                                        <td>@Html.DisplayFor(us => user.Login)</td>
-                                        <td>@Html.DisplayFor(us => user.Password)</td>
-                                        <td>@Html.DisplayFor(us => user.Number)</td>
-                                        <td>@Html.DisplayFor(us => user.EmailAddress)</td>
-                                        <td>@Html.DisplayFor(us => user.Address)</td>
-                                        <td>@Html.DisplayFor(us => user.Position)</td>
+                                        <td>@user.FirstName</td>
+                                        <td>@user.LastName</td>
+                                        <td>@user.PatronymicName</td>
+                                        <td>@user.Login</td>
+                                        <td>@user.Password</td>
+                                        <td>@user.Number</td>
+                                        <td>@user.EmailAddress</td>
+                                        <td>@user.Address</td>
+                                        <td>@user.Position</td>
                                    </tr>
                                }
                             }

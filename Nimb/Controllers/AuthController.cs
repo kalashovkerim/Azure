@@ -27,9 +27,9 @@ namespace Nimb.Controllers
         {
             if (ModelState.IsValid)
             {
-                var users = _unitOfwork!.User!.GetAll();
+                var users = _unitOfwork.User.GetAll();
 
-                var userlog = users!.Where(us => us.Login == authModel.UserName && us.Password == authModel.Password).FirstOrDefault();
+                var userlog = users.Where(us => us.Login == authModel.UserName && us.Password == authModel.Password).FirstOrDefault();
 
                 if(userlog != null)
                 {

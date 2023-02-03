@@ -19,22 +19,31 @@ namespace NimbRepository.Repository.Classes
             _context = context;
         }
 
-        public Company? FindById(int id)
+        public Company FindById(int id)
         {
-            return _context!.Companies!.Find(id)!;
+            if(id > 0)
+            {
+                return _context.Companies.Find(id)!;
+            }
+            else
+            {
+                return _context.Companies.FirstOrDefault();
+            }
         }
 
-        public void Update(Company? obj)
+        public void Update(Company obj)
         {
-            var objFromDb = _context!.Companies!.FirstOrDefault(u => u.Id == obj.Id);
-
-            if (objFromDb != null)
+            var objFromDb = _context.Companies.FirstOrDefault(u => u.Id == obj.Id);
+            if (obj != null)
             {
-                objFromDb.Name = obj.Name;
-                objFromDb.Address = obj.Address;
-                objFromDb.EmailAddress = obj.EmailAddress;
-                objFromDb.Number = obj.Number;
+                if (objFromDb != null)
+                {
+                    objFromDb.Name = obj.Name;
+                    objFromDb.Address = obj.Address;
+                    objFromDb.EmailAddress = obj.EmailAddress;
+                    objFromDb.Number = obj.Number;
 
+                }
             }
         }
 

@@ -27,7 +27,7 @@ namespace NimbApp.Controllers
 
         public IActionResult AdminPanel()
         {
-           var users = _unitOfwork!.User!.GetAll();
+           var users = _unitOfwork.User.GetAll();
 
             return  View(users);
         }
@@ -42,18 +42,18 @@ namespace NimbApp.Controllers
 
             if (ModelState.IsValid)
             {
-                _unitOfwork!.User!.Update(user);
+                _unitOfwork.User.Update(user);
 
                 _unitOfwork.Save();
 
-                return RedirectToAction("AdminPanel",_unitOfwork!.User!.GetAll());
+                return RedirectToAction("AdminPanel",_unitOfwork.User.GetAll());
             }
             return View("UserEdit");
         }
 
         public IActionResult Delete(int id)
         {
-            var user = _unitOfwork!.User!.FindById(id);
+            var user = _unitOfwork.User.FindById(id);
             if (user != null) // check
             {
                 _unitOfwork.User.Remove(user);
@@ -72,7 +72,7 @@ namespace NimbApp.Controllers
             {
                 var login = GenerateUserLogin.FromName(user.FirstName);
                 var password = GenerateUserPassword.Generate();
-                var users = _unitOfwork!.User!.GetAll();
+                var users = _unitOfwork.User.GetAll();
 
                 if (users!.Contains(users!.Where(us => us.Login == login).FirstOrDefault()))
                 {
@@ -80,7 +80,7 @@ namespace NimbApp.Controllers
                 }
                 user.Login = login;
                 user.Password = password;
-                _unitOfwork!.User!.Add(user);
+                _unitOfwork.User.Add(user);
 
                 _unitOfwork.Save();
 
@@ -101,7 +101,7 @@ namespace NimbApp.Controllers
         }
         public IActionResult UserEdit(int id)
         {
-            var user = _unitOfwork!.User!.FindById(id);
+            var user = _unitOfwork.User.FindById(id);
 
             return View(user);
         }

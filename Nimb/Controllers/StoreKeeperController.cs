@@ -32,7 +32,7 @@ namespace Nimb.Controllers
         public IActionResult AddProduct()
         {
             var suppliers = new List<Supplier>();
-            foreach (var supplier in _unitOfwork!.Supplier!.GetAll()!)
+            foreach (var supplier in _unitOfwork.Supplier.GetAll()!)
             {
                 suppliers.Add(supplier);
             }
@@ -50,7 +50,7 @@ namespace Nimb.Controllers
                 {
                     product.good.SupplierId = product.SuppId;
 
-                    _unitOfwork!.Good!.Add(product.good);
+                    _unitOfwork.Good.Add(product.good);
                     _unitOfwork.Save();
                 }
             }
@@ -63,7 +63,7 @@ namespace Nimb.Controllers
 
             if (result.IsValid)
             {
-                var check = _unitOfwork!.Supplier!.GetAll();
+                var check = _unitOfwork.Supplier.GetAll()!;
 
                 if (check!.Contains(check!.Where(supl => supl.Name.ToUpper() == supp.Name.ToUpper()).FirstOrDefault()))
                 {
@@ -72,7 +72,7 @@ namespace Nimb.Controllers
                 }
                 else
                 {
-                    _unitOfwork!.Supplier!.Add(supp);
+                    _unitOfwork.Supplier.Add(supp);
                     _unitOfwork.Save();
                 }
             }

@@ -24,7 +24,9 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
 }
-
+a {
+    color:white;
+}
 .container {
     text-align: center;
 }
@@ -111,7 +113,7 @@ body {
             margin-top: 55px;
             border: 0;
             border-radius: 10px;
-            background-color: #3fe6a0;
+            background-color: #25d48b;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         }
 
@@ -131,7 +133,10 @@ body {
             color: rgb(56, 56, 56);
             font-family: Inter-Regular;
         }
-
+.signInbtn:hover {
+    background-color: #3fe6a0 !important;
+    transition: background-color 500ms linear;
+}
 @-webkit-keyframes gradient {
     0% {
         background-position: 0% 50%;
