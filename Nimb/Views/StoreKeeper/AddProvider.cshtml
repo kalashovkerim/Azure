@@ -8,19 +8,29 @@
 
 <body>
     <div class="container">
-        <div class="bg">
-            <div class="header"><p>Add Provider</p></div>
-            <form asp-controller="StoreKeeper" asp-action="AddProvider">
-                <input asp-for="Name" placeholder="Name" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-                <input asp-for="Number" placeholder="Number" />
-                <span asp-validation-for="Number" class="text-danger"></span>
-                <input asp-for="Address" placeholder ="Adress" />
-                <span asp-validation-for="Address" class="text-danger"></span>
-                <input asp-for="EmailAddress" placeholder="Email" />
-                <span asp-validation-for="EmailAddress" class="text-danger"></span>
-                <button type="submit"><p>Confirm</p></button>
-            </form>
+        <div class="main">
+            <div class="bg">
+                <div class="header-container">
+                    <div class="header">Add supplier</div>
+                </div>
+                <form asp-action="AddProvider" asp-controller="StoreKeeper">
+                    <div class="inputs">
+                        <div class="namePart">
+                            <input type="text" asp-for="Name" class="nameField" id="nameField" placeholder="Enter the name"></input>
+                        </div>
+                        <div class="categoryPart">
+                            <input type="text" asp-for="Number" class="addressField" id="addressField" placeholder="Enter the number"></input>
+                        </div>
+                        <div class="countPart">
+                            <input type="email" asp-for="EmailAddress" class="mailField" id="mailField" placeholder="Enter the email"></input>
+                        </div>
+                        <div class="pricePart">
+                            <input type="text" asp-for="Address" class="priceField" id="priceField" placeholder="Enter the address"></input>
+                        </div>
+                    </div>
+                    <button class="applyButton" type="submit"><p>Apply</p></button>
+                </form>
+            </div>
         </div>
     </div>
 </body>

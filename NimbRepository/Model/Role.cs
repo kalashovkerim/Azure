@@ -10,8 +10,6 @@ namespace NimbRepository.Model
     public class Role : IEntity
     {
         
-        public int StandardRefId { get; set; }
-        [ForeignKey("Standard")]
         public int Id { get; set; }
         public string Position { get; set; }
     }

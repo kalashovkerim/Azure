@@ -10,28 +10,39 @@
 
 <body>
     <div class="container">
-        <div class="bg">
-            <div class="header"><p>Add Product</p></div>
-            <form asp-controller="StoreKeeper" asp-action="AddProduct">
-                <select asp-for=SuppId id="suppselectid">
-                    <option selected>Choose provider</option>
-                    @foreach (var item in supplierList!)
-                    {
-                        <option value=@item.Id>@Html.DisplayFor(items => item.Name)</option>
-                    }
-                </select> 
-                <input asp-for="good.Name" placeholder="Name"/>
-                <span asp-validation-for="good.Name" class="text-danger"></span>
-                <input asp-for="good.Category" placeholder="Catergory" />
-                <span asp-validation-for="good.Category" class="text-danger"></span>
-                <textarea asp-for="good.Description" placeholder="Discription"></textarea>
-                <span asp-validation-for="good.Description" class="text-danger"></span>
-                <input asp-for="good.Price" placeholder="Price" />
-                <span asp-validation-for="good.Price" class="text-danger"></span>
-                <input asp-for="good.Count" type="number" placeholder="Count" />
-                <span asp-validation-for="good.Count" class="text-danger"></span>
-                <button class="confirmbtn" type="submit"><p>Confirm</p></button>
-            </form>
+        <div class="main">
+            <div class="bg">
+                <div class="header-container">
+                    <div class="header">Add product</div>
+                </div>
+                <form>
+                    <div class="inputs">
+                        <select class="supplierBox" asp-for=SuppId id="suppselectid">
+                            <option selected>Choose provider</option>
+                            @foreach (var item in supplierList!)
+                            {
+                                <option value=@item.Id>@Html.DisplayFor(items => item.Name)</option>
+                            }
+                        </select>
+                        <div class="namePart">
+                            <input type="text" asp-for="good.Name" class="nameField" id="nameField" placeholder="Enter the name"></input>
+                        </div>
+                        <div class="categoryPart">
+                            <input type="text" asp-for="good.Category" class="categoryField" id="categoryField" placeholder="Enter the category"></input>
+                        </div>
+                        <div class="pricePart">
+                            <input type="number" asp-for="good.Price" class="priceField" id="priceField" placeholder="Enter the price"></input>
+                        </div>
+                        <div class="countPart">
+                            <input type="number" asp-for="good.Count" class="countField" id="countField" placeholder="Enter the count"></input>
+                        </div>
+                        <div class="descPart">
+                            <textarea class="descField" asp-for="good.Description" id="descField" placeholder="Enter the description"></textarea>
+                        </div>
+                    </div>
+                    <button class="applyButton" type="submit"><p>Apply</p></button>
+                </form>
+            </div>
         </div>
     </div>
 </body>
