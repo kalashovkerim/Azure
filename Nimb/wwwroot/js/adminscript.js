@@ -1,6 +1,7 @@
 ﻿var currentitemid;
 
 $("tr").click(function () {
+    console.log("CLICK");
     if (this.id != "headtr" && !(this.classList.contains('selected'))) {
         $(this).parent().children().removeClass('selected')
         $(this).addClass('selected');

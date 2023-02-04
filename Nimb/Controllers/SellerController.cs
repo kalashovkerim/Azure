@@ -9,6 +9,7 @@ using NimbRepository.Model.Storekeeper;
 using NimbRepository.Model.Admin;
 using NimbRepository.Repository.Interfaces;
 using System.Globalization;
+using NimbRepository.Repository.Classes;
 
 namespace NimbProjectApp.Controllers
 {
@@ -145,5 +146,6 @@ namespace NimbProjectApp.Controllers
                 
             return View("SellerMain", _unitOfwork.Client.GetAll());
         }
+
     }
 }

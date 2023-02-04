@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wpqcfbRC1Cq/nICqF4NZRseqKg4lnxhkBsXsrOJVgnk=",
+  "Hash": "cnURZuLAfOz/OpEPIZDMk/4pau4so4+l6RcRq3BaYzM=",
   "Source": "Nimb",
   "BasePath": "_content/Nimb",
   "Mode": "Default",
@@ -1409,6 +1409,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\keeper.js"
+    },
+    {
+      "Identity": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Nimb\\wwwroot\\js\\seller.js",
+      "SourceId": "Nimb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Nimb\\wwwroot\\",
+      "BasePath": "_content/Nimb",
+      "RelativePath": "js/seller.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\seller.js"
     },
     {
       "Identity": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Nimb\\wwwroot\\js\\site.js",

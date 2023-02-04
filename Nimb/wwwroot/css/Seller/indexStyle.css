@@ -1,421 +1,162 @@
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url("/resource/fonts/inter/Inter-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url("/resource/fonts/inter/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: Inter-Light;
+    src: url("/resource/fonts/inter/Inter-Light.ttf");
+}
+
 body {
     height: 100%;
     width: 100%;
-    background: linear-gradient(-45deg, #5492a8, #4b4f9b, #2f8f8f, #1475a5);
-    background-size: 400% 400%;
-    -webkit-animation: gradient 20s ease infinite;
-    animation: gradient 20s ease infinite;
-    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #E7E7E7;
 }
 
 .container {
-    background-color: transparent;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
-
-p {
     text-align: center;
 }
 
-.container h1 {
-    text-align: center;
+table {
+    margin-top: 50px;
 }
 
-.container .btn-primary {
-    width: 230px;
-    height: 35px;
-    margin-top: 55px;
-    border: 0;
-    border-radius: 10px;
-    background-color: #3fe6a0;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-
-    .container .btn-primary:hover {
-        opacity: .8;
-    }
-
-    .container .btn-primary p {
-        margin-top: -5px;
-        font-size: 15px;
-        color: white;
-        /*font-family: Inter-Medium;*/
-    }
-
-
-.container .searchPanel {
-    width: 500px;
-    height: 350px;
-    background-color: transparent;
-}
-
-
-.container .tableSubCont .btn-primary {
-    width: 300px;
-}
-
-#main-statement {
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
-}
-
-.container .form-control {
-    width: 500px;
-    height: 40px;
-    border-radius: 2px;
-    border: 0px;
-    outline-color: rgb(90, 90, 90);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-
-#searchButton {
-    width: 500px;
-    height: 35px;
-    margin-top: 55px;
-    border: 0;
-    border-radius: 10px;
-    background-color: #3fe6a0;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-
-    #searchButton p {
-        margin-top: -7px;
-        font-size: 20px;
-        color: white;
-        /*font-family: Inter-Medium;*/
-    }
-
-    #searchButton:hover {
-        opacity: .8;
-    }
-
-.userscontrol {
+.container .main {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+}
+
+.bg label {
+    font-family: Inter-Regular;
+}
+
+.bg p {
+    font-family: Inter-SemiBold;
+}
+
+.dataTables_length {
+    display: none;
+}
+
+.dataTables_paginate {
+    margin-bottom: 20px;
+}
+
+.container .main .bg {
+    justify-content: center;
+    margin-top: 50px;
+    background-color: white;
+    height: auto;
+    width: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+th {
+    font-family: Inter-SemiBold;
+}
+
+td {
+    font-family: Inter-Regular;
+}
+
+.dataTables_info, a {
+    font-family: Inter-Light;
+}
+
+.container .main .bg .table .display {
     margin-top: 20px;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.2549019608);
-    height: 420px;
-    width: 630px;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.userslist {
-    margin-top: 40px;
+.dataTables_info {
+    margin-left: 20px;
 }
 
-    .userslist table {
-        width: 100%;
-        table-layout: fixed;
-    }
+.dataTables_filter {
+    margin-top: 20px;
+}
 
-    .userslist .tbl-header {
-        background-color: rgba(255, 255, 255, 0.3);
-    }
+.display {
+    margin-top: 10px;
+}
 
-    .userslist .tbl-content {
-        height: 300px;
-        overflow-x: auto;
-        margin-top: 0px;
-        /* border: 1px solid rgba(255, 255, 255, 0.3);*/
-    }
-
-    .userslist th {
-        padding: 20px 15px;
-        text-align: left;
-        font-weight: 500;
-        font-size: 12px;
-        color: #fff;
-        text-transform: uppercase;
-    }
-
-    .userslist td {
-        padding: 15px;
-        text-align: left;
-        vertical-align: middle;
-        font-weight: 300;
-        font-size: 12px;
-        color: #fff;
-        border-bottom: solid 1px rgba(255, 255, 255, 0.1);
-    }
-
-.controlbtns {
-    width: 100%;
-    margin-top: 30px;
-    padding: 0;
+.container .buttons {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 120px;
 }
 
-    .controlbtns .btn {
-        width: 220px;
+    .container .buttons .firstButton,
+    .container .buttons .secondButton,
+    .container .buttons .thirdButton,
+    .container .buttons .fourthButton {
+        width: 150px;
         height: 35px;
-        margin-top: 55px;
+        margin-top: 30px;
         border: 0;
-        border-radius: 10px;
-        background-color: #3fe6a0;
+        border-radius: 15px;
+        background-color: #7ACBE5;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
     }
 
-        .controlbtns .btn p {
-            margin-top: 7px;
-            font-size: 15px;
-            color: white;
-            /*font-family: Inter-Medium;*/
+        .container .buttons .firstButton:hover,
+        .container .buttons .secondButton:hover,
+        .container .buttons .thirdButton:hover,
+        .container .buttons .fourthButton:hover {
+            opacity: .8;
         }
 
-.selected {
-    background-color: #2f8f8f;
-}
+        .container .buttons .firstButton p,
+        .container .buttons .secondButton p,
+        .container .buttons .thirdButton p,
+        .container .buttons .fourthButton p {
+            font-size: 17px;
+            font-weight: 600;
+            font-family: Inter-SemiBold;
+            margin-top:15px;
+        }
 
-::-webkit-scrollbar {
-    width: 6px;
-}
-
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-@-webkit-keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
+@media screen and (max-height: 790px) {
+    body {
+        overflow-y: visible;
     }
 }
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-
-@media screen and (max-width: 550px) {
-    .container .searchPanel {
+/* 
+@media screen and (max-width: 700px) {
+     .container .main .bg {
         width: 450px;
-        height: 350px;
-        background-color: transparent;
-    }
-
-    .container .form-control {
-        width: 450px;
-        height: 40px;
-        border-radius: 2px;
-        border: 0px;
-        outline-color: rgb(90, 90, 90);
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    #searchButton {
-        width: 450px;
-        height: 35px;
-        margin-top: 55px;
-        border: 0;
-        border-radius: 10px;
-        background-color: #3fe6a0;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    .container .btn-primary {
-        width: 210px;
-        height: 35px;
-        margin-top: 55px;
-        border: 0;
-        border-radius: 10px;
-        background-color: #3fe6a0;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    .userscontrol {
+        height: 520px;
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0.2549019608);
-        height: 420px;
+    }
+
+    .container .inputs{
+        margin-left: 0;
+        margin-top: -80px;
+    }
+
+    .container form .applyButton {
+        width: 355px;
+        height: 35px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .container .header-container{
         width: 450px;
-        border-radius: 20px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        position: relative;
-        top: 70%;
     }
-}
-
-
-@media screen and (min-width: 550px) and (max-width: 800px) {
-    .container .searchPanel {
-        width: 500px;
-        height: 350px;
-        background-color: transparent;
-        position: absolute;
-        left: 20%;
-    }
-
-    .container .form-control {
-        width: 500px;
-        height: 40px;
-        border-radius: 2px;
-        border: 0px;
-        outline-color: rgb(90, 90, 90);
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    #searchButton {
-        width: 500px;
-        height: 35px;
-        margin-top: 55px;
-        border: 0;
-        border-radius: 10px;
-        background-color: #3fe6a0;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    .container .btn-primary {
-        width: 230px;
-        height: 35px;
-        margin-top: 55px;
-        border: 0;
-        border-radius: 10px;
-        background-color: #3fe6a0;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    .userscontrol {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        align-items: center;
-        background-color: rgba(255, 255, 255, 0.2549019608);
-        height: 420px;
-        width: 450px;
-        border-radius: 20px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        position: relative;
-        top: 70%;
-    }
-}
-
-
-@media screen and (min-width: 800px) and (max-width: 950px) {
-    .container h1 {
-        text-align: right;
-        color: green;
-    }
-
-    .container .searchPanel {
-        width: 500px;
-        height: 350px;
-        background-color: transparent;
-        position: absolute;
-        left: 20%;
-    }
-
-    .container .form-control {
-        width: 500px;
-        height: 40px;
-        border-radius: 2px;
-        border: 0px;
-        outline-color: rgb(90, 90, 90);
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    #searchButton {
-        width: 500px;
-        height: 35px;
-        margin-top: 55px;
-        border: 0;
-        border-radius: 10px;
-        background-color: #3fe6a0;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    .container .btn-primary {
-        width: 230px;
-        height: 35px;
-        margin-top: 55px;
-        border: 0;
-        border-radius: 10px;
-        background-color: #3fe6a0;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    .userscontrol {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        align-items: center;
-        background-color: rgba(255, 255, 255, 0.2549019608);
-        height: 420px;
-        width: 550px;
-        border-radius: 20px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        /*position: relative;
-        top: 100%;*/
-    }
-}
-
-
-@media screen and (min-width: 950px) and (max-width: 1300px) {
-    .container h1 {
-        text-align: left;
-    }
-
-    .container .searchPanel {
-        width: 300px;
-        height: 350px;
-        background-color: transparent;
-    }
-
-    .userscontrol {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        align-items: center;
-        background-color: rgba(255, 255, 255, 0.2549019608);
-        height: 420px;
-        width: 450px;
-        border-radius: 20px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        position: absolute;
-        right: 7%;
-    }
-}
-
-
-@media screen and (min-width: 1300px) and (max-width: 1415px) {
-    .userscontrol {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        align-items: center;
-        background-color: rgba(255, 255, 255, 0.2549019608);
-        height: 420px;
-        width: 530px;
-        border-radius: 20px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        position: absolute;
-        right: 7%;
-    }
-}
+} */

@@ -11,90 +11,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/Seller/indexStyle.css">
-    <title>SellerPanel</title>
+
+    <link href="/css/Seller/indexStyle.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css"> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script defer type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/js/seller.js"></script>
+    <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <h1>Seller Panel</h1>
-        <hr>
-        <div class="row">
-            <div class="col">
-                <form class="searchPanel" action="">
-                    <div class="mb-3">
-                        <label for="firstName" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="lastName" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="number" class="form-label">Number</label>
-                        <input type="number" class="form-control" placeholder="Phone Number">
-                    </div>
-                    <p class="or">or</p>
-                    <div class="mb-3">
-                        <label for="company" class="form-label">Company</label>
-                        <input type="text" class="form-control" id="company" placeholder="Company">
-                    </div>
-                    <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-primary" id="searchButton"><p>Search</p></button>
-                    </div>
-                    <hr>
-                    <div class="tovari">
-                        <div class="row">
-                            <div class="col">
-                                <button type="submit" class="btn btn-primary" asp-controller="Seller" asp-action="Goods">Tovari</button>
-                            </div>
-                            <div class="col"><button class="btn btn-primary" asp-controller="Seller" asp-action="RegisterUser">Registraciya klienta</button></div>
-                            <div class="col"><button class="btn btn-primary" asp-controller="Seller" asp-action="RegisterCompany">Registraciya companii</button></div>
-                            <div class="col"><button type="submit" class="btn btn-primary" asp-controller="Seller" asp-action="GoodsSoldFirst">Oformit zakaz bez registracii</button></div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col">
-                <div class="userscontrol">
-                    <div class="userslist">
-                        <div class="tbl-header">
-                            <table cellpadding="0" cellspacing="0">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Id</th>
-                                        <th scope="col">First Name</th>
-                                        <th scope="col">Last Name</th>
-                                        <th scope="col">Patronymic Name</th>
-                                        <th scope="col">Phone Number</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-                        <div class="tbl-content">
-                            <table cellpadding="0" cellspacing="0">
-                                <tbody>
-                                    @foreach (var cleint in Model)
-                                        {
-                                            <tr>
-                                                <td>@cleint.Id</td>
-                                                <td>@cleint.FirstName</td>
-                                                <td>@cleint.LastName</td>
-                                                <td>@cleint.PatronymicName</td>
-                                                <td>@cleint.Number</td>
-                                            </tr>
-                                        }
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <form class="controlbtns">
-                        <button type="submit" class="btn btn-primary" asp-controller="Seller" asp-action="GetUsers"><p>Info</p></button>
-                        <button type="submit" class="btn btn-primary float-end"><p>Oformit zakaz</p></button>
-                    </form>
+        <div class="main">
+            <div class="bg">
+                <div class="table">
+                    <table id="table_id" class="display">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Last name</th>
+                                <th>Patronymic name</th>
+                                <th>Number</th>
+                                <th>EmailAddress</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach(var client in Model){
+                                <tr>
+                                    <td>@client.FirstName</td>
+                                    <td>@client.LastName</td>
+                                    <td>@client.PatronymicName</td>
+                                    <td>@client.Number</td>
+                                    <td>@client.EmailAddress</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
+        <form class="buttons">
+            <button asp-controller="Seller" asp-action="Goods" class="firstButton" value="Goods" type="submit"><p>Goods</p></button>
+            <button asp-controller="Seller" asp-action="RegisterUser" class="secondButton" value="Add client" type="submit"><p>Add client</p></button>
+            <button asp-controller="Seller" asp-action="RegisterCompany" class="thirdButton" value="Add company" type="submit"><p>Add company</p></button>
+            <button class="fourthButton" value="Place an order" type="submit"><p>Place an order</p></button>
+        </form>
     </div>
 </body>
 
 </html>
+    

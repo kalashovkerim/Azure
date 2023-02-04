@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\js\\keeper.js"
     },
     {
+      "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Nimb\\wwwroot\\js\\seller.js",
+      "PackagePath": "staticwebassets\\js\\seller.js"
+    },
+    {
       "Id": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Nimb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
