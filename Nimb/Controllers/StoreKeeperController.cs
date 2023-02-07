@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -9,6 +10,7 @@ using NimbRepository.Repository.Interfaces;
 
 namespace Nimb.Controllers
 {
+    [Authorize]
     public class StoreKeeperController : Controller
     {
         private readonly IUnitOfWork _unitOfwork;

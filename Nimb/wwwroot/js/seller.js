@@ -1,23 +1,23 @@
 $(document).ready(function () {
     var table = $('#table_id').dataTable();
 });
-/*function assignToEventsColumns() {    //future update
+function assignToEventsColumns() {    //future update
     var table = $('#table_id').dataTable({
         "ajax": {
-            "url": "Seller/GetAll"
+            "url": "/Seller/GetAll"
         },
         "columns": [{
-            "data": "FirstName"
+            "data": "firstName"
         }, {
-            "data": "LastName"
+            "data": "lastName"
         }, {
-            "data": "PatronymicName"
+            "data": "patronymicName"
         }, {
-            "data": "Number"
+            "data": "number"
         }, {
-            "data": "EmailAddress"
+            "data": "emailAddress"
         }, {
             "width": "15%"
         }]
     })
-}*/
+}

@@ -35,7 +35,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach(var client in Model){
+                            @*@foreach(var client in Model){
                                 <tr>
                                     <td>@client.FirstName</td>
                                     <td>@client.LastName</td>
@@ -43,7 +43,7 @@
                                     <td>@client.Number</td>
                                     <td>@client.EmailAddress</td>
                                 </tr>
-                            }
+                            }*@
                         </tbody>
                     </table>
                 </div>
@@ -59,4 +59,6 @@
 </body>
 
 </html>
-    
+@section Scripts{
+    <script src="~/js/seller.js"></script>
+}

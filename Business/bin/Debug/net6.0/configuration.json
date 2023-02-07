@@ -1,0 +1,5 @@
+{
+  "Connectionstrings": {
+    "NimbDb": "Data Source=KARIM-DESKTOP;Initial Catalog=NimbDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
+  }
+}

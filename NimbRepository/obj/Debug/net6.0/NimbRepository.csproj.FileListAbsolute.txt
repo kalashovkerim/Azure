@@ -1,0 +1,75 @@
+C:\Users\Tamerlan\source\repos\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.deps.json
+C:\Users\Tamerlan\source\repos\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.runtimeconfig.json
+C:\Users\Tamerlan\source\repos\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.dll
+C:\Users\Tamerlan\source\repos\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.pdb
+C:\Users\Tamerlan\source\repos\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.csproj.AssemblyReference.cache
+C:\Users\Tamerlan\source\repos\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tamerlan\source\repos\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.AssemblyInfoInputs.cache
+C:\Users\Tamerlan\source\repos\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.AssemblyInfo.cs
+C:\Users\Tamerlan\source\repos\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.csproj.CoreCompileInputs.cache
+C:\Users\Tamerlan\source\repos\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.dll
+C:\Users\Tamerlan\source\repos\NimbApp\NimbRepository\obj\Debug\net6.0\refint\NimbRepository.dll
+C:\Users\Tamerlan\source\repos\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.pdb
+C:\Users\Tamerlan\source\repos\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.genruntimeconfig.cache
+C:\Users\Tamerlan\source\repos\NimbApp\NimbRepository\obj\Debug\net6.0\ref\NimbRepository.dll
+C:\Users\Tamerlan\source\repos\NimbApp\NimbRepository\bin\Debug\net6.0\configuration.json
+D:\Files\Documents\NimbApp\NimbRepository\bin\Debug\net6.0\configuration.json
+D:\Files\Documents\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.deps.json
+D:\Files\Documents\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.runtimeconfig.json
+D:\Files\Documents\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.dll
+D:\Files\Documents\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.pdb
+D:\Files\Documents\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.csproj.AssemblyReference.cache
+D:\Files\Documents\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Files\Documents\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.AssemblyInfoInputs.cache
+D:\Files\Documents\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.AssemblyInfo.cs
+D:\Files\Documents\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.csproj.CoreCompileInputs.cache
+D:\Files\Documents\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.dll
+D:\Files\Documents\NimbApp\NimbRepository\obj\Debug\net6.0\refint\NimbRepository.dll
+D:\Files\Documents\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.pdb
+D:\Files\Documents\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.genruntimeconfig.cache
+D:\Files\Documents\NimbApp\NimbRepository\obj\Debug\net6.0\ref\NimbRepository.dll
+C:\Users\Tamerlan\OneDrive\Документы\NimbApp\NimbRepository\bin\Debug\net6.0\configuration.json
+C:\Users\Tamerlan\OneDrive\Документы\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.deps.json
+C:\Users\Tamerlan\OneDrive\Документы\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.runtimeconfig.json
+C:\Users\Tamerlan\OneDrive\Документы\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.dll
+C:\Users\Tamerlan\OneDrive\Документы\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.pdb
+C:\Users\Tamerlan\OneDrive\Документы\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.csproj.AssemblyReference.cache
+C:\Users\Tamerlan\OneDrive\Документы\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tamerlan\OneDrive\Документы\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.AssemblyInfoInputs.cache
+C:\Users\Tamerlan\OneDrive\Документы\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.AssemblyInfo.cs
+C:\Users\Tamerlan\OneDrive\Документы\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.csproj.CoreCompileInputs.cache
+C:\Users\Tamerlan\OneDrive\Документы\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.dll
+C:\Users\Tamerlan\OneDrive\Документы\NimbApp\NimbRepository\obj\Debug\net6.0\refint\NimbRepository.dll
+C:\Users\Tamerlan\OneDrive\Документы\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.pdb
+C:\Users\Tamerlan\OneDrive\Документы\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.genruntimeconfig.cache
+C:\Users\Tamerlan\OneDrive\Документы\NimbApp\NimbRepository\obj\Debug\net6.0\ref\NimbRepository.dll
+C:\Users\kerim\Downloads\NimbApp (2)\NimbApp\NimbRepository\bin\Debug\net6.0\configuration.json
+C:\Users\kerim\Downloads\NimbApp (2)\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.deps.json
+C:\Users\kerim\Downloads\NimbApp (2)\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.runtimeconfig.json
+C:\Users\kerim\Downloads\NimbApp (2)\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.dll
+C:\Users\kerim\Downloads\NimbApp (2)\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.pdb
+C:\Users\kerim\Downloads\NimbApp (2)\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.csproj.AssemblyReference.cache
+C:\Users\kerim\Downloads\NimbApp (2)\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kerim\Downloads\NimbApp (2)\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.AssemblyInfoInputs.cache
+C:\Users\kerim\Downloads\NimbApp (2)\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.AssemblyInfo.cs
+C:\Users\kerim\Downloads\NimbApp (2)\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.csproj.CoreCompileInputs.cache
+C:\Users\kerim\Downloads\NimbApp (2)\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.dll
+C:\Users\kerim\Downloads\NimbApp (2)\NimbApp\NimbRepository\obj\Debug\net6.0\refint\NimbRepository.dll
+C:\Users\kerim\Downloads\NimbApp (2)\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.pdb
+C:\Users\kerim\Downloads\NimbApp (2)\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.genruntimeconfig.cache
+C:\Users\kerim\Downloads\NimbApp (2)\NimbApp\NimbRepository\obj\Debug\net6.0\ref\NimbRepository.dll
+C:\Users\kerim\source\repos\NimbApp\NimbApp\NimbRepository\bin\Debug\net6.0\configuration.json
+C:\Users\kerim\source\repos\NimbApp\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.deps.json
+C:\Users\kerim\source\repos\NimbApp\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.runtimeconfig.json
+C:\Users\kerim\source\repos\NimbApp\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.dll
+C:\Users\kerim\source\repos\NimbApp\NimbApp\NimbRepository\bin\Debug\net6.0\NimbRepository.pdb
+C:\Users\kerim\source\repos\NimbApp\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.csproj.AssemblyReference.cache
+C:\Users\kerim\source\repos\NimbApp\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kerim\source\repos\NimbApp\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.AssemblyInfoInputs.cache
+C:\Users\kerim\source\repos\NimbApp\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.AssemblyInfo.cs
+C:\Users\kerim\source\repos\NimbApp\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.csproj.CoreCompileInputs.cache
+C:\Users\kerim\source\repos\NimbApp\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.dll
+C:\Users\kerim\source\repos\NimbApp\NimbApp\NimbRepository\obj\Debug\net6.0\refint\NimbRepository.dll
+C:\Users\kerim\source\repos\NimbApp\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.pdb
+C:\Users\kerim\source\repos\NimbApp\NimbApp\NimbRepository\obj\Debug\net6.0\NimbRepository.genruntimeconfig.cache
+C:\Users\kerim\source\repos\NimbApp\NimbApp\NimbRepository\obj\Debug\net6.0\ref\NimbRepository.dll

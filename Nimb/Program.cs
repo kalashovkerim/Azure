@@ -26,7 +26,7 @@ services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
         options.Cookie.Name = "AuthToken";
-        options.ExpireTimeSpan = TimeSpan.FromSeconds(5);
+        options.ExpireTimeSpan = TimeSpan.FromHours(5);
         options.SlidingExpiration = true;
         options.AccessDeniedPath = "/Forbidden/";
     });

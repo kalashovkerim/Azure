@@ -5,7 +5,6 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace Business.Services.Classes
 {
     public class GenerateUserPassword
@@ -21,8 +20,9 @@ namespace Business.Services.Classes
             {
                 password += chars[rand.Next(0, chars.Length)];
             }
-            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
-            return hashedPassword;
+            return password;
         }
+
+       
     }
 }

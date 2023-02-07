@@ -10,16 +10,17 @@ namespace NimbRepository.Repository.Classes
 {
     public class UnitOfWork : IUnitOfWork
     {
-        public IUserRepository User { get; private set; }
-        public ISupplierRepository Supplier { get; private set; }
-        public IGoodRepository Good { get; private set; }
+        public IUserRepository? User { get; private set; }
+        public ISupplierRepository? Supplier { get; private set; }
+        public IGoodRepository? Good { get; private set; }
         public IClientRepository Client { get; private set; }
+
         public ICompanyRepository Company { get; private set; }
 
-        private NimbDbContext _context;
-        public UnitOfWork(NimbDbContext context)
+        private NimbDbContext? _context;
+        public UnitOfWork(NimbDbContext? context)
         {
-            _context = context;
+            _context = context!;
 
             User = new UserRepository(_context);
             Supplier = new SupplierRepository(_context);
@@ -29,7 +30,7 @@ namespace NimbRepository.Repository.Classes
         }
         public void Save()
         {
-            _context.SaveChanges();
+            _context?.SaveChanges();
         }
     }
 }

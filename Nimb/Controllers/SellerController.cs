@@ -10,9 +10,11 @@ using NimbRepository.Model.Admin;
 using NimbRepository.Repository.Interfaces;
 using System.Globalization;
 using NimbRepository.Repository.Classes;
+using Microsoft.AspNetCore.Authorization;
 
 namespace NimbProjectApp.Controllers
 {
+    [Authorize]
     public class SellerController : Controller
     {
         private readonly IUnitOfWork _unitOfwork;
@@ -147,5 +149,11 @@ namespace NimbProjectApp.Controllers
             return View("SellerMain", _unitOfwork.Client.GetAll());
         }
 
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var clients = _unitOfwork.Client.GetAll();
+            return Json(new {data = clients});
+        }
     }
 }

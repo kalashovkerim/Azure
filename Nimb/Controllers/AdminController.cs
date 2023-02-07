@@ -71,19 +71,28 @@ namespace NimbApp.Controllers
 
             if (result.IsValid)
             {
+                
                 var login = GenerateUserLogin.FromName(user.FirstName);
+
                 var password = GenerateUserPassword.Generate();
+                var hashedPassword = new HashData(password).DoHash();
+
                 var users = _unitOfwork.User.GetAll();
 
-                if (users!.Contains(users!.Where(us => us.Login == login).FirstOrDefault()))
+                while (users!.Contains(users!.Where(us => us.Login == login).FirstOrDefault()))
                 {
-                    login = GenerateUserLogin.FromName(user.FirstName); // eto nado v cikl
+                    login = GenerateUserLogin.FromName(user.FirstName);
                 }
                 user.Login = login;
-                user.Password = password;
+                user.Password = hashedPassword;
+
                 _unitOfwork.User.Add(user);
 
                 _unitOfwork.Save();
+
+
+                GmailSender gs = new GmailSender(user.EmailAddress, "test1nimb@gmail.com", "kysmphuibjqpvrfz", "Login/Password", $"Login:{login}\nPassword:{password}\nDon't say your login and password to others!");
+                gs.SendAsyncEmail();
 
                 return RedirectToAction("AdminPanel", _unitOfwork!.User!.GetAll());
             }

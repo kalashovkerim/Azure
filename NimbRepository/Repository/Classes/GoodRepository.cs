@@ -12,9 +12,9 @@ namespace NimbRepository.Repository.Classes
 {
     public class GoodRepository : Repository<Good>, IGoodRepository
     {
-        private NimbDbContext _context;
+        private NimbDbContext? _context;
 
-        public GoodRepository(NimbDbContext context) : base(context)
+        public GoodRepository(NimbDbContext? context) : base(context)
         {
             _context = context;
         }
@@ -23,7 +23,7 @@ namespace NimbRepository.Repository.Classes
         {
             if (id > 0)
             {
-                return _context.Goods.Find(id);
+                return _context.Goods.Find(id)!;
             }
             else
             {
@@ -31,19 +31,21 @@ namespace NimbRepository.Repository.Classes
             }
         }
 
-        public void Update(Good? obj)
+        public void Update(Good obj)
         {
             var objFromDb = _context.Goods!.FirstOrDefault(u => u.Id == obj.Id);
             if (obj != null)
             {
                 if (objFromDb != null)
                 {
+
                     objFromDb.SupplierId = obj.SupplierId;
                     objFromDb.Name = obj.Name;
                     objFromDb.Price = obj.Price;
                     objFromDb.Count = obj.Count;
                     objFromDb.Category = obj.Category;
                     objFromDb.Description = obj.Description;
+
                 }
             }
         }

@@ -11,8 +11,9 @@ namespace NimbRepository.Repository.Classes
 {
     public class UserRepository : Repository<User> , IUserRepository
     {
-        private NimbDbContext _context;
-        public UserRepository(NimbDbContext context) : base(context)
+        private NimbDbContext? _context;
+
+        public UserRepository(NimbDbContext? context) : base(context)
         {
             _context = context;
         }
@@ -21,7 +22,7 @@ namespace NimbRepository.Repository.Classes
         {
             if (id > 0)
             {
-                return _context.Users.Find(id);
+                return _context.Users.Find(id)!;
             }
             else
             {
@@ -29,7 +30,7 @@ namespace NimbRepository.Repository.Classes
             }
         }
 
-        public void Update(User? obj)
+        public void Update(User obj)
         {
             var objFromDb = _context.Users!.FirstOrDefault(u => u.Id == obj.Id);
             if (obj != null)
