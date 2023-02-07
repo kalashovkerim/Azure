@@ -12,79 +12,78 @@ namespace NimbRepository.Repository.Classes
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        private readonly NimbDbContext? _context;
-        internal DbSet<T>? contextSet;
+        private readonly NimbDbContext _context;
+        internal DbSet<T> contextSet;
 
-        public Repository(NimbDbContext? context)
+        public Repository(NimbDbContext context)
         {
             _context = context;
-            this.contextSet = _context!.Set<T>();
+            this.contextSet = _context.Set<T>();
         }
-        public void Add(T? entity)
+        public void Add(T entity)
         {
-            contextSet!.Add(entity!);
+            contextSet.Add(entity);
         }
 
-        public IEnumerable<T> GetAll(Expression<Func<T, bool>>? filter = null, string? includeProperties = null)
+        public IEnumerable<T>? GetAll(Expression<Func<T, bool>>? filter = null, string? includeProperties = null)
         {
-            IQueryable<T>? query = contextSet!;
+            IQueryable<T> query = contextSet;
             if (filter != null)
             {
-                query = query!.Where(filter);
+                query = query.Where(filter);
             }
             if (includeProperties != null)
             {
                 foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
-                    query = query!.Include(includeProp);
+                    query = query.Include(includeProp);
                 }
             }
-            return query.ToList()!;
+            return query.ToList();
         }
 
         public T? GetFirstOrDefault(Expression<Func<T, bool>>? filter, string? includeProperties = null, bool tracked = true)
         {
             if (tracked)
             {
-                IQueryable<T>? query = contextSet!;
+                IQueryable<T> query = contextSet;
 
-                query = query!.Where(filter!);
+                query = query.Where(filter!);
 
                 if (includeProperties != null)
                 {
                     foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                     {
-                        query = query!.Include(includeProp);
+                        query = query.Include(includeProp);
                     }
                 }
-                return query!.FirstOrDefault();
+                return query!.First();
             }
             else
             {
-                IQueryable<T>? query = contextSet!.AsNoTracking();
+                IQueryable<T> query = contextSet.AsNoTracking();
 
-                query = query!.Where(filter!);
+                query = query.Where(filter);
                 if (includeProperties != null)
                 {
                     foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                     {
-                        query = query!.Include(includeProp);
+                        query = query.Include(includeProp);
                     }
                 }
-                return query!.FirstOrDefault();
+                return query.FirstOrDefault();
             }
 
         }
 
-        public void Remove(T? entity)
+        public void Remove(T entity)
         {
-            contextSet!.Remove(entity!);
+            contextSet.Remove(entity);
         }
 
-        public void RemoveRange(IEnumerable<T>? entity)
+        public void RemoveRange(IEnumerable<T> entity)
         {
-            contextSet!.RemoveRange(entity!);
+            contextSet.RemoveRange(entity);
         }
-
     }
 }

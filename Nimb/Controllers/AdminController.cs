@@ -11,10 +11,11 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using FluentValidation.AspNetCore;
 using Business.Services.Classes;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace NimbApp.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
         private readonly IUnitOfWork _unitOfwork;

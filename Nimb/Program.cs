@@ -9,19 +9,31 @@ using FluentValidation;
 using System;
 using NimbRepository.Validators.Classes;
 using NimbRepository.Model.Storekeeper;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("NimbDbContextConnection") ?? throw new InvalidOperationException("Connection string 'NimbDbContextConnection' not found.");
 
 var services = builder.Services;
 
-// Add services to the container.
 services.AddControllersWithViews();
 
 services.AddDbContext<NimbDbContext>();
 
-services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<NimbDbContext>();
+
+services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.Cookie.Name = "AuthToken";
+        options.ExpireTimeSpan = TimeSpan.FromSeconds(5);
+        options.SlidingExpiration = true;
+        options.AccessDeniedPath = "/Forbidden/";
+    });
+
+
+//services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+//    .AddEntityFrameworkStores<NimbDbContext>();
 
 services.AddScoped<IUnitOfWork, UnitOfWork>();
 
@@ -33,11 +45,9 @@ services.AddScoped<IValidator<Supplier>, SupplierValidator>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -45,16 +55,12 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseAuthentication();;
-
-
+app.UseAuthentication();
 
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Auth}/{action=Login}/{id?}");
-
-app.MapRazorPages();
 
 app.Run();

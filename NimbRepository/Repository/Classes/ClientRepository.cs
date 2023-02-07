@@ -12,9 +12,9 @@ namespace NimbRepository.Repository.Classes
 {
     public class ClientRepository : Repository<Client>, IClientRepository
     {
-        private NimbDbContext? _context;
+        private NimbDbContext _context;
 
-        public ClientRepository(NimbDbContext? context) : base(context)
+        public ClientRepository(NimbDbContext context) : base(context)
         {
             _context = context;
         }
@@ -23,7 +23,7 @@ namespace NimbRepository.Repository.Classes
         {
             if(id > 0)
             {
-                return _context.Clients.Find(id)!;
+                return _context.Clients.Find(id);
             }
             else
             {
@@ -31,23 +31,20 @@ namespace NimbRepository.Repository.Classes
             }
         }
 
-        public void Update(Client obj)
+        public void Update(Client? obj)
         {
             var objFromDb = _context.Clients.FirstOrDefault(u => u.Id == obj.Id);
             if (obj != null)
             {
                 if (objFromDb != null)
                 {
-
                     objFromDb.FirstName = obj.FirstName;
                     objFromDb.LastName = obj.LastName;
                     objFromDb.Number = obj.Number;
                     objFromDb.PatronymicName = obj.PatronymicName;
                     objFromDb.EmailAddress = obj.EmailAddress;
-
                 }
             }
         }
-
     }
 }
