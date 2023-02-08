@@ -11103,11 +11103,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\NimbRepository\\NimbRepository.csproj",
+      "projectUniqueName": "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\NimbRepository.csproj",
       "projectName": "NimbRepository",
-      "projectPath": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\NimbRepository\\NimbRepository.csproj",
+      "projectPath": "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\NimbRepository.csproj",
       "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\NimbRepository\\obj\\",
+      "outputPath": "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",

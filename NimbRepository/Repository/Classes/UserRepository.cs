@@ -18,7 +18,7 @@ namespace NimbRepository.Repository.Classes
             _context = context;
         }
 
-        public User FindById(int id)
+        public async Task<User> FindById(int id)
         {
             if (id > 0)
             {

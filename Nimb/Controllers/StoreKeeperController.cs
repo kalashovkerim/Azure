@@ -4,13 +4,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Nimb.Models;
+using NimbRepository.Model;
 using NimbRepository.Model.Admin;
 using NimbRepository.Model.Storekeeper;
 using NimbRepository.Repository.Interfaces;
 
 namespace Nimb.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Storekeeper")]
     public class StoreKeeperController : Controller
     {
         private readonly IUnitOfWork _unitOfwork;
@@ -31,10 +32,11 @@ namespace Nimb.Controllers
         {
             return View();
         }
-        public IActionResult AddProduct()
+        public async Task<IActionResult> AddProduct()
         {
             var suppliers = new List<Supplier>();
-            foreach (var supplier in _unitOfwork.Supplier.GetAll()!)
+            var supps = await _unitOfwork.Supplier.GetAll();
+            foreach (var supplier in supps)
             {
                 suppliers.Add(supplier);
             }
@@ -65,7 +67,7 @@ namespace Nimb.Controllers
 
             if (result.IsValid)
             {
-                var check = _unitOfwork.Supplier.GetAll()!;
+                var check = await _unitOfwork.Supplier.GetAll()!;
 
                 if (check!.Contains(check!.Where(supl => supl.Name.ToUpper() == supp.Name.ToUpper()).FirstOrDefault()))
                 {

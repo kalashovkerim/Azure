@@ -19,7 +19,7 @@ namespace NimbRepository.Repository.Classes
             _context = context;
         }
 
-        public Client FindById(int id)
+        public async Task<Client> FindById(int id)
         {
             if(id > 0)
             {

@@ -19,7 +19,7 @@ namespace NimbRepository.Repository.Classes
             _context = context;
         }
 
-        public Supplier FindById(int id)
+        public async Task<Supplier> FindById(int id)
         {
             if (id > 0)
             {

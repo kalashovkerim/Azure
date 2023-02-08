@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZbjcrCjeg55dEIb4F2VLNgvvB+eiGsKZNmTIraBykiHtdKv7Q/eNrbWp/ZuxFQlfCD0etY+7oYm2nTtgAd55Zg==",
+  "dgSpecHash": "UKrIqE0NleNuEYKThUlBQ7YEf1vE/22h3FySoJmWXdMTXnrjQra+I+6Fx7lZI5UJa/+mBbrlGjHL5gI/nItqDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kerim\\source\\repos\\NimbApp\\NimbApp\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Users\\kerim\\Desktop\\Nimb\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kerim\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\kerim\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

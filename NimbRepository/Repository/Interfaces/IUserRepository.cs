@@ -9,7 +9,7 @@ namespace NimbRepository.Repository.Interfaces
 {
     public interface IUserRepository : IRepository<User>
     {
-        public User? FindById(int id);
-        public void Update(User? obj);
+        public Task<User> FindById(int id);
+        public void Update(User? obj); //?
     }
 }

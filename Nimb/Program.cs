@@ -29,6 +29,7 @@ services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
         options.ExpireTimeSpan = TimeSpan.FromHours(5);
         options.SlidingExpiration = true;
         options.AccessDeniedPath = "/Forbidden/";
+        options.LogoutPath = "/logout";
     });
 
 

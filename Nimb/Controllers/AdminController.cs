@@ -12,10 +12,11 @@ using System.ComponentModel.DataAnnotations;
 using FluentValidation.AspNetCore;
 using Business.Services.Classes;
 using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace NimbApp.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
         private readonly IUnitOfWork _unitOfwork;
@@ -26,9 +27,9 @@ namespace NimbApp.Controllers
             _validator = validator;
         }
 
-        public IActionResult AdminPanel()
+        public async Task<IActionResult> AdminPanel()
         {
-           var users = _unitOfwork.User.GetAll();
+           var users = await _unitOfwork.User.GetAll();
 
             return  View(users);
         }
@@ -38,7 +39,7 @@ namespace NimbApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult UserEditConfirm(User user)
+        public async Task<IActionResult> UserEditConfirm(User user)
         {
 
             if (ModelState.IsValid)
@@ -47,21 +48,21 @@ namespace NimbApp.Controllers
 
                 _unitOfwork.Save();
 
-                return RedirectToAction("AdminPanel",_unitOfwork.User.GetAll());
+                return RedirectToAction("AdminPanel",await _unitOfwork.User.GetAll());
             }
             return View("UserEdit");
         }
 
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var user = _unitOfwork.User.FindById(id);
+            var user = await _unitOfwork.User.FindById(id);
             if (user != null) // check
             {
                 _unitOfwork.User.Remove(user);
                 _unitOfwork.Save();
             }
 
-            return View("AdminPanel", _unitOfwork.User.GetAll());
+            return View("AdminPanel",await _unitOfwork.User.GetAll());
         }
 
         [HttpPost]
@@ -77,7 +78,7 @@ namespace NimbApp.Controllers
                 var password = GenerateUserPassword.Generate();
                 var hashedPassword = new HashData(password).DoHash();
 
-                var users = _unitOfwork.User.GetAll();
+                var users = await _unitOfwork.User.GetAll();
 
                 while (users!.Contains(users!.Where(us => us.Login == login).FirstOrDefault()))
                 {
@@ -109,9 +110,9 @@ namespace NimbApp.Controllers
 
             return View();
         }
-        public IActionResult UserEdit(int id)
+        public async Task<IActionResult> UserEdit(int id)
         {
-            var user = _unitOfwork.User.FindById(id);
+            var user = await _unitOfwork.User.FindById(id);
 
             return View(user);
         }

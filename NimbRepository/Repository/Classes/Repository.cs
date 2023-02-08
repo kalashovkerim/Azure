@@ -25,7 +25,7 @@ namespace NimbRepository.Repository.Classes
             contextSet!.Add(entity!);
         }
 
-        public IEnumerable<T> GetAll(Expression<Func<T, bool>>? filter = null, string? includeProperties = null)
+        public async Task<IEnumerable<T>> GetAll(Expression<Func<T, bool>>? filter = null, string? includeProperties = null)
         {
             IQueryable<T>? query = contextSet!;
             if (filter != null)
@@ -42,7 +42,7 @@ namespace NimbRepository.Repository.Classes
             return query.ToList()!;
         }
 
-        public T? GetFirstOrDefault(Expression<Func<T, bool>>? filter, string? includeProperties = null, bool tracked = true)
+        public async Task<T?> GetFirstOrDefault(Expression<Func<T, bool>>? filter, string? includeProperties = null, bool tracked = true)
         {
             if (tracked)
             {
@@ -57,7 +57,7 @@ namespace NimbRepository.Repository.Classes
                         query = query!.Include(includeProp);
                     }
                 }
-                return query!.FirstOrDefault();
+                return await query!.FirstOrDefaultAsync();
             }
             else
             {
@@ -71,7 +71,7 @@ namespace NimbRepository.Repository.Classes
                         query = query!.Include(includeProp);
                     }
                 }
-                return query!.FirstOrDefault();
+                return await query!.FirstOrDefaultAsync();
             }
 
         }

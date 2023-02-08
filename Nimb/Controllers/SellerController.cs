@@ -11,10 +11,11 @@ using NimbRepository.Repository.Interfaces;
 using System.Globalization;
 using NimbRepository.Repository.Classes;
 using Microsoft.AspNetCore.Authorization;
+using NuGet.Packaging.Signing;
 
 namespace NimbProjectApp.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Seller")]
     public class SellerController : Controller
     {
         private readonly IUnitOfWork _unitOfwork;
@@ -24,9 +25,9 @@ namespace NimbProjectApp.Controllers
             _unitOfwork = unitofwork;
         }
 
-        public IActionResult SellerMain()
+        public async Task<IActionResult> SellerMainAsync()
         {
-            return View(_unitOfwork.Client.GetAll());
+            return View(await _unitOfwork.Client.GetAll());
         }
         
         public IActionResult RegisterCompany()
@@ -38,15 +39,15 @@ namespace NimbProjectApp.Controllers
             return View();
         }
 
-        public IActionResult Goods(string Name)
+        public async Task<IActionResult> Goods(string Name)
         {
 
-            var suppliers = _unitOfwork.Supplier.GetAll();
+            var suppliers = await _unitOfwork.Supplier.GetAll();
 
 
             if (Name == null || Name == "All" || Name == "")
             { 
-                var goods = _unitOfwork!.Good!.GetAll();
+                var goods = await _unitOfwork!.Good!.GetAll();
 
                 ViewData["Goods"] = goods;
             }
@@ -54,15 +55,16 @@ namespace NimbProjectApp.Controllers
             return View(suppliers);
         }
 
-        public IActionResult GetGoods(string Name, string Category)
+        public async Task<IActionResult> GetGoodsAsync(string Name, string Category)
         {
-
-            var currentsupp = _unitOfwork.Supplier.GetAll().Where(supp => supp.Name == Name).FirstOrDefault();
+            var allgoods = await _unitOfwork.Good.GetAll();
+            var supps = await _unitOfwork.Supplier.GetAll();
+            var currentsupp = supps.Where(supp => supp.Name == Name).FirstOrDefault();
 
             //var goods = _context.Goods.Where(good => good.SupplierId == currentsupp.Id).Where(good => good.Category == Category).ToArray();
-            var goods = _unitOfwork.Good.GetAll().Where(good => good.SupplierId == currentsupp!.Id).Where(good => good.Category == Category).ToArray();
+            var goods = allgoods.Where(good => good.SupplierId == currentsupp!.Id).Where(good => good.Category == Category).ToArray();
 
-            var goods2 = _unitOfwork.Good.GetAll().Where(good => good.SupplierId == currentsupp!.Id);
+            var goods2 = allgoods.Where(good => good.SupplierId == currentsupp!.Id);
 
             var categories = goods2.Select(good => good.Category).ToArray();
 
@@ -79,14 +81,16 @@ namespace NimbProjectApp.Controllers
 
             ViewData["Categories"] = categories.Distinct();
 
-            return View("Goods", _unitOfwork.Supplier.GetAll()!);
+            return View("Goods", supps);
         }
 
-        public IActionResult GetCategories(string Name)
+        public async Task<IActionResult> GetCategoriesAsync(string Name)
         {
 
-            var currentsupp = _unitOfwork.Supplier.GetAll().Where(supl => supl.Name == Name).FirstOrDefault();
+            var supps = await _unitOfwork.Supplier.GetAll();
+            var currentsupp = supps.Where(supl => supl.Name == Name).FirstOrDefault();
 
+            var goods = await _unitOfwork.Good.GetAll();
 
             if (Name == null || Name == "All" || Name == "")
             {
@@ -94,8 +98,8 @@ namespace NimbProjectApp.Controllers
             }
             else
             {
-                ViewData["Goods"] = _unitOfwork.Good.GetAll()!.Where(good => good.SupplierId == currentsupp.Id);
-                ViewData["Categories"] = _unitOfwork.Good.GetAll()!.Where(good => good.SupplierId == currentsupp.Id).Select(good => good.Category).ToArray().Distinct();
+                ViewData["Goods"] = goods.Where(good => good.SupplierId == currentsupp.Id);
+                ViewData["Categories"] = goods.Where(good => good.SupplierId == currentsupp.Id).Select(good => good.Category).ToArray().Distinct();
             }
 
             return View("Goods", _unitOfwork.Supplier.GetAll()!);
@@ -117,10 +121,10 @@ namespace NimbProjectApp.Controllers
             }
             return RedirectToAction("SellerMain", _unitOfwork.Client.GetAll());
         }
-        public IActionResult SearchGood(string request)
+        public async Task<IActionResult> SearchGoodAsync(string request)
         {
-            var goods = _unitOfwork.Good.GetAll();
-            var suppliers = _unitOfwork.Supplier.GetAll();
+            var goods = await _unitOfwork.Good.GetAll();
+            var suppliers = await _unitOfwork.Supplier.GetAll();
 
             if (goods.Contains(goods.Where(good => good.Category.ToUpper() == request.ToUpper()).FirstOrDefault()))
             {
@@ -128,14 +132,14 @@ namespace NimbProjectApp.Controllers
             }
             else if (suppliers!.Contains(suppliers.Where(supp => supp.Name.ToUpper() == request.ToUpper()).FirstOrDefault()))
             {
-                var currentsupp = _unitOfwork.Supplier.GetAll().Where(supp => supp.Name.ToUpper() == request.ToUpper()).FirstOrDefault();
+                var currentsupp = suppliers.Where(supp => supp.Name.ToUpper() == request.ToUpper()).FirstOrDefault();
                 ViewData["Goods"] = goods.Where(good => good.SupplierId == currentsupp!.Id);
             }
             else
             {
                 // modal window error not found
             }
-            return View("Goods",_unitOfwork.Supplier.GetAll());
+            return View("Goods", suppliers);
         }
         [HttpPost]
         public IActionResult RegisterCompany(Company client)
@@ -150,9 +154,9 @@ namespace NimbProjectApp.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAllAsync()
         {
-            var clients = _unitOfwork.Client.GetAll();
+            var clients = await _unitOfwork.Client.GetAll();
             return Json(new {data = clients});
         }
     }

@@ -33,23 +33,24 @@ namespace Nimb.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(AuthViewModel authModel)
         {
-            var identity = new ClaimsIdentity(new[] {
-            new Claim(ClaimTypes.Name, authModel.UserName),
-            new Claim(ClaimTypes.Role, "Admin"),
-            new Claim(ClaimTypes.Role, "Seller"),
-            new Claim(ClaimTypes.Role,"Storekeeper") },
-            CookieAuthenticationDefaults.AuthenticationScheme);
-
+ 
             if (ModelState.IsValid)
             {
-                var users = _unitOfwork.User.GetAll();
+                var users = await _unitOfwork.User.GetAll();
 
                 var userlog = users.Where(us => us.Login == authModel.UserName).FirstOrDefault();
 
+                var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme);
 
-                if(authModel.UserName == "admin" && authModel.Password == "admin")
+                string controller = " ";
+                string action = " ";
+
+                if (authModel.Password == "admin" && authModel.UserName == "admin") 
                 {
-                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
+                    identity.AddClaims(new[] { new Claim(ClaimTypes.Name, authModel.UserName), new Claim(ClaimTypes.Role, "Admin") });
+                    controller = "Admin";
+                    action = "AdminPanel";
+                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
                     return RedirectToAction("AdminPanel", "Admin");
                 }
 
@@ -58,20 +59,28 @@ namespace Nimb.Controllers
                     bool isUser = new HashData(authModel.Password).Verify(userlog.Password);
                     if (isUser) {
 
-                        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
+                        
                         if (userlog.Position == "Admin")
                         {
-                            return RedirectToAction("AdminPanel", "Admin");
+                            identity.AddClaim(new Claim(ClaimTypes.Role, "Admin"));
+                            controller = "Admin";
+                            action = "AdminPanel";
                         }
                         else if (userlog.Position == "Storekeeper")
                         {
-                            return RedirectToAction("KeeperPanel", "StoreKeeper");
+                            identity.AddClaims(new[] { new Claim(ClaimTypes.Name, authModel.UserName), new Claim(ClaimTypes.Role, "Storekeeper") });
+                            controller = "StoreKeeper";
+                            action = "KeeperPanel";
                         }
                         else if (userlog.Position == "Seller")
                         {
-
-                            return RedirectToAction("SellerMain", "Seller");
+                            identity.AddClaims(new[] { new Claim(ClaimTypes.Name, authModel.UserName), new Claim(ClaimTypes.Role, "Seller") });
+                            controller = "Seller";
+                            action = "SellerMain";
+                           
                         }
+                        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
+                        return RedirectToAction(action, controller);
                     }
                     
                 }
