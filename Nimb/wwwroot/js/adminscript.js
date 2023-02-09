@@ -1,5 +1,9 @@
 ﻿var currentitemid;
 
+$(document).ready(function () {
+    $('#table_id').DataTable();
+});
+
 $("tr").click(function () {
     console.log("CLICK");
     if (this.id != "headtr" && !(this.classList.contains('selected'))) {

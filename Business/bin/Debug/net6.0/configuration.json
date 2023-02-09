@@ -1,5 +1,6 @@
 {
   "Connectionstrings": {
-    "NimbDb": "Data Source=KARIM-DESKTOP;Initial Catalog=NimbDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
+    "NimbDb": "Data Source=KARIM-DESKTOP;Initial Catalog=NimbDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False",
+    "SNimbDb": "workstation id=NimbDataBase.mssql.somee.com;packet size=4096;user id=kerimkalash_SQLLogin_1;pwd=tvqlktet83;data source=NimbDataBase.mssql.somee.com;persist security info=False;initial catalog=NimbDataBase"
   }
 }
