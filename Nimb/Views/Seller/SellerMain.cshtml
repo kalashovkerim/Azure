@@ -1,25 +1,15 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-   
-}
-@model IEnumerable<NimbRepository.Model.Seller.Client>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+﻿@model IEnumerable<NimbRepository.Model.Seller.Client>
 
+
+
+
+@section Styles 
+{
     <link href="/css/Seller/indexStyle.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css"> 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script defer type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="/js/seller.js"></script>
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
+}
+    
+
     <div class="container">
         <div class="main">
             <div class="bg">
@@ -56,9 +46,10 @@
             <button class="fourthButton" value="Place an order" type="submit"><p>Place an order</p></button>
         </form>
     </div>
-</body>
 
-</html>
 @section Scripts{
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+     <script defer type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+     <script type="text/javascript" src="/js/seller.js"></script>
     <script src="~/js/seller.js"></script>
 }

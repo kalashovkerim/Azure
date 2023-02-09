@@ -6,9 +6,12 @@
 @{
     IEnumerable<Supplier>? supplierList = ViewData["Suppliers"] as IEnumerable<Supplier>;
 }
-<link href="~/css/Storekeeper/keeperproduct.css" rel="stylesheet">
+@section Styles {
+    <link href="~/css/Storekeeper/keeperproduct.css" rel="stylesheet">
+}
 
-<body>
+
+
     <div class="container">
         <div class="main">
             <div class="bg">
@@ -45,6 +48,7 @@
             </div>
         </div>
     </div>
-</body>
 
-<script defer src="/js/keeper.js"></script>
+@section Scripts {
+    <script defer src="/js/keeper.js"></script>
+}

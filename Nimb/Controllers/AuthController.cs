@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using NuGet.Protocol.Plugins;
 using Business.Services.Classes;
+using Microsoft.AspNetCore.Components;
 
 namespace Nimb.Controllers
 {
@@ -70,7 +71,7 @@ namespace Nimb.Controllers
                         {
                             identity.AddClaims(new[] { new Claim(ClaimTypes.Name, authModel.UserName), new Claim(ClaimTypes.Role, "Storekeeper") });
                             controller = "StoreKeeper";
-                            action = "KeeperPanel";
+                            action = "AddProvider";
                         }
                         else if (userlog.Position == "Seller")
                         {
@@ -87,6 +88,13 @@ namespace Nimb.Controllers
             }
             return View();
 
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            AuthViewModel AuthModel = new AuthViewModel();
+                  await HttpContext.SignOutAsync();
+            return View("Login", AuthModel);
         }
     }
 }

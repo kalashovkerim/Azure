@@ -1,23 +1,10 @@
 ﻿@model IEnumerable<NimbRepository.Model.Admin.User>
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
 
-}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+@section Styles {
     <link href="/css/Admin/Adminstyle.css" rel="stylesheet" type="text/css" />
+}
+    
 
-
-    <title>Document</title>
-</head>
-<body>
     <div class="container">
         <div class="userscontrol">
             <div class="searchpart">
@@ -68,6 +55,8 @@
             </form>
         </div>
     </div>
-</body>
-<script defer src="/js/adminscript.js"></script>
-</html>
+
+@section Scripts {
+    <script defer src="/js/adminscript.js"></script>
+}
+

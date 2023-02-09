@@ -24,10 +24,6 @@ namespace Nimb.Controllers
             _goodvalidator = goodvalidator;
             _suppvalidator = suppvalidator;
         }
-        public IActionResult KeeperPanel()
-        {
-            return View();
-        }
         public IActionResult AddProvider()
         {
             return View();

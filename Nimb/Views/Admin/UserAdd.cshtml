@@ -1,28 +1,11 @@
 ﻿@model NimbRepository.Model.Admin.User
 
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-    
-}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+@section Styles
+{
     <link href="/css/Admin/Addstyle.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <script defer src="~/js/useradd.js"></script>
-
-    <script defer src="~/js/toast.js"></script>
-    <title>Document</title>
-</head>
-<body>
     <div class="container">
         <form asp-controller="Admin" asp-action="UserAdd" class="bg">
             <div class="header">
@@ -78,6 +61,10 @@
             </div>
         </div>
     </div>
-</body>
 
-</html>
+@section Scripts
+{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script defer src="~/js/useradd.js"></script>
+    <script defer src="~/js/toast.js"></script>
+}

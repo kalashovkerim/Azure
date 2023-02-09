@@ -1258,7 +1258,6 @@ C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Shared\Error.cshtm
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\StoreKeeper\AddProduct.cshtml.g.cs
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\StoreKeeper\AddProvider.cshtml.g.cs
-C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\StoreKeeper\KeeperPanel.cshtml.g.cs
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Shared\_Layout.cshtml.g.cs
