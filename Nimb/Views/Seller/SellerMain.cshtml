@@ -2,51 +2,46 @@
 
 
 
-    <link href="/css/Seller/indexStyle.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
+<link href="/css/Seller/indexStyle.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
 
-    
 
-    <div class="container">
-        <div class="main">
-            <div class="bg">
-                <div class="table">
-                    <table id="table_id" class="display">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Last name</th>
-                                <th>Patronymic name</th>
-                                <th>Number</th>
-                                <th>EmailAddress</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                           @* @foreach(var client in Model){
-                                <tr>
-                                    <td>@client.FirstName</td>
-                                    <td>@client.LastName</td>
-                                    <td>@client.PatronymicName</td>
-                                    <td>@client.Number</td>
-                                    <td>@client.EmailAddress</td>
-                                </tr>
-                            }*@
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <form class="buttons">
-            <button asp-controller="Seller" asp-action="Goods" class="firstButton" value="Goods" type="submit"><p>Goods</p></button>
-            <button asp-controller="Seller" asp-action="RegisterUser" class="secondButton" value="Add client" type="submit"><p>Add client</p></button>
-            <button asp-controller="Seller" asp-action="RegisterCompany" class="thirdButton" value="Add company" type="submit"><p>Add company</p></button>
-            <button class="fourthButton" value="Place an order" type="submit"><p>Place an order</p></button>
-        </form>
+<div class="table">
+    <div class="dataTables_wrapper">
+        <table id="table_id" class="display nowrap dataTable dtr-inline collapsed" style="width:100%; position: relative;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Last name</th>
+                    <th>Patronymic name</th>
+                    <th>Number</th>
+                    <th>EmailAddress</th>
+                </tr>
+            </thead>
+            <tbody>
+                @* @foreach(var client in Model){
+                <tr>
+                <td>@client.FirstName</td>
+                <td>@client.LastName</td>
+                <td>@client.PatronymicName</td>
+                <td>@client.Number</td>
+                <td>@client.EmailAddress</td>
+                </tr>
+                }*@
+            </tbody>
+        </table>
     </div>
+</div>
+<form class="buttons">
+    <button asp-controller="Seller" asp-action="Goods" class="firstButton" value="Goods" type="submit"><p>Goods</p></button>
+    <button asp-controller="Seller" asp-action="RegisterUser" class="secondButton" value="Add client" type="submit"><p>Add client</p></button>
+    <button asp-controller="Seller" asp-action="RegisterCompany" class="thirdButton" value="Add company" type="submit"><p>Add company</p></button>
+    <button class="fourthButton" value="Place an order" type="submit"><p>Place an order</p></button>
+</form>
+</div>
 
 @section Scripts{
-     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-     <script defer type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-     <script type="text/javascript" src="/js/seller.js"></script>
-    <script src="~/js/seller.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script defer type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/js/seller.js"></script>
 }

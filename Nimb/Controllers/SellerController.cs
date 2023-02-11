@@ -154,7 +154,7 @@ namespace NimbProjectApp.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllAsync()
+        public async Task<IActionResult> GetAll()
         {
             var clients = await _unitOfwork.Client.GetAll();
             return Json(new {data = clients});
