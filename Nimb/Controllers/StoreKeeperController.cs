@@ -42,15 +42,15 @@ namespace Nimb.Controllers
         [HttpPost]
         public async Task<IActionResult> AddProductAsync(ProductViewModel product)
         {
-            var result = await _goodvalidator.ValidateAsync(product.good); 
+            var result = await _goodvalidator.ValidateAsync(product.Good); 
 
             if (result.IsValid)
             {
                 if (product.SuppId != 0)
                 {
-                    product.good.SupplierId = product.SuppId;
+                    product.Good.SupplierId = product.SuppId;
 
-                    _unitOfwork.Good.Add(product.good);
+                    _unitOfwork.Good.Add(product.Good);
                     _unitOfwork.Save();
                 }
             }

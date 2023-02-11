@@ -80,6 +80,13 @@ namespace Nimb.Controllers
                             action = "SellerMain";
                            
                         }
+                        else if (userlog.Position == "Economist")
+                        {
+                            identity.AddClaims(new[] { new Claim(ClaimTypes.Name, authModel.UserName), new Claim(ClaimTypes.Role, "Economist") });
+                            controller = "Finance";
+                            action = "Statistics";
+
+                        }
                         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
                         return RedirectToAction(action, controller);
                     }

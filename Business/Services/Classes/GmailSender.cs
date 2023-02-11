@@ -10,27 +10,27 @@ namespace Business.Services.Classes
 {
     public class GmailSender
     {
-        public string txtTo { get; set; }
-        public string txtFrom { get; set; }
-        public string txtPassword { get; set; }
-        public string txtSubject { get; set; }
-        public string txtBody { get; set; }
+        public string TxtTo { get; set; }
+        public string TxtFrom { get; set; }
+        public string TxtPassword { get; set; }
+        public string TxtSubject { get; set; }
+        public string TxtBody { get; set; }
 
         public GmailSender(string _txtTo, string _txtFrom, string _password, string _txtSubject, string _body)
         {
-            txtTo = _txtTo;
-            txtFrom = _txtFrom;
-            txtSubject = _txtSubject;
-            txtPassword = _password;
-            txtBody = _body;
+            TxtTo = _txtTo;
+            TxtFrom = _txtFrom;
+            TxtPassword = _password;
+            TxtSubject = _txtSubject;
+            TxtBody = _body;
         }
         public void SendAsyncEmail()
         {
-            string to = txtTo;
-            string from = txtFrom;
-            string password = txtPassword;
-            string subject = txtSubject;
-            string body = txtBody;
+            string to = TxtTo;
+            string from = TxtFrom;
+            string password = TxtPassword;
+            string subject = TxtSubject;
+            string body = TxtBody;
             //HttpPostedFile postedFile = fuAttachment.PostedFile;
 
             using (MailMessage mm = new MailMessage(from, to))

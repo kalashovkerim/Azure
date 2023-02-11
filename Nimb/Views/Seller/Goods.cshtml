@@ -7,83 +7,68 @@
     IEnumerable<string>? categorList = ViewData["Categories"] as IEnumerable<string>;
     IEnumerable<Good>? goodsList = ViewData["Goods"] as IEnumerable<Good>;
 }
+<link rel="stylesheet" href="/css/Seller/goods.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
 
-    <link rel="stylesheet" href="/css/Seller/goods.css">
-
-    
-    
-    <div class="container">
-        <h1>Goods Panel</h1>
-        <hr>
-        <div>
-            <div class="row">
-                <div class="col">
-                    <div class="search">
-                        <input type="text" class="form-control" id="searchfield" placeholder="Search">
-                        <button id="searchbtn" class="btn btn-primary">Search</button>
-                    </div>
-                    <label for="lblBrendSelectId" class="lblBrend">Spisok postavshikov:</label>
-                    <br>
-                    <select class="lblBrendClass" id="lblBrendSelectId">
-                        @foreach (var item in Model)
+<div class="main">
+    <div class="bg">
+        <div class="table">
+            <table id="table_id" class="display">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (goodsList != null)
+                    {
+                        foreach (var item in goodsList)
                         {
-                            <option value=@item.Name>@Html.DisplayFor(items => item.Name)</option>
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Name</td>
+                                <td>@item.Category</td>
+                                <td>@item.Count</td>
+                            </tr>
                         }
-                        <option value="All">All</option>
-                    </select>
-                    <br>
-                    <label for="lblCategorySelectId" class="lblCategory">Spisok category:</label>
-                    <br>
-                    <select class="lblCategoryClass" id="lblCategorySelectId">
-                        @if (categorList != null)
-                        {
-                            foreach (var item in categorList)
-                            {
-                                <option value=@(item)>@Html.DisplayFor(items => item)</option>
-                            }
-                        }
-                        <option value="All">All</option>
-                    </select>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="userslist">
-                        <div class="tbl-header">
-                            <table cellpadding="0" cellspacing="0">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Id</th>
-                                        <th scope="col">Name of goods</th>
-                                        <th scope="col">Price</th>
-                                        <th scope="col">Total in stock</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-                        <div class="tbl-content">
-                            <table cellpadding="0" cellspacing="0">
-                                <tbody>
-                                    @if (goodsList != null)
-                                    {
-                                        foreach (var item in goodsList)
-                                        {
-                                            <tr>
-                                                <td>@item.Id</td>
-                                                <td>@item.Name</td>
-                                                <td>@item.Category</td>
-                                                <td>@item.Count</td>
-                                            </tr>
-                                        }
-                                    }
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    }
+                </tbody>
+            </table>
         </div>
     </div>
+</div>
+<div class="options">
+    <form>
+        <select class="comboBox" id="lblBrendSelectId">
+            <option>Choose a supplier...</option>
+            @foreach (var item in Model)
+            {
+                <option value=@item.Name>@Html.DisplayFor(items => item.Name)</option>
+            }
+            <option value="All">All</option>
+        </select>
+        <select class="comboBox" id="lblCategorySelectId">
+            <option>Choose a supplier...</option>
+            @if (categorList != null)
+            {
+                foreach (var item in categorList)
+                {
+                    <option value=@(item)>@Html.DisplayFor(items => item)</option>
+                }
+            }
+        </select>
+        <input type="text" class="timeBox" id="timeBox" name="timeBox" placeholder="Search by id..." />
+        <button class="searchButton" value="Search" type="submit"><p>Search</p></button>
+    </form>
+</div>
 
-@section Scripts{
-    <script defer src="/js/Goods.js"></script>
-}
+            @section Scripts
+            {
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+    <script defer type="text/javascript" charset="utf8" src="Goods.js"></script>
+
+            }

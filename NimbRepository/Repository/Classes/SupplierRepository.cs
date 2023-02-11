@@ -12,9 +12,9 @@ namespace NimbRepository.Repository.Classes
 {
     internal class SupplierRepository : Repository<Supplier>, ISupplierRepository
     {
-        private NimbDbContext? _context;
+        private NimbDbContext _context;
 
-        public SupplierRepository(NimbDbContext? context) : base(context)
+        public SupplierRepository(NimbDbContext context) : base(context)
         {
             _context = context;
         }
@@ -31,7 +31,7 @@ namespace NimbRepository.Repository.Classes
             }
         }
 
-        public void Update(Supplier obj)
+        public void Update(Supplier? obj)
         {
             var objFromDb = _context.Suppliers!.FirstOrDefault(u => u.Id == obj.Id);
             if (obj != null)

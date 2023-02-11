@@ -10,7 +10,7 @@ namespace NimbRepository.Repository.Interfaces
 {
     public interface ICompanyRepository : IRepository<Company>
     {
-        public Task<Company?> FindById(int id);
-        public void Update(Company? obj); //?
+        public Task<Company> FindById(int id);
+        public void Update(Company? obj); 
     }
 }

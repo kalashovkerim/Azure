@@ -4,7 +4,7 @@ namespace Nimb.Models
 {
     public class ProductViewModel
     {
-        public Good good { get; set; }
+        public Good Good { get; set; }
         public int SuppId { get; set; }
     }
 }

@@ -1270,3 +1270,4 @@ C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\refint\Nimb.dll
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Nimb.pdb
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Nimb.genruntimeconfig.cache
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\ref\Nimb.dll
+C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Finance\Statistics.cshtml.g.cs

@@ -12,9 +12,9 @@ namespace NimbRepository.Repository.Classes
 {
     public class CompanyRepository : Repository<Company>, ICompanyRepository
     {
-        private NimbDbContext? _context;
+        private NimbDbContext _context;
 
-        public CompanyRepository(NimbDbContext? context) : base(context)
+        public CompanyRepository(NimbDbContext context) : base(context)
         {
             _context = context;
         }
@@ -31,7 +31,7 @@ namespace NimbRepository.Repository.Classes
             }
         }
 
-        public void Update(Company obj)
+        public void Update(Company? obj)
         {
             var objFromDb = _context.Companies.FirstOrDefault(u => u.Id == obj.Id);
             if (obj != null)

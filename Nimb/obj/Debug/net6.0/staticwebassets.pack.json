@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\Authorization\\Authstyle.css"
     },
     {
+      "Id": "C:\\Users\\kerim\\Desktop\\Nimb\\Nimb\\wwwroot\\css\\Finance\\statistics.css",
+      "PackagePath": "staticwebassets\\css\\Finance\\statistics.css"
+    },
+    {
       "Id": "C:\\Users\\kerim\\Desktop\\Nimb\\Nimb\\wwwroot\\css\\Seller\\goods.css",
       "PackagePath": "staticwebassets\\css\\Seller\\goods.css"
     },

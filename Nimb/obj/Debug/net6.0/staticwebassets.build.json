@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/wZlh2ROi3brvMdnfch5H77JIbJ5V46vzq/dK1WTKO4=",
+  "Hash": "x6q5S8roh9001MD9fuvq8zwFQ3wOf1J35TbzNPrSaRM=",
   "Source": "Nimb",
   "BasePath": "_content/Nimb",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Authorization\\Authstyle.css"
+    },
+    {
+      "Identity": "C:\\Users\\kerim\\Desktop\\Nimb\\Nimb\\wwwroot\\css\\Finance\\statistics.css",
+      "SourceId": "Nimb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kerim\\Desktop\\Nimb\\Nimb\\wwwroot\\",
+      "BasePath": "_content/Nimb",
+      "RelativePath": "css/Finance/statistics.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Finance\\statistics.css"
     },
     {
       "Identity": "C:\\Users\\kerim\\Desktop\\Nimb\\Nimb\\wwwroot\\css\\Seller\\goods.css",

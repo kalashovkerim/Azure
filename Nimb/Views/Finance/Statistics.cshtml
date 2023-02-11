@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<link rel="stylesheet" href="/css/Finance/statistics.css">
+
+<div class="main">
+    <form class="options">
+        <select class="comboBox" id="comboBox">
+            <option>Choose an action...</option>
+        </select>
+        <select class="comboBox" id="comboBox">
+            <option>Choose a period...</option>
+        </select>
+        <div class="times">
+            <div class="labels">
+                <label>From</label>
+                <label>To</label>
+            </div>
+            <div class="boxes">
+                <input type="text" class="timeBox" id="timeBox" name="timeBox" />
+                <input type="text" class="timeBox" id="timeBox" name="timeBox" />
+            </div>
+        </div>
+        <textarea class="textarea"></textarea>
+        <button class="applyButton" value="Apply" type="submit"><p>Apply</p></button>
+    </form>
+</div>

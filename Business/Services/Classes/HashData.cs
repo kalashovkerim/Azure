@@ -9,21 +9,21 @@ namespace Business.Services.Classes
 {
     public class HashData
     {
-        public string _data { get; set; }
+        public string Data { get; set; }
 
         public HashData(string data)
         {
-            _data = data;
+            Data = data;
         }
 
         public string DoHash()
         {
-            string hashedData = BCrypt.Net.BCrypt.HashPassword(_data);
+            string hashedData = BCrypt.Net.BCrypt.HashPassword(Data);
             return hashedData;
         }
         public bool Verify(string _hash)
         {
-            bool hashVerify = BCrypt.Net.BCrypt.Verify(_data, _hash);
+            bool hashVerify = BCrypt.Net.BCrypt.Verify(Data, _hash);
             return hashVerify;
         }
     }

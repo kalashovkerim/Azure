@@ -50,7 +50,7 @@ public partial class NimbDbContext : IdentityDbContext
 
         var config = builder.Build();
 
-        optionsBuilder.UseSqlServer(config.GetConnectionString("SNimbDb"));
+        optionsBuilder.UseSqlServer(config.GetConnectionString("NimbDb"));
 
         base.OnConfiguring(optionsBuilder);
     }

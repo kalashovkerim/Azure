@@ -1,4 +1,7 @@
 ﻿$(document).ready(function () {
+
+    $('#table_id').DataTable();
+
     const params = new URLSearchParams(window.location.search);
 
     var selectedBrand = "All";
@@ -31,3 +34,8 @@
         }
     });
 })
+
+$(document).ready(function () {
+
+    $('#table_id').DataTable();
+});

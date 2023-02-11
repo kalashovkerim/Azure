@@ -12,22 +12,22 @@ namespace NimbRepository.Repository.Classes
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        private readonly NimbDbContext? _context;
-        internal DbSet<T>? contextSet;
+        private readonly NimbDbContext _context;
+        internal DbSet<T> contextSet;
 
         public Repository(NimbDbContext? context)
         {
             _context = context;
-            this.contextSet = _context!.Set<T>();
+            this.contextSet = _context.Set<T>();
         }
         public void Add(T? entity)
         {
-            contextSet!.Add(entity!);
+            contextSet.Add(entity!);
         }
 
         public async Task<IEnumerable<T>> GetAll(Expression<Func<T, bool>>? filter = null, string? includeProperties = null)
         {
-            IQueryable<T>? query = contextSet!;
+            IQueryable<T> query = contextSet!;
             if (filter != null)
             {
                 query = query!.Where(filter);
@@ -46,7 +46,7 @@ namespace NimbRepository.Repository.Classes
         {
             if (tracked)
             {
-                IQueryable<T>? query = contextSet!;
+                IQueryable<T> query = contextSet!;
 
                 query = query!.Where(filter!);
 
@@ -61,7 +61,7 @@ namespace NimbRepository.Repository.Classes
             }
             else
             {
-                IQueryable<T>? query = contextSet!.AsNoTracking();
+                IQueryable<T> query = contextSet.AsNoTracking();
 
                 query = query!.Where(filter!);
                 if (includeProperties != null)
@@ -78,12 +78,19 @@ namespace NimbRepository.Repository.Classes
 
         public void Remove(T? entity)
         {
-            contextSet!.Remove(entity!);
+            if(entity != null)
+            {
+                contextSet.Remove(entity);
+            }
         }
 
         public void RemoveRange(IEnumerable<T>? entity)
         {
-            contextSet!.RemoveRange(entity!);
+            if (entity != null)
+            {
+                contextSet.RemoveRange(entity);
+            }
+           
         }
 
     }
