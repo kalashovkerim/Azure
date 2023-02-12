@@ -15,6 +15,8 @@ using Microsoft.AspNetCore.Http;
 using NuGet.Protocol.Plugins;
 using Business.Services.Classes;
 using Microsoft.AspNetCore.Components;
+using NimbRepository.Model;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Nimb.Controllers
 {
@@ -51,7 +53,8 @@ namespace Nimb.Controllers
                     identity.AddClaims(new[] { new Claim(ClaimTypes.Name, authModel.UserName), new Claim(ClaimTypes.Role, "Admin") });
                     controller = "Admin";
                     action = "AdminPanel";
-                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
+                    TempData["Check"] = userlog.Position;
                     return RedirectToAction("AdminPanel", "Admin");
                 }
 
@@ -59,7 +62,7 @@ namespace Nimb.Controllers
                 {
                     bool isUser = new HashData(authModel.Password).Verify(userlog.Password);
                     if (isUser) {
-
+                        
                         
                         if (userlog.Position == "Admin")
                         {
@@ -87,7 +90,9 @@ namespace Nimb.Controllers
                             action = "Statistics";
 
                         }
+                        
                         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
+                        TempData["Check"] = userlog.Position;
                         return RedirectToAction(action, controller);
                     }
                     
@@ -99,8 +104,10 @@ namespace Nimb.Controllers
 
         public async Task<IActionResult> Logout()
         {
+            ViewBag.SignIn = false;
             AuthViewModel AuthModel = new AuthViewModel();
-                  await HttpContext.SignOutAsync();
+            TempData["Check"] = "";
+            await HttpContext.SignOutAsync();
             return View("Login", AuthModel);
         }
     }

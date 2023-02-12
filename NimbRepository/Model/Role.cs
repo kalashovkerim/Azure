@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace NimbRepository.Model
 {
-    public class Role : IEntity
+    public class Role
     {
-        
-        public int Id { get; set; }
-        public string Position { get; set; }
+        public static string Position { get; set; }
     }
 }

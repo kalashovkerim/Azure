@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kerim\\Desktop\\Nimb\\Nimb\\Nimb.csproj": {}
+    "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Nimb\\Nimb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kerim\\Desktop\\Nimb\\Business\\Business.csproj": {
+    "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerim\\Desktop\\Nimb\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\kerim\\Desktop\\Nimb\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerim\\Desktop\\Nimb\\Business\\obj\\",
+        "outputPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\NimbRepository.csproj": {
-                "projectPath": "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\NimbRepository.csproj"
+              "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\NimbRepository\\NimbRepository.csproj": {
+                "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\NimbRepository\\NimbRepository.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\NimbRepository.csproj": {
+    "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\NimbRepository\\NimbRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\NimbRepository.csproj",
+        "projectUniqueName": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\NimbRepository\\NimbRepository.csproj",
         "projectName": "NimbRepository",
-        "projectPath": "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\NimbRepository.csproj",
+        "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\NimbRepository\\NimbRepository.csproj",
         "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\obj\\",
+        "outputPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\NimbRepository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -115,17 +115,17 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.2, )"
+              "version": "[6.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.2, )"
+              "version": "[6.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.2, )"
+              "version": "[6.0.13, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
@@ -156,14 +156,14 @@
         }
       }
     },
-    "C:\\Users\\kerim\\Desktop\\Nimb\\Nimb\\Nimb.csproj": {
+    "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Nimb\\Nimb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerim\\Desktop\\Nimb\\Nimb\\Nimb.csproj",
+        "projectUniqueName": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Nimb\\Nimb.csproj",
         "projectName": "Nimb",
-        "projectPath": "C:\\Users\\kerim\\Desktop\\Nimb\\Nimb\\Nimb.csproj",
+        "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Nimb\\Nimb.csproj",
         "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerim\\Desktop\\Nimb\\Nimb\\obj\\",
+        "outputPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Nimb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -180,11 +180,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\kerim\\Desktop\\Nimb\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\kerim\\Desktop\\Nimb\\Business\\Business.csproj"
+              "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Business\\Business.csproj"
               },
-              "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\NimbRepository.csproj": {
-                "projectPath": "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\NimbRepository.csproj"
+              "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\NimbRepository\\NimbRepository.csproj": {
+                "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\NimbRepository\\NimbRepository.csproj"
               }
             }
           }
