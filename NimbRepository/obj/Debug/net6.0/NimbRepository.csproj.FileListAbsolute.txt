@@ -103,6 +103,7 @@ C:\Work\Nimb\NimbRepository\obj\Debug\net6.0\refint\NimbRepository.dll
 C:\Work\Nimb\NimbRepository\obj\Debug\net6.0\NimbRepository.pdb
 C:\Work\Nimb\NimbRepository\obj\Debug\net6.0\NimbRepository.genruntimeconfig.cache
 C:\Work\Nimb\NimbRepository\obj\Debug\net6.0\ref\NimbRepository.dll
+<<<<<<< HEAD
 C:\Users\kerim\Downloads\Nimb-develop\Nimb-develop\NimbRepository\bin\Debug\net6.0\configuration.json
 C:\Users\kerim\Downloads\Nimb-develop\Nimb-develop\NimbRepository\bin\Debug\net6.0\NimbRepository.deps.json
 C:\Users\kerim\Downloads\Nimb-develop\Nimb-develop\NimbRepository\bin\Debug\net6.0\NimbRepository.runtimeconfig.json
@@ -118,3 +119,5 @@ C:\Users\kerim\Downloads\Nimb-develop\Nimb-develop\NimbRepository\obj\Debug\net6
 C:\Users\kerim\Downloads\Nimb-develop\Nimb-develop\NimbRepository\obj\Debug\net6.0\NimbRepository.pdb
 C:\Users\kerim\Downloads\Nimb-develop\Nimb-develop\NimbRepository\obj\Debug\net6.0\NimbRepository.genruntimeconfig.cache
 C:\Users\kerim\Downloads\Nimb-develop\Nimb-develop\NimbRepository\obj\Debug\net6.0\ref\NimbRepository.dll
+=======
+>>>>>>> 13d460eda53c9389fc0596da8de7b61bfcf57dae

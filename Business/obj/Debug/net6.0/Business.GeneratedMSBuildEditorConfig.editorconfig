@@ -8,4 +8,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Business
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\kerim\Downloads\Nimb-develop\Nimb-develop\Business\
+=======
+build_property.ProjectDir = C:\Work\Nimb\Business\
+>>>>>>> 13d460eda53c9389fc0596da8de7b61bfcf57dae

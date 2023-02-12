@@ -3,7 +3,18 @@ $(document).ready(function () {
 });
 
 
+<<<<<<< HEAD
 function loadDataTable() {    
+=======
+//var table = $('#example').DataTable({
+//    rowReorder: {
+//        selector: 'td:nth-child(2)'
+//    },
+//    responsive: true
+//}
+
+function loadDataTable() {    //future update
+>>>>>>> 13d460eda53c9389fc0596da8de7b61bfcf57dae
     var table = $('#table_id').dataTable({
         rowReorder: {
             selector: 'td:nth-child(2)'

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Business\\Business.csproj": {}
   },
   "projects": {
@@ -12,9 +13,26 @@
         "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Business\\obj\\",
+=======
+    "C:\\Work\\Nimb\\Business\\Business.csproj": {}
+  },
+  "projects": {
+    "C:\\Work\\Nimb\\Business\\Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\Nimb\\Business\\Business.csproj",
+        "projectName": "Business",
+        "projectPath": "C:\\Work\\Nimb\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\elvin\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\Nimb\\Business\\obj\\",
+>>>>>>> 13d460eda53c9389fc0596da8de7b61bfcf57dae
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\elvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +40,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\NimbRepository\\NimbRepository.csproj": {
                 "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\NimbRepository\\NimbRepository.csproj"
+=======
+              "C:\\Work\\Nimb\\NimbRepository\\NimbRepository.csproj": {
+                "projectPath": "C:\\Work\\Nimb\\NimbRepository\\NimbRepository.csproj"
+>>>>>>> 13d460eda53c9389fc0596da8de7b61bfcf57dae
               }
             }
           }
@@ -65,10 +89,11 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\NimbRepository\\NimbRepository.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -77,9 +102,23 @@
         "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\NimbRepository\\NimbRepository.csproj",
         "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\NimbRepository\\obj\\",
+=======
+    "C:\\Work\\Nimb\\NimbRepository\\NimbRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\Nimb\\NimbRepository\\NimbRepository.csproj",
+        "projectName": "NimbRepository",
+        "projectPath": "C:\\Work\\Nimb\\NimbRepository\\NimbRepository.csproj",
+        "packagesPath": "C:\\Users\\elvin\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\Nimb\\NimbRepository\\obj\\",
+>>>>>>> 13d460eda53c9389fc0596da8de7b61bfcf57dae
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\elvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,6 +126,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -152,7 +192,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
         }
       }
     }
