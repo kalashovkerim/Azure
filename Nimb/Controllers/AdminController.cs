@@ -30,7 +30,7 @@ namespace NimbApp.Controllers
         public async Task<IActionResult> AdminPanel()
         {
            var users = await _unitOfwork.User.GetAll();
-
+            TempData["Check"] = "Yes";
             return  View(users);
         }
         public IActionResult UserAdd()

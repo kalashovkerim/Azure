@@ -11146,32 +11146,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\elvin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\kerim\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Nimb\\Nimb.csproj",
+      "projectUniqueName": "C:\\Users\\kerim\\Desktop\\Nimb\\Nimb\\Nimb.csproj",
       "projectName": "Nimb",
-      "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Nimb\\Nimb.csproj",
+      "projectPath": "C:\\Users\\kerim\\Desktop\\Nimb\\Nimb\\Nimb.csproj",
       "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Nimb\\obj\\",
-=======
-      "projectUniqueName": "C:\\Work\\Nimb\\Nimb\\Nimb.csproj",
-      "projectName": "Nimb",
-      "projectPath": "C:\\Work\\Nimb\\Nimb\\Nimb.csproj",
-      "packagesPath": "C:\\Users\\elvin\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\Nimb\\Nimb\\obj\\",
->>>>>>> 13d460eda53c9389fc0596da8de7b61bfcf57dae
+      "outputPath": "C:\\Users\\kerim\\Desktop\\Nimb\\Nimb\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\elvin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11179,26 +11166,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-<<<<<<< HEAD
-            "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\Business\\Business.csproj"
+            "C:\\Users\\kerim\\Desktop\\Nimb\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\kerim\\Desktop\\Nimb\\Business\\Business.csproj"
             },
-            "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\NimbRepository\\NimbRepository.csproj": {
-              "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop\\Nimb-develop\\NimbRepository\\NimbRepository.csproj"
-=======
-            "C:\\Work\\Nimb\\Business\\Business.csproj": {
-              "projectPath": "C:\\Work\\Nimb\\Business\\Business.csproj"
-            },
-            "C:\\Work\\Nimb\\NimbRepository\\NimbRepository.csproj": {
-              "projectPath": "C:\\Work\\Nimb\\NimbRepository\\NimbRepository.csproj"
->>>>>>> 13d460eda53c9389fc0596da8de7b61bfcf57dae
+            "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\NimbRepository.csproj": {
+              "projectPath": "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\NimbRepository.csproj"
             }
           }
         }
@@ -11253,7 +11231,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   },

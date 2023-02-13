@@ -110,7 +110,42 @@ namespace NimbProjectApp.Controllers
             return View();
         }
 
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            var client = _unitOfwork.Client.GetFirstOrDefault(u => u.Id == id);
+            if (client == null)
+            {
+                return Json(new { success = false, message = "Error while deleting" });
+            }
 
+
+            _unitOfwork.Client.Remove(client);
+            _unitOfwork.Save();
+            return Json(new { success = true, message = "Delete Successful" });
+        }
+        public IActionResult EditUser(int id)
+        {
+            if (id == null || id == 0)
+            {
+                return View("SellerMain");
+            }
+            else
+            {
+                var client = _unitOfwork.Client.GetFirstOrDefault(cl => cl.Id == id);
+                return View(client);
+            }
+        }
+        [HttpPost]
+        public IActionResult EditUser(Client client)
+        {
+
+            _unitOfwork.Client.Update(client);
+
+            _unitOfwork.Save();
+            
+            return View("SellerMain");
+        }
         [HttpPost]
         public IActionResult RegisterUser(Client client)
         {

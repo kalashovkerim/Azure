@@ -31,7 +31,7 @@ namespace Nimb.Controllers
 
         public IActionResult Login()
         {
-           return View();
+            return View();
         }
         [HttpPost]
         public async Task<IActionResult> Login(AuthViewModel authModel)

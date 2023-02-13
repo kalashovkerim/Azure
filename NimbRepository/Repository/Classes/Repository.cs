@@ -42,7 +42,7 @@ namespace NimbRepository.Repository.Classes
             return query.ToList()!;
         }
 
-        public async Task<T?> GetFirstOrDefault(Expression<Func<T, bool>>? filter, string? includeProperties = null, bool tracked = true)
+        public T? GetFirstOrDefault(Expression<Func<T, bool>>? filter, string? includeProperties = null, bool tracked = true)
         {
             if (tracked)
             {
@@ -57,7 +57,7 @@ namespace NimbRepository.Repository.Classes
                         query = query!.Include(includeProp);
                     }
                 }
-                return await query!.FirstOrDefaultAsync();
+                return query!.FirstOrDefault();
             }
             else
             {
@@ -71,7 +71,7 @@ namespace NimbRepository.Repository.Classes
                         query = query!.Include(includeProp);
                     }
                 }
-                return await query!.FirstOrDefaultAsync();
+                return query!.FirstOrDefault();
             }
 
         }

@@ -1,0 +1,39 @@
+﻿@model NimbRepository.Model.Seller.Client
+@{
+    
+}
+
+    <link rel="stylesheet" href="/css/Seller/registerUser.css">
+
+
+
+    <div class="container">
+        <div class="main">
+            <div class="bg">
+                <div class="header-container">
+                    <div class="header">Edit Client</div>
+                </div>
+                <form asp-controller="Seller" asp-action="EditUser" asp-route-id = "@Model.Id">
+                    <div class="inputs">
+                        <div class="part">
+                            <input asp-for="FirstName" type="text" class="field" placeholder="Enter the name"></input>
+                        </div>
+                        <div class="part">
+                        <input asp-for="LastName" type="text" class="field" placeholder="Enter the surname"></input>
+                        </div>
+                        <div class="part">
+                        <input asp-for="PatronymicName" type="text" class="field" placeholder="Enter the patronymic name"></input>
+                        </div>
+                        <div class="part">
+                        <input asp-for="Number" type="text" class="field" placeholder="Enter the phone number"></input>
+                        </div>
+                        <div class="part">
+                        <input asp-for="EmailAddress" type="email" class="field" placeholder="Enter the email"></input>
+                        </div>
+                    </div>
+                    <button class="registerButton" value="Register" type="submit"><p>Update</p></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
