@@ -120,7 +120,6 @@ button p{
     font-size: 17px;
     font-weight: 600;
     font-family: Inter-SemiBold;
-    margin-top: 15px;
 }
 
 @media screen and (max-height: 790px) {

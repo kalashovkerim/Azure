@@ -1,7 +1,7 @@
 ﻿@model NimbRepository.Model.Admin.User
 
 
-    <link href="/css/Admin/Addstyle.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Admin/Addstyle.css rel="stylesheet" type="text/css" />
 
 
 <div class="main">
@@ -9,25 +9,32 @@
         <div class="header-container">
             <div class="header">Edit user</div>
         </div>
-        <form>
+        <form asp-action="UserEdit" asp-controller="Admin" asp-route-id="@Model.Id">
             <div class="inputs">
                 <div class="namePart">
-                    <input type="text" class="field" id="nameField" placeholder="Enter the name"></input>
+                    <input asp-for=@Model.FirstName type="text" class="field" id="nameField" placeholder="Enter the first name"></input>
                 </div>
                 <div class="pricePart">
-                    <input type="text" class="field" id="priceField" placeholder="Enter the login"></input>
+                    <input asp-for=@Model.LastName type="text" class="field" id="priceField" placeholder="Enter the last name"></input>
+                </div>
+                <div class="pricePart">
+                    <input asp-for=@Model.PatronymicName type="text" class="field" id="priceField" placeholder="Enter the patronymic name"></input>
                 </div>
                 <div class="categoryPart">
-                    <input type="password" class="field" id="categoryField" placeholder="Enter the password"></input>
+                    <input asp-for=@Model.Number  class="field" id="categoryField" placeholder="Enter the number"></input>
                 </div>
                 <div class="countPart">
-                    <input type="text" class="field" id="countField" placeholder="Enter the phone number"></input>
+                    <input asp-for=@Model.Address type="text" class="field" id="countField" placeholder="Enter the phone number"></input>
                 </div>
                 <div class="descPart">
-                    <input type="text" class="field" id="descField" placeholder="Enter the address"></input>
+                    <input asp-for=@Model.EmailAddress type="text" class="field" id="descField" placeholder="Enter the address"></input>
                 </div>
-                <select class="supplierBox" id="supplierBox">
-                    <option>Choose a supplier...</option>
+                <select asp-for="@Model.Position" class="propbox">
+                    <option value="" disabled selected>Select user's position</option>
+                    <option value="Chief">Chief</option>
+                    <option value="Storekeeper">Storekeeper</option>
+                    <option value="Seller">Seller</option>
+                    <option value="Economist">Economist</option>
                 </select>
             </div>
             <div class="btn-group">

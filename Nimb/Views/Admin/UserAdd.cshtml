@@ -2,15 +2,12 @@
 
 
     <link href="/css/Admin/Addstyle.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 
-
-    <div class="container">
-        <form asp-controller="Admin" asp-action="UserAdd" class="bg">
+    <div class="bg">
+        <form asp-controller="Admin" asp-action="UserAdd">
             <div class="header">
                 <label>User Add</label>
             </div>
-            <div class="userdata">
                 <input asp-for="FirstName" class="propfield" placeholder="Name"/>
                 <span asp-validation-for="FirstName" class="text-danger"></span>
                 <input asp-for="LastName" class="propfield" placeholder="Surname" />
@@ -31,27 +28,16 @@
                     <option value="Economist">Economist</option>
                 </select>
                 <span asp-validation-for="Position" class="text-danger"></span>
-            </div>
             <div class="controlbtns">
                 <button asp-controller="Admin" asp-action="AdminPanel" class="ctrl back"><p>Back</p></button>
                 <button type="submit" class="ctrl confirm"><p>Confirm</p></button>
             </div>
         </form>
-        <div class="alert alert-info" style="display: none;"></div>
-        <script>
-            const phoneInputField = document.querySelector("#phone");
-            const phoneInput = window.intlTelInput(phoneInputField, {
-                utilsScript:
-                    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-            });
-        </script>
     </div>
 
    
 
 @section Scripts
 {
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <script defer src="~/js/useradd.js"></script>
-    <script defer src="~/js/toast.js"></script>
+
 }

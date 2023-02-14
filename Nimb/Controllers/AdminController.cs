@@ -53,8 +53,9 @@ namespace NimbApp.Controllers
         [HttpPost]
         public async Task<IActionResult> UserEdit(User user)
         {
+            var result = await _validator.ValidateAsync(user);
 
-            if (ModelState.IsValid)
+            if (result.IsValid)
             {
                 _unitOfwork.User.Update(user);
 

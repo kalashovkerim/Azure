@@ -17,19 +17,16 @@ body {
 }
 
 .container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-    .container .main {
-        display: flex;
-        justify-content: center;
-    }
 
-        .container .main .bg {
+        .container .bg {
             justify-content: center;
             margin-top: 100px;
             background-color: white;
-            height: 540px;
+            height: auto;
             width: 650px;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -42,10 +39,12 @@ body {
 
 option {
     font-family: Inter-Medium;
+    font-size: 18px;
 }
 
 select {
     font-family: Inter-Medium;
+    font-size: 18px;
 }
 
 .container .header {
@@ -72,7 +71,7 @@ select {
     margin-left: 0;
 }
 
-    .container form select {
+    .container form input, .container form select {
         width: 350px;
         height: 35px;
         border-radius: 5px;
@@ -80,39 +79,20 @@ select {
         background-color: #D9D9D9;
         border: 0;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    .container form input {
-        width: 350px;
-        height: 35px;
-        border-radius: 5px;
-        margin: 15px;
-        background-color: #D9D9D9;
-        border: 0;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    .container form textarea {
-        width: 350px;
-        height: 85px;
-        border-radius: 5px;
-        margin: 15px;
-        background-color: #D9D9D9;
-        border: 0;
-        resize: none;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px, rgba(0, 0, 0, 0.23) 0px 2px 4px;
+        font-size: 18px;
     }
 
 ::placeholder {
     padding: 5px;
     font-family: Inter-SemiBold;
+    font-size: 18px;
 }
 
-.container .main .bg .btn-group {
+.bg controlbtns {
     margin-top: 20px;
 }
 
-.container .Button {
+button {
     width: 150px;
     height: 35px;
     margin: 20px;
@@ -128,7 +108,7 @@ select {
     font-family: Inter-Medium;
 }
 
-    .container .Button:hover {
+    button:hover {
         opacity: .8;
     }
 
@@ -147,9 +127,8 @@ option {
 }
 
 @media screen and (max-width: 700px) {
-    .container .main .bg {
+    .container .bg {
         width: 450px;
-        height: 590px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -160,7 +139,7 @@ option {
         margin-top: -80px;
     }
 
-    .container form .Button {
+    button {
         width: 355px;
         height: 35px;
         margin-top: 20px;
@@ -170,15 +149,19 @@ option {
     .container .header-container {
         width: 450px;
     }
+
+    .container .header {
+        margin-top: -38px;
+    }
 }
 
 
 /* For phones */
 
 @media screen and (max-width: 420px) {
-    .container .main .bg {
+    .container .bg {
         width: 350px;
-        height: 590px;
+        height: 600px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -194,10 +177,16 @@ option {
         width: 300px;
     }
 
-    .container form .Button {
+     button {
         width: 300px;
         height: 35px;
-        margin-top: 20px;
-        margin-left: 0;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+
+    .container .header {
+        margin-top: -5px;
+        margin-right: 50px;
     }
 }
