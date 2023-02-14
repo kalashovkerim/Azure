@@ -1,36 +1,67 @@
-﻿var currentitemid;
+﻿var dataTable;
 
 $(document).ready(function () {
-    $('#table_id').DataTable();
+    loadDataTable();
 });
 
-$("tr").click(function () {
-    console.log("CLICK");
-    if (this.id != "headtr" && !(this.classList.contains('selected'))) {
-        $(this).parent().children().removeClass('selected')
-        $(this).addClass('selected');
-        currentitemid = this.id;
-    }
-    else if (this.id != "headtr" && this.classList.contains('selected')) {
-        $(this).removeClass('selected');
-        currentitemid = null;
-    }
-});
-$(".Delete").click(function () {
-    $('#' + currentitemid).remove();
-    if (currentitemid == null) {
-        alert("Choose user!");
-    }
-    else {
-        window.location.href = "Delete?id=" + currentitemid;
-    }
-});
-$(".Edit").click(function () {
-    if (currentitemid == null) {
-        alert("Choose user!");
-    }
-    else {
-        window.location.href = "UserEdit?id=" + currentitemid;
-    }
-});
-
+function loadDataTable() {
+    var dataTable = $('#table_id').DataTable({
+        rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
+        responsive: true,
+        "ajax": {
+            "url": "/Admin/GetAll"
+        },
+        "columns": [
+            { "data": "firstName", "width": "15%" },
+            { "data": "lastName", "width": "15%" },
+            { "data": "patronymicName", "width": "15%" },
+            { "data": "number", "width": "15%" },
+            { "data": "address", "width": "15%" },
+            { "data": "emailAddress", "width": "15%" },
+            { "data": "position", "width": "15%" },
+            {
+                "data": "id",
+                "render": function (data) {
+                    return `
+                        <div class="w-75 btn-group" role="group">
+                        <a href='/Admin/UserEdit?id=${data}'
+                        class="btn btn-primary mx-2"> <i class="bi bi-pencil-square"></i> Edit</a>
+                        <a  onClick=Delete('/Admin/Delete/${data}')
+                        class="btn btn-danger mx-2"> <i class="bi bi-trash-fill"></i> Delete</a>
+					</div>
+                        `
+                },
+                "width": "15%"
+            }
+        ]
+    });
+}
+function Delete(url) {
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            $.ajax({
+                url: url,
+                type: 'DELETE',
+                success: function (data) {
+                    if (data.success) {
+                        $('#table_id').DataTable().ajax.reload();
+                        toastr.success(data.message);
+                    }
+                    else {
+                        toastr.error(data.message);
+                    }
+                }
+            })
+        }
+    })
+}

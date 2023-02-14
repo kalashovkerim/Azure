@@ -1,61 +1,33 @@
-﻿@model IEnumerable<NimbRepository.Model.Admin.User>
-
-
+﻿
 <link href="/css/Admin/Adminstyle.css" rel="stylesheet" type="text/css" />
- 
 
-    <div class="container">
-        <div class="userscontrol">
-            <div class="searchpart">
-                <input class="searchfield" placeholder="Name" />
-                <button class="searchbtn"><p>Search</p></button>
-            </div>
-            <div class="userslist">
-                <div class="tbl-header">
-                    <table cellpadding="0" cellspacing="0">
-                        <thead>
-                            <tr id="headtr">
-                                <th>Name</th>
-                                <th>Surname</th>
-                                <th>PatronymicName</th>
-                                <th>Number</th>
-                                <th>Email</th>
-                                <th>Adress</th>
-                                <th>Position</th>
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-                <div class="tbl-content">
-                    <table cellpadding="0" cellspacing="0">
-                        <tbody>
-                            @{
-                                foreach (var user in Model)
-                                {
-                                    <tr id=@user.Id>
-                                        <td>@user.FirstName</td>
-                                        <td>@user.LastName</td>
-                                        <td>@user.PatronymicName</td>
-                                        <td>@user.Number</td>
-                                        <td>@user.EmailAddress</td>
-                                        <td>@user.Address</td>
-                                        <td>@user.Position</td>
-                                    </tr>
-                                }
-                            }
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <form class="controlbtns">
-                <button asp-controller="Admin" asp-action="UserAdd" class="ctrl add"><p>Add</p></button>
-                <div type="button" class="ctrl Edit"><p>Edit</p></div>
-                <div type="button" class="ctrl Delete"><p>Delete</p></div>
-            </form>
-        </div>
+ <div class="bg">
+<div class="table">
+    <div class="dataTables_wrapper">
+        <table id="table_id" class="display nowrap dataTable dtr-inline collapsed" style="width:100%; position: relative;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Last name</th>
+                    <th>Patronymic name</th>
+                    <th>Number</th>
+                    <th>Address</th>
+                    <th>EmailAddress</th>
+                    <th>Position</th>
+                    <th style="text-align: center;">Edit or Delete</th>
+                </tr>
+            </thead>
+        </table>
     </div>
+</div>
+ </div>
+<form>
+    <button asp-controller="Admin" asp-action="UserAdd" class="thirdButton" value="Add company" type="submit"><p>New user</p></button>
+</form>
 
 @section Scripts {
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script defer type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
     <script defer src="/js/adminscript.js"></script>
 }
 

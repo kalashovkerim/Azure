@@ -143,7 +143,7 @@ namespace NimbProjectApp.Controllers
             _unitOfwork.Client.Update(client);
 
             _unitOfwork.Save();
-            
+
             return View("SellerMain");
         }
         [HttpPost]

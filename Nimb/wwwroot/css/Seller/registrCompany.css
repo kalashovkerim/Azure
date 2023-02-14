@@ -112,8 +112,7 @@ body {
         overflow-y: visible;
     }
 }
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
     .container .main .bg {
         width: 450px;
         height: 550px;
@@ -136,6 +135,10 @@ body {
 
     .container .header-container {
         width: 450px;
+    }
+
+    .container .header {
+        margin-top: -55px;
     }
 }
 
@@ -166,4 +169,8 @@ body {
         margin-top: 20px;
         margin-left: 0;
     }
-}
+
+    .container .header {
+        margin-top: -65px;
+        margin-right: 50px;
+    }

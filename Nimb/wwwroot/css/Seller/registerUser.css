@@ -120,7 +120,6 @@ select {
         overflow-y: visible;
     }
 }
-
 @media screen and (max-width: 770px) {
     .container .main .bg {
         width: 450px;
@@ -144,6 +143,10 @@ select {
 
     .container .header-container {
         width: 450px;
+    }
+
+    .container .header {
+        margin-top: -65px;
     }
 }
 
@@ -173,5 +176,10 @@ select {
         height: 35px;
         margin-top: 20px;
         margin-left: 0;
+    }
+
+    .container .header {
+        margin-top: -70px;
+        margin-right: 50px;
     }
 }

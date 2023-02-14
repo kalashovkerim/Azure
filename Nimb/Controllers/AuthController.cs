@@ -54,7 +54,7 @@ namespace Nimb.Controllers
                     controller = "Admin";
                     action = "AdminPanel";
                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
-                    TempData["Check"] = userlog.Position;
+                    TempData["Check"] = "Admin";
                     return RedirectToAction("AdminPanel", "Admin");
                 }
 

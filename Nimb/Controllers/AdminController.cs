@@ -13,6 +13,7 @@ using FluentValidation.AspNetCore;
 using Business.Services.Classes;
 using Microsoft.AspNetCore.Authorization;
 using System.Data;
+using NimbRepository.Model.Seller;
 
 namespace NimbApp.Controllers
 {
@@ -29,17 +30,28 @@ namespace NimbApp.Controllers
 
         public async Task<IActionResult> AdminPanel()
         {
-           var users = await _unitOfwork.User.GetAll();
             TempData["Check"] = "Yes";
-            return  View(users);
+            return  View();
         }
         public IActionResult UserAdd()
         {
             return View();
         }
+        public async Task<IActionResult> UserEdit(int id)
+        {
+            if (id == null || id == 0)
+            {
+                return View("AdminPanel");
+            }
+            else
+            {
+                var user = _unitOfwork.User.GetFirstOrDefault(us => us.Id== id);
+                return View(user);
+            }
+        }
 
         [HttpPost]
-        public async Task<IActionResult> UserEditConfirm(User user)
+        public async Task<IActionResult> UserEdit(User user)
         {
 
             if (ModelState.IsValid)
@@ -48,11 +60,10 @@ namespace NimbApp.Controllers
 
                 _unitOfwork.Save();
 
-                return RedirectToAction("AdminPanel",await _unitOfwork.User.GetAll());
             }
-            return View("UserEdit");
+            return View("AdminPanel");
         }
-
+        [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
             var user = await _unitOfwork.User.FindById(id);
@@ -61,12 +72,16 @@ namespace NimbApp.Controllers
                 _unitOfwork.User.Remove(user);
                 _unitOfwork.Save();
             }
+            else
+            {
+                return Json(new { success = false, message = "Error while deleting" });
+            }
 
-            return View("AdminPanel",await _unitOfwork.User.GetAll());
+            return Json(new { success = true, message = "Delete Successful" });
         }
 
         [HttpPost]
-        public async Task<IActionResult> UserAddAsync(User user)
+        public async Task<IActionResult> UserAdd(User user)
         {
             var result = await _validator.ValidateAsync(user);
 
@@ -110,11 +125,10 @@ namespace NimbApp.Controllers
 
             return View();
         }
-        public async Task<IActionResult> UserEdit(int id)
+        public async Task<IActionResult> GetAll()
         {
-            var user = await _unitOfwork.User.FindById(id);
-
-            return View(user);
+            var users = await _unitOfwork.User.GetAll();
+            return Json(new { data = users });
         }
     }
 }

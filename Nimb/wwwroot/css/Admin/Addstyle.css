@@ -1,102 +1,203 @@
 @font-face {
     font-family: Inter-Medium;
-    src: url("../../resource/fonts/inter/Inter-Medium.ttf");
+    src: url("/resource/fonts/inter/Inter-Medium.ttf");
 }
+
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url("/resource/fonts/inter/Inter-SemiBold.ttf");
+}
+
 body {
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(-45deg, #5492a8, #4b609b, #2f8f8f, #1475a5);
-  background-size: 400% 400%;
-  -webkit-animation: gradient 20s ease infinite;
-          animation: gradient 20s ease infinite;
-  height: 100vh;
-  overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #E7E7E7;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
+    text-align: center;
 }
-.container .bg {
-  margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.2549019608);
-  height: 600px;
-  width: 600px;
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-.container .header {
-  text-align: center;
-  background-color: aliceblue;
-  width: 80px;
-  border-radius: 30px 0 10px 0;
-}
-.container .userdata {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 500px;
-  justify-content: space-around;
-}
-.container input {
-    width: 300px;
-}
-    .container .userdata .propbox {
-        width: 300px;
-        height: 30px;
+
+    .container .main {
+        display: flex;
+        justify-content: center;
     }
-.container .controlbtns {
-  width: 250px;
-  margin: 10px 0px 0px 330px;
-  padding: 0;
-  display: flex;
-  justify-content: space-evenly;
-}
-.container .controlbtns .ctrl {
-  width: 100px;
-  height: 40px;
-  border: 0;
-  border-radius: 3px;
-  background-color: rgba(120, 255, 199, 0.4784313725);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-.container .controlbtns .ctrl p {
-  margin-top: 7px;
-  font-size: 15px;
-  color: white;
-  font-family: Inter-Medium;
+
+        .container .main .bg {
+            justify-content: center;
+            margin-top: 100px;
+            background-color: white;
+            height: 540px;
+            width: 650px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+    .container .header-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+option {
+    font-family: Inter-Medium;
 }
 
-.toast {
-    margin-top: 70px;
-    margin-right: 40px;
-    bottom: 75%;
-    right: 30%;
-    height: 100px;
+select {
+    font-family: Inter-Medium;
+}
+
+.container .header {
+    background-color: #D9D9D9;
+    border: 0;
+    width: 150px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 10px;
+    height: 25px;
+    font-weight: 600;
+    font-family: Inter-Medium;
+}
+
+.container .inputs {
+    margin-left: -200px;
+    margin-top: -80px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 0;
+}
+
+    .container form select {
+        width: 350px;
+        height: 35px;
+        border-radius: 5px;
+        margin: 15px;
+        background-color: #D9D9D9;
+        border: 0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container form input {
+        width: 350px;
+        height: 35px;
+        border-radius: 5px;
+        margin: 15px;
+        background-color: #D9D9D9;
+        border: 0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .container form textarea {
+        width: 350px;
+        height: 85px;
+        border-radius: 5px;
+        margin: 15px;
+        background-color: #D9D9D9;
+        border: 0;
+        resize: none;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px, rgba(0, 0, 0, 0.23) 0px 2px 4px;
+    }
+
+::placeholder {
+    padding: 5px;
+    font-family: Inter-SemiBold;
+}
+
+.container .main .bg .btn-group {
+    margin-top: 20px;
+}
+
+.container .Button {
+    width: 150px;
+    height: 35px;
+    margin: 20px;
+    border: 0;
+    border-radius: 15px;
+    background-color: #7ACBE5;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: Inter-Medium;
+}
+
+    .container .Button:hover {
+        opacity: .8;
+    }
+
+select {
+    font-family: Inter-Medium;
+}
+
+option {
+    font-family: Inter-Medium;
+}
+
+@media screen and (max-height: 790px) {
+    body {
+        overflow-y: visible;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container .main .bg {
+        width: 450px;
+        height: 590px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .inputs {
+        margin-left: 0;
+        margin-top: -80px;
+    }
+
+    .container form .Button {
+        width: 355px;
+        height: 35px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .container .header-container {
+        width: 450px;
+    }
 }
 
 
+/* For phones */
 
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+@media screen and (max-width: 420px) {
+    .container .main .bg {
+        width: 350px;
+        height: 590px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .inputs {
+        margin-left: 0;
+        margin-top: -80px;
+    }
+
+    .container form input,
+    .container form select {
+        width: 300px;
+    }
+
+    .container form .Button {
+        width: 300px;
+        height: 35px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
 }
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}/*# sourceMappingURL=Addstyle.css.map */
