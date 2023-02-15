@@ -140,7 +140,7 @@ option {
     }
 
     button {
-        width: 355px;
+        width: 300px;
         height: 35px;
         margin-top: 20px;
         margin-left: 0;
@@ -157,7 +157,6 @@ option {
 
 
 /* For phones */
-
 @media screen and (max-width: 420px) {
     .container .bg {
         width: 350px;

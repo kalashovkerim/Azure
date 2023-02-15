@@ -12,6 +12,7 @@ using System.Globalization;
 using NimbRepository.Repository.Classes;
 using Microsoft.AspNetCore.Authorization;
 using NuGet.Packaging.Signing;
+using FluentValidation;
 
 namespace NimbProjectApp.Controllers
 {
@@ -19,23 +20,28 @@ namespace NimbProjectApp.Controllers
     public class SellerController : Controller
     {
         private readonly IUnitOfWork _unitOfwork;
+        private IValidator<Client> _validator;
 
-        public SellerController(IUnitOfWork unitofwork)
+        public SellerController(IUnitOfWork unitofwork,IValidator<Client> validator)
         {
             _unitOfwork = unitofwork;
+            _validator = validator;
         }
 
         public async Task<IActionResult> SellerMainAsync()
         {
+            TempData["Check"] = "Seller main";
             return View(await _unitOfwork.Client.GetAll());
         }
         
         public IActionResult RegisterCompany()
         {
+            TempData["Check"] = "Add company";
             return View();
         }
         public IActionResult RegisterUser()
         {
+            TempData["Check"] = "Add client";
             return View();
         }
 
@@ -149,12 +155,18 @@ namespace NimbProjectApp.Controllers
         [HttpPost]
         public IActionResult RegisterUser(Client client)
         {
-            if (ModelState.IsValid)
+            var result = _validator.Validate(client);
+            if (result.IsValid)
             {
                 _unitOfwork.Client.Add(client);
-                _unitOfwork.Save();    
+                _unitOfwork.Save();
+                return RedirectToAction("SellerMain", _unitOfwork.Client.GetAll());
             }
-            return RedirectToAction("SellerMain", _unitOfwork.Client.GetAll());
+            else 
+            {
+                return View(client);
+            }
+            
         }
         public async Task<IActionResult> SearchGoodAsync(string request)
         {

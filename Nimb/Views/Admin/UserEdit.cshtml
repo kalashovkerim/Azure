@@ -1,50 +1,60 @@
 ﻿@model NimbRepository.Model.Admin.User
 
 
-    <link href="/css/Admin/Addstyle.css rel="stylesheet" type="text/css" />
+    <link href="/css/Admin/Addstyle.css" rel="stylesheet" type="text/css" />
 
 
-<div class="main">
     <div class="bg">
-        <div class="header-container">
-            <div class="header">Edit user</div>
-        </div>
+            
+        
         <form asp-action="UserEdit" asp-controller="Admin" asp-route-id="@Model.Id">
-            <div class="inputs">
+        <div class="header">Edit user</div>
                 <div class="namePart">
                     <input asp-for=@Model.FirstName type="text" class="field" id="nameField" placeholder="Enter the first name"></input>
+                    <br />
+                    <span asp-validation-for=@Model.FirstName class="text-danger"></span>
                 </div>
                 <div class="pricePart">
                     <input asp-for=@Model.LastName type="text" class="field" id="priceField" placeholder="Enter the last name"></input>
+                    <br />
+                    <span asp-validation-for=@Model.LastName class="text-danger"></span>
                 </div>
                 <div class="pricePart">
                     <input asp-for=@Model.PatronymicName type="text" class="field" id="priceField" placeholder="Enter the patronymic name"></input>
+                    <br />
+                    <span asp-validation-for=@Model.PatronymicName class="text-danger"></span>
                 </div>
                 <div class="categoryPart">
                     <input asp-for=@Model.Number  class="field" id="categoryField" placeholder="Enter the number"></input>
+                    <br />
+                    <span asp-validation-for=@Model.Number class="text-danger"></span>
                 </div>
                 <div class="countPart">
                     <input asp-for=@Model.Address type="text" class="field" id="countField" placeholder="Enter the phone number"></input>
+                    <br />
+                    <span asp-validation-for=@Model.Address class="text-danger"></span>
                 </div>
                 <div class="descPart">
                     <input asp-for=@Model.EmailAddress type="text" class="field" id="descField" placeholder="Enter the address"></input>
+                    <br />
+                    <span asp-validation-for=@Model.EmailAddress class="text-danger"></span>
                 </div>
-                <select asp-for="@Model.Position" class="propbox">
+                <select asp-for=@Model.Position class="propbox">
                     <option value="" disabled selected>Select user's position</option>
                     <option value="Chief">Chief</option>
                     <option value="Storekeeper">Storekeeper</option>
                     <option value="Seller">Seller</option>
                     <option value="Economist">Economist</option>
                 </select>
-            </div>
-            <div class="btn-group">
-                <button class="Button" value="back" type="submit">Back</button>
-                <button class="Button" value="confirm" type="submit">Confirm</button>
+                <br />
+                <span asp-validation-for=@Model.Position class="text-danger"></span>
+            <div class="controlbtns">
+                <button value="back" type="submit">Back</button>
+                <button value="confirm" type="submit">Confirm</button>
             </div>
         </form>
-        
     </div>
-</div>
+
 
 @section Scripts
 {

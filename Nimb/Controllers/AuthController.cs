@@ -17,6 +17,7 @@ using Business.Services.Classes;
 using Microsoft.AspNetCore.Components;
 using NimbRepository.Model;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.ComponentModel.DataAnnotations;
 
 namespace Nimb.Controllers
 {
@@ -34,6 +35,7 @@ namespace Nimb.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(AuthViewModel authModel)
         {
  
@@ -98,13 +100,13 @@ namespace Nimb.Controllers
                     
                 }
             }
+            ModelState.AddModelError("", "Password or login is invalid");            
             return View();
 
         }
 
         public async Task<IActionResult> Logout()
         {
-            ViewBag.SignIn = false;
             AuthViewModel AuthModel = new AuthViewModel();
             TempData["Check"] = "";
             await HttpContext.SignOutAsync();

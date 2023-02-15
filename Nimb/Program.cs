@@ -11,6 +11,7 @@ using NimbRepository.Validators.Classes;
 using NimbRepository.Model.Storekeeper;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.Options;
+using NimbRepository.Model.Seller;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("NimbDbContextConnection") ?? throw new InvalidOperationException("Connection string 'NimbDbContextConnection' not found.");
@@ -43,6 +44,7 @@ services.AddMvc();
 services.AddScoped<IValidator<User>, UserValidator>();
 services.AddScoped<IValidator<Good>, GoodValidator>();
 services.AddScoped<IValidator<Supplier>, SupplierValidator>();
+services.AddScoped<IValidator<Client>, ClientValidator>();
 
 var app = builder.Build();
 

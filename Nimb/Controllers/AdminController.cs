@@ -30,15 +30,17 @@ namespace NimbApp.Controllers
 
         public async Task<IActionResult> AdminPanel()
         {
-            TempData["Check"] = "Yes";
+            TempData["Check"] = "AdminPanel";
             return  View();
         }
         public IActionResult UserAdd()
         {
+            TempData["Check"] = "Add user";
             return View();
         }
         public async Task<IActionResult> UserEdit(int id)
         {
+            TempData["Check"] = "Edit user";
             if (id == null || id == 0)
             {
                 return View("AdminPanel");
@@ -53,6 +55,7 @@ namespace NimbApp.Controllers
         [HttpPost]
         public async Task<IActionResult> UserEdit(User user)
         {
+            TempData["Check"] = "Edit user";
             var result = await _validator.ValidateAsync(user);
 
             if (result.IsValid)
@@ -61,8 +64,12 @@ namespace NimbApp.Controllers
 
                 _unitOfwork.Save();
 
+                return View("AdminPanel");
             }
-            return View("AdminPanel");
+            else
+            {
+                return View(user);
+            }
         }
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
@@ -84,6 +91,7 @@ namespace NimbApp.Controllers
         [HttpPost]
         public async Task<IActionResult> UserAdd(User user)
         {
+            TempData["Check"] = "Add user";
             var result = await _validator.ValidateAsync(user);
 
             if (result.IsValid)
@@ -113,17 +121,6 @@ namespace NimbApp.Controllers
 
                 return RedirectToAction("AdminPanel", _unitOfwork!.User!.GetAll());
             }
-            else
-            {
-                result.AddToModelState(ModelState, null);
-                var context = new NimbDbContext();
-
-                foreach (var failure in result.Errors)
-                {
-                    Console.WriteLine($"Property: {failure.PropertyName} Error Code: {failure.ErrorCode}");
-                }
-            }
-
             return View();
         }
         public async Task<IActionResult> GetAll()
