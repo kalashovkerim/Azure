@@ -30,17 +30,17 @@ namespace NimbApp.Controllers
 
         public async Task<IActionResult> AdminPanel()
         {
-            TempData["Check"] = "AdminPanel";
+            TempData["Check"] = "Admin";
             return  View();
         }
         public IActionResult UserAdd()
         {
-            TempData["Check"] = "Add user";
+            TempData["Check"] = "Admin";
             return View();
         }
         public async Task<IActionResult> UserEdit(int id)
         {
-            TempData["Check"] = "Edit user";
+            TempData["Check"] = "Admin";
             if (id == null || id == 0)
             {
                 return View("AdminPanel");
@@ -55,7 +55,7 @@ namespace NimbApp.Controllers
         [HttpPost]
         public async Task<IActionResult> UserEdit(User user)
         {
-            TempData["Check"] = "Edit user";
+            TempData["Check"] = "Admin"; ;
             var result = await _validator.ValidateAsync(user);
 
             if (result.IsValid)
@@ -91,7 +91,7 @@ namespace NimbApp.Controllers
         [HttpPost]
         public async Task<IActionResult> UserAdd(User user)
         {
-            TempData["Check"] = "Add user";
+            TempData["Check"] = "Admin";
             var result = await _validator.ValidateAsync(user);
 
             if (result.IsValid)

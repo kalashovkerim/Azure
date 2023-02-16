@@ -1,33 +1,38 @@
 ﻿
 <link href="/css/Admin/Adminstyle.css" rel="stylesheet" type="text/css" />
 
- <div class="bg">
-<div class="table">
-    <div class="dataTables_wrapper">
-        <table id="table_id" class="display nowrap dataTable dtr-inline collapsed" style="width:100%; position: relative;">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Last name</th>
-                    <th>Patronymic name</th>
-                    <th>Number</th>
-                    <th>Address</th>
-                    <th>EmailAddress</th>
-                    <th>Position</th>
-                    <th style="text-align: center;">Edit or Delete</th>
-                </tr>
-            </thead>
-        </table>
+<div class="container">
+    <div class="main">
+        <div class="bg">
+            <div class="table">
+                <div class="dataTables_wrapper">
+                    <table id="table_id" class="display nowrap dataTable dtr-inline collapsed" style="width:100%; position: relative;">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Last name</th>
+                                <th>Patronymic name</th>
+                                <th>Number</th>
+                                <th>Address</th>
+                                <th>EmailAddress</th>
+                                <th>Position</th>
+                                <th style="text-align: center;">Edit or Delete</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+    <form>
+        <div class="buttons">
+            <button asp-controller="Admin" asp-action="UserAdd" class="button" value="Add user" type="submit" style="height: 50px;">Create new user</button>
+        </div>
+    </form>
  </div>
-<form>
-    <button asp-controller="Admin" asp-action="UserAdd" class="thirdButton bi bi-plus-circle" value="Add company" type="submit" style="height: 50px;"><p>Create new user</p></button>
-</form>
 
 @section Scripts {
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script defer type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
     <script defer src="/js/adminscript.js"></script>
 }
-

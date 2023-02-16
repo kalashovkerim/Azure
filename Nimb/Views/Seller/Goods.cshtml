@@ -10,13 +10,12 @@
 <link rel="stylesheet" href="/css/Seller/goods.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
 
-<div class="main">
     <div class="bg">
         <div class="table">
             <table id="table_id" class="display">
                 <thead>
                     <tr>
-                        <th>Id</th>
+                        <th>Brand</th>
                         <th>Name</th>
                         <th>Category</th>
                         <th>Count</th>
@@ -28,7 +27,7 @@
                         foreach (var item in goodsList)
                         {
                             <tr>
-                                <td>@item.Id</td>
+                                <td>@Model.Where(sp => sp.Id == item.SupplierId).FirstOrDefault().Name</td>
                                 <td>@item.Name</td>
                                 <td>@item.Category</td>
                                 <td>@item.Count</td>
@@ -39,36 +38,10 @@
             </table>
         </div>
     </div>
-</div>
-<div class="options">
-    <form>
-        <select class="comboBox" id="lblBrendSelectId">
-            <option>Choose a supplier...</option>
-            @foreach (var item in Model)
-            {
-                <option value=@item.Name>@Html.DisplayFor(items => item.Name)</option>
-            }
-            <option value="All">All</option>
-        </select>
-        <select class="comboBox" id="lblCategorySelectId">
-            <option>Choose a supplier...</option>
-            @if (categorList != null)
-            {
-                foreach (var item in categorList)
-                {
-                    <option value=@(item)>@Html.DisplayFor(items => item)</option>
-                }
-            }
-        </select>
-        <input type="text" class="timeBox" id="timeBox" name="timeBox" placeholder="Search by id..." />
-        <button class="searchButton" value="Search" type="submit"><p>Search</p></button>
-    </form>
-</div>
-
-            @section Scripts
-            {
+@section Scripts
+{
     <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-    <script defer type="text/javascript" charset="utf8" src="Goods.js"></script>
+    <script defer type="text/javascript" charset="utf8" src="~/js/Goods.js"></script>
 
-            }
+}

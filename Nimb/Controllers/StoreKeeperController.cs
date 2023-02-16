@@ -26,10 +26,14 @@ namespace Nimb.Controllers
         }
         public IActionResult AddProvider()
         {
+            TempData["Check"] = "keeper";
+
             return View();
         }
+        
         public async Task<IActionResult> AddProduct()
         {
+            TempData["Check"] = "keeper";
             var suppliers = new List<Supplier>();
             var supps = await _unitOfwork.Supplier.GetAll();
             foreach (var supplier in supps)
@@ -42,7 +46,15 @@ namespace Nimb.Controllers
         [HttpPost]
         public async Task<IActionResult> AddProductAsync(ProductViewModel product)
         {
-            var result = await _goodvalidator.ValidateAsync(product.Good); 
+            TempData["Check"] = "keeper";
+            var result = await _goodvalidator.ValidateAsync(product.Good);
+            var suppliers = new List<Supplier>();
+            var supps = await _unitOfwork.Supplier.GetAll();
+            foreach (var supplier in supps)
+            {
+                suppliers.Add(supplier);
+            }
+            ViewData["Suppliers"] = suppliers.Distinct();
 
             if (result.IsValid)
             {
@@ -52,13 +64,15 @@ namespace Nimb.Controllers
 
                     _unitOfwork.Good.Add(product.Good);
                     _unitOfwork.Save();
+                    return View("AddProduct",product);
                 }
             }
-            return View("KeeperPanel");
+            return View("AddProduct", product);
         }
         [HttpPost]
         public async Task<IActionResult> AddProviderAsync(Supplier supp)
         {
+            TempData["Check"] = "keeper";
             var result = await _suppvalidator.ValidateAsync(supp);
 
             if (result.IsValid)
@@ -79,4 +93,5 @@ namespace Nimb.Controllers
             return View();
         }
     }
+   
 }

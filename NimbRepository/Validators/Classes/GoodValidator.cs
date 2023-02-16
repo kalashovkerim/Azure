@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using Microsoft.Build.Tasks.Deployment.Bootstrapper;
 using NimbRepository.Model.Admin;
 using NimbRepository.Model.Storekeeper;
 using System;
@@ -13,6 +14,8 @@ namespace NimbRepository.Validators.Classes
     {
         public GoodValidator()
         {
+           
+
             RuleFor(x => x.Name)
             .NotEmpty().WithMessage("Name is required")
             .MaximumLength(100).WithMessage("Name cannot be longer than 100 characters");

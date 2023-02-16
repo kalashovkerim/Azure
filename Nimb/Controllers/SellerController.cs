@@ -30,89 +30,24 @@ namespace NimbProjectApp.Controllers
 
         public async Task<IActionResult> SellerMainAsync()
         {
-            TempData["Check"] = "Seller main";
+            TempData["Check"] = "Seller";
             return View(await _unitOfwork.Client.GetAll());
         }
         
         public IActionResult RegisterCompany()
         {
-            TempData["Check"] = "Add company";
+            TempData["Check"] = "Seller";
             return View();
         }
         public IActionResult RegisterUser()
         {
-            TempData["Check"] = "Add client";
+            TempData["Check"] = "Seller";
             return View();
         }
 
-        public async Task<IActionResult> Goods(string Name)
-        {
-
-            var suppliers = await _unitOfwork.Supplier.GetAll();
-
-
-            if (Name == null || Name == "All" || Name == "")
-            { 
-                var goods = await _unitOfwork!.Good!.GetAll();
-
-                ViewData["Goods"] = goods;
-            }
-
-            return View(suppliers);
-        }
-
-        public async Task<IActionResult> GetGoodsAsync(string Name, string Category)
-        {
-            var allgoods = await _unitOfwork.Good.GetAll();
-            var supps = await _unitOfwork.Supplier.GetAll();
-            var currentsupp = supps.Where(supp => supp.Name == Name).FirstOrDefault();
-
-            //var goods = _context.Goods.Where(good => good.SupplierId == currentsupp.Id).Where(good => good.Category == Category).ToArray();
-            var goods = allgoods.Where(good => good.SupplierId == currentsupp!.Id).Where(good => good.Category == Category).ToArray();
-
-            var goods2 = allgoods.Where(good => good.SupplierId == currentsupp!.Id);
-
-            var categories = goods2.Select(good => good.Category).ToArray();
-
-
-            if (Category == "" || Category == "All")
-            {
-                ViewData["Goods"] = goods2;
-            }
-            else
-            {
-                ViewData["Goods"] = goods;
-            }
-
-
-            ViewData["Categories"] = categories.Distinct();
-
-            return View("Goods", supps);
-        }
-
-        public async Task<IActionResult> GetCategoriesAsync(string Name)
-        {
-
-            var supps = await _unitOfwork.Supplier.GetAll();
-            var currentsupp = supps.Where(supl => supl.Name == Name).FirstOrDefault();
-
-            var goods = await _unitOfwork.Good.GetAll();
-
-            if (Name == null || Name == "All" || Name == "")
-            {
-                ViewData["Goods"] = _unitOfwork.Good.GetAll()!;
-            }
-            else
-            {
-                ViewData["Goods"] = goods.Where(good => good.SupplierId == currentsupp.Id);
-                ViewData["Categories"] = goods.Where(good => good.SupplierId == currentsupp.Id).Select(good => good.Category).ToArray().Distinct();
-            }
-
-            return View("Goods", _unitOfwork.Supplier.GetAll()!);
-        }
         public IActionResult GoodsSoldFirst()
         {
-
+            
             return View();
         }
 
@@ -132,6 +67,7 @@ namespace NimbProjectApp.Controllers
         }
         public IActionResult EditUser(int id)
         {
+            TempData["Check"] = "Seller";
             if (id == null || id == 0)
             {
                 return View("SellerMain");
@@ -145,7 +81,7 @@ namespace NimbProjectApp.Controllers
         [HttpPost]
         public IActionResult EditUser(Client client)
         {
-
+            TempData["Check"] = "Seller";
             _unitOfwork.Client.Update(client);
 
             _unitOfwork.Save();
@@ -155,6 +91,7 @@ namespace NimbProjectApp.Controllers
         [HttpPost]
         public IActionResult RegisterUser(Client client)
         {
+            TempData["Check"] = "Seller";
             var result = _validator.Validate(client);
             if (result.IsValid)
             {
@@ -199,12 +136,38 @@ namespace NimbProjectApp.Controllers
                 
             return View("SellerMain", _unitOfwork.Client.GetAll());
         }
+        public IActionResult PlaceAnOrder()
+        {
+            TempData["Check"] = "Seller";
+            return View();
+        }
+        public IActionResult SWin()
+        {
+            TempData["Check"] = "Seller";
+            return View();
+        }
+        public async Task<IActionResult> Check(int id)
+        {
+            TempData["Check"] = "Seller";
+            var goods = await _unitOfwork.Good.GetAll();
+            ViewData["Goods"] = goods;
+            var client = _unitOfwork.Client.GetFirstOrDefault(cl => cl.Id == id);
+            return View(client);
+        }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
+            TempData["Check"] = "Seller";
             var clients = await _unitOfwork.Client.GetAll();
             return Json(new {data = clients});
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetAllGoods()
+        {
+            TempData["Check"] = "Seller";
+            var goods = await _unitOfwork.Good.GetAll();
+            return Json(new { data = goods });
         }
     }
 }

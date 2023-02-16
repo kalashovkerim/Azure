@@ -17,15 +17,23 @@
                     <div class="inputs">
                         <div class="namePart">
                             <input type="text" asp-for="Name" class="nameField" id="nameField" placeholder="Enter the name"></input>
+                        <br />
+                        <span asp-validation-for="Name" class="text-danger"></span>
                         </div>
                         <div class="categoryPart">
                             <input type="text" asp-for="Number" class="addressField" id="addressField" placeholder="Enter the number"></input>
+                        <br />
+                        <span asp-validation-for="Number" class="text-danger"></span>
                         </div>
                         <div class="countPart">
                             <input type="email" asp-for="EmailAddress" class="mailField" id="mailField" placeholder="Enter the email"></input>
+                        <br />
+                        <span asp-validation-for="EmailAddress" class="text-danger"></span>
                         </div>
                         <div class="pricePart">
                             <input type="text" asp-for="Address" class="priceField" id="priceField" placeholder="Enter the address"></input>
+                        <br />
+                        <span asp-validation-for="Address" class="text-danger"></span>
                         </div>
                     </div>
                     <button class="applyButton" type="submit"><p>Apply</p></button>

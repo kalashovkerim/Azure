@@ -39,7 +39,10 @@
                         <span asp-validation-for="EmailAddress" class="text-danger"></span>
                         </div>
                     </div>
-                    <button class="registerButton" value="Register" type="submit"><p>Register</p></button>
+                    <div class="btn-group">
+                        <button asp-controller="Seller" asp-action="SellerMain" class="ctrl back" id="Button" value="back" type="submit">Back</button>
+                        <button class="registerButton" id="Button" value="Register" type="submit">Register</button>
+                    </div>
                 </form>
             </div>
         </div>

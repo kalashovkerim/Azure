@@ -95,7 +95,7 @@ td {
     .container .buttons .secondButton,
     .container .buttons .thirdButton,
     .container .buttons .fourthButton {
-        width: 150px;
+        width: 200px;
         height: 35px;
         margin-top: 30px;
         border: 0;
@@ -125,27 +125,6 @@ td {
             margin-top:15px;
         }
 
-@media screen and (max-height: 790px) {
-    body {
-        overflow-y: visible;
-    }
-}
-@media screen and (min-width: 580px) and (max-width: 670px) {
-
-
-    .container .buttons button {
-        width: 100px;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .container .buttons button {
-        width: 100px;
-    }
-}
-
-
-/* For phones */
 
 @media screen and (max-width: 770px) {
 
@@ -154,7 +133,21 @@ td {
         flex-direction: column;
     }
 
-        .container .buttons button {
-            width: 250px;
-        }
+    .container .buttons .firstButton,
+    .container .buttons .secondButton,
+    .container .buttons .thirdButton,
+    .container .buttons .fourthButton {
+        width: 350px;
+    }
+}
+
+/* For phones */
+
+@media screen and (max-width: 420px) {
+    .container .buttons .firstButton,
+    .container .buttons .secondButton,
+    .container .buttons .thirdButton,
+    .container .buttons .fourthButton {
+        width: 350px;
+    }
 }

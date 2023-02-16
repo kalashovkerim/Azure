@@ -29,10 +29,11 @@ body {
             justify-content: center;
             margin-top: 100px;
             background-color: white;
-            height: 460px;
+            height: auto;
             width: 650px;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            padding-bottom:20px;
         }
 
     .container .header-container {
@@ -115,7 +116,6 @@ body {
 @media screen and (max-width: 700px) {
     .container .main .bg {
         width: 450px;
-        height: 520px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -128,7 +128,6 @@ body {
 
     .container form .applyButton {
         width: 355px;
-        height: 35px;
         margin-top: 20px;
         margin-left: 0;
     }

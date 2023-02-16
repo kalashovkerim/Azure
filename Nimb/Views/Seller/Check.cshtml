@@ -1,0 +1,53 @@
+﻿@using NimbRepository.Model.Seller
+@using NimbRepository.Model.Storekeeper
+
+<link rel="stylesheet" href="/css/Seller/Check.css">
+
+@model Client
+@{
+    var goods = ViewData["Goods"] as IEnumerable<Good>;
+}
+<div class="main">
+    <div class="bg">
+        <form>
+            <div class="inputs">
+                <div class="part">
+                    <label class="label">Client: </label>
+                    <div class="field" id="clientField" name="clientField">@Model.FirstName @Model.LastName</div>
+                </div>
+                <div class="part">
+                    <label class="label">Product: </label>
+                    <select style="width:280px;" required class="comboBox" id="lblBrendSelectId">
+                        <option>Choose the good</option>
+                        @foreach (var item in goods)
+                        {
+                        <option value=@item.Name>@item.Name</option>
+                        }
+                    </select>
+                </div>
+                <div class="part">
+                    <label class="label">Price:</label>
+                    <div class="field" id="priceField" name="priceField"><p class="pprice"></p></div>
+                </div>
+                <div class="part">
+                    <label class="label">Count:</label>
+                    <input type="number" class="field" id="countField" name="countField"></input>
+                </div>
+                <div class="part">
+                    <label id="total" class="label">Total:</label>
+                </div>
+            </div>
+            <button asp-controller="Seller" asp-action="SWin" class="applyButton" value="Apply" type="submit"><p>Apply</p></button>
+
+            
+
+        </form>
+        
+    </div>
+</div>   
+
+@section Scripts
+    {
+    <script defer type="text/javascript" charset="utf8" src="~/js/Check.js"></script>
+
+}

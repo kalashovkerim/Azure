@@ -32,6 +32,7 @@ namespace Nimb.Controllers
 
         public IActionResult Login()
         {
+            TempData["Check"] = "";
             return View();
         }
         [HttpPost]

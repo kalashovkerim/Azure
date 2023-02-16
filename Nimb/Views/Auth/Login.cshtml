@@ -19,17 +19,16 @@
                     <h1 class="nimbLabel">Nimb</h1>
                 </div>
                 
-                        <span class="text-danger"></span>
+                <span class="text-danger"></span>
+
                 <form asp-controller="Auth" asp-action="Login" method="post">
                     <div class="loginpart">
-                        <label asp-for="UserName" class="loginLabel">Login:</label>
-                        <input required asp-for="UserName" class="loginfield" id="loginfield"></input>
+                        <input required asp-for="UserName" class="loginfield" id="loginfield" placeholder="Enter name..."></input>
                     </div>
                     <div class="passwordpart">
-                        <label asp-for="Password" class="passwordLabel">Password:</label>
-                        <input required asp-for="Password" class="passwordfield" id="passwordfield" type="password"></input>
+                        <input required asp-for="Password" class="passwordfield" id="passwordfield" type="password" placeholder="Enter a password..."></input>
                     </div>
-                    <button class="signInbtn" value="Login" type="submit"><p>Sign In</p></button>
+                    <button class="signInbtn" value="Login" type="submit">Sign In</button>
                 </form>
             </div>
         </div>

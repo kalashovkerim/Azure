@@ -1,59 +1,64 @@
 ﻿@model NimbRepository.Model.Admin.User
 
 
-    <link href="/css/Admin/Addstyle.css" rel="stylesheet" type="text/css" />
+<link href="/css/Admin/Addstyle.css" rel="stylesheet" type="text/css" />
 
-
-    <div class="bg">
-            
-        
-        <form asp-action="UserEdit" asp-controller="Admin" asp-route-id="@Model.Id">
-        <div class="header">Edit user</div>
-                <div class="namePart">
-                    <input asp-for=@Model.FirstName type="text" class="field" id="nameField" placeholder="Enter the first name"></input>
-                    <br />
-                    <span asp-validation-for=@Model.FirstName class="text-danger"></span>
-                </div>
-                <div class="pricePart">
-                    <input asp-for=@Model.LastName type="text" class="field" id="priceField" placeholder="Enter the last name"></input>
-                    <br />
-                    <span asp-validation-for=@Model.LastName class="text-danger"></span>
-                </div>
-                <div class="pricePart">
-                    <input asp-for=@Model.PatronymicName type="text" class="field" id="priceField" placeholder="Enter the patronymic name"></input>
-                    <br />
-                    <span asp-validation-for=@Model.PatronymicName class="text-danger"></span>
-                </div>
-                <div class="categoryPart">
-                    <input asp-for=@Model.Number  class="field" id="categoryField" placeholder="Enter the number"></input>
-                    <br />
-                    <span asp-validation-for=@Model.Number class="text-danger"></span>
-                </div>
-                <div class="countPart">
-                    <input asp-for=@Model.Address type="text" class="field" id="countField" placeholder="Enter the phone number"></input>
-                    <br />
-                    <span asp-validation-for=@Model.Address class="text-danger"></span>
-                </div>
-                <div class="descPart">
-                    <input asp-for=@Model.EmailAddress type="text" class="field" id="descField" placeholder="Enter the address"></input>
-                    <br />
-                    <span asp-validation-for=@Model.EmailAddress class="text-danger"></span>
-                </div>
-                <select asp-for=@Model.Position class="propbox">
-                    <option value="" disabled selected>Select user's position</option>
-                    <option value="Chief">Chief</option>
-                    <option value="Storekeeper">Storekeeper</option>
-                    <option value="Seller">Seller</option>
-                    <option value="Economist">Economist</option>
-                </select>
-                <br />
-                <span asp-validation-for=@Model.Position class="text-danger"></span>
-            <div class="controlbtns">
-                <button value="back" type="submit">Back</button>
-                <button value="confirm" type="submit">Confirm</button>
+<div class="container">
+    <div class="main">
+       <div class="bg">
+            <div class="header-container">
+                <div class="header">Edit user</div>
             </div>
-        </form>
+             <form asp-action="UserEdit" asp-controller="Admin" asp-route-id="@Model.Id">
+                <div class="inputs">
+                    <div class="namePart">
+                        <input asp-for=@Model.FirstName type="text" class="field" id="nameField" placeholder="Enter name">
+                        <br />
+                        <span asp-validation-for=@Model.FirstName class="text-danger"></span>
+                    </div>
+                    <div class="surnamePart">
+                        <input type="text" asp-for=@Model.LastName class="field" id="nameField" placeholder="Enter surname">
+                        <br />
+                        <span asp-validation-for=@Model.LastName class ="text-danger"></span>
+                    </div>
+                    <div class="patrnamePart">
+                        <input type="text" asp-for=@Model.PatronymicName class="field" id="nameField" placeholder="Enter patronymic name">
+                        <br />
+                        <span asp-validation-for=@Model.PatronymicName class="text-danger"></span>
+                    </div>
+                    <div class="countPart">
+                        <input class="field" id="countField" type="tel" asp-for=@Model.Number placeholder="Enter the phone number">
+                        <br />
+                        <span asp-validation-for=@Model.Number class="text-danger"></span>
+                    </div>
+                    <div class="mailPart">
+                        <input type="email" asp-for=@Model.EmailAddress class="field" id="mailField" placeholder="Enter the mail">
+                        <br />
+                        <span asp-validation-for=@Model.EmailAddress class="text-danger"></span>
+                    </div>
+                    <div class="addressPart">
+                        <input type="text" asp-for=@Model.Address class="field" id="addressField" placeholder="Enter the address">
+                        <br />
+                        <span asp-validation-for=@Model.Address class="text-danger"></span><div class="alert alert-info" style="display: none;"></div>
+                    </div>
+                    <select asp-for=@Model.Position class="propbox">
+                        <option value="" disabled selected>Select user's position</option>
+                        <option value="Chief">Chief</option>
+                        <option value="Storekeeper">Storekeeper</option>
+                        <option value="Seller">Seller</option>
+                        <option value="Economist">Economist</option>
+                    </select>
+                    <br />
+                    <span asp-validation-for=@Model.Position class="text-danger"></span>
+                    </div>
+                <div class="btn-group">
+                    <button asp-controller="Admin" asp-action="AdminPanel" class="ctrl back" id="Button" value="back" type="submit">Back</button>
+                    <button class="ctrl confirm" id="Button" value="confirm" type="submit">Confirm</button>
+                </div>
+            </form>
+        </div>
     </div>
+</div>
 
 
 @section Scripts
@@ -61,3 +66,4 @@
     <script defer src="/js/﻿adminscript.js"></script>
 }
 
+                

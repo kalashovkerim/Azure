@@ -12,6 +12,37 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav me-auto">
+                @{
+                    if (TempData["Check"].ToString() == "keeper")
+                    {
+                        <form>
+                            <li class="nav-item">
+                                <button asp-controller="StoreKeeper" asp-action="AddProduct" class="nav-link btn btn-link text-light">Add product</button>
+                            </li>
+                            </form>
+                            <form>
+                            <li class="nav-item" type="submit" class="nav-link btn btn-link text-light">
+                                <button asp-controller="StoreKeeper" asp-action="AddProvider" type="submit" class="nav-link btn btn-link text-light">Add supplier</button>
+                            </li>
+                        </form>
+                    }
+                    else if (TempData["Check"].ToString() == "Seller")
+                    {
+                        <form>
+                            <li class="nav-item" type="submit" class="nav-link btn btn-link text-light">
+                                <button asp-controller="Seller" asp-action="SellerMain" type="submit" class="nav-link btn btn-link text-light">Home</button>
+                            </li>
+                        </form>
+                    }
+                    else if (TempData["Check"].ToString() == "Admin")
+                    {
+                        <form>
+                            <li class="nav-item" type="submit" class="nav-link btn btn-link text-light">
+                                <button asp-controller="Admin" asp-action="AdminPanel" type="submit" class="nav-link btn btn-link text-light">Home</button>
+                            </li>
+                        </form>
+                    }
+                 }
                 <li class="nav-item">
                     <form id="logoutForm" class="form-inline" asp-controller="Auth" asp-action="Logout">
                         <button id="logout" type="submit" class="nav-link btn btn-link text-light">Logout</button>

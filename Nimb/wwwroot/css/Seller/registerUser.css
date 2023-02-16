@@ -11,8 +11,6 @@
 body {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
     background-color: #E7E7E7;
 }
 
@@ -20,25 +18,26 @@ body {
     text-align: center;
 }
 
-    .container .main {
-        display: flex;
-        justify-content: center;
-    }
+.container .main {
+    display: flex;
+    justify-content: center;
+}
 
-        .container .main .bg {
-            justify-content: center;
-            margin-top: 100px;
-            background-color: white;
-            height: 450px;
-            width: 650px;
-            border-radius: 10px;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        }
+.container .main .bg {
+    justify-content: center;
+    margin-top: 100px;
+    background-color: white;
+    height:auto;
+    width: 650px;
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
 
-    .container .header-container {
-        display: flex;
-        justify-content: flex-end;
-    }
+.container .header-container {
+    display: flex;
+    justify-content: flex-end;
+}
 
 option {
     font-family: Inter-Medium;
@@ -73,15 +72,17 @@ select {
 }
 
 
-    .container form input {
-        width: 350px;
-        height: 35px;
-        border-radius: 5px;
-        margin: 15px;
-        background-color: #D9D9D9;
-        border: 0;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
+.container form input {
+    width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 15px;
+    background-color: #D9D9D9;
+    border: 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-size: 17px;
+}
 
 
 ::placeholder {
@@ -89,41 +90,33 @@ select {
     font-family: Inter-SemiBold;
 }
 
+container .main .bg .btn-group {
+    margin-top: 20px;
+}
 
-.container .registerButton {
+.container form #Button {
     width: 150px;
     height: 35px;
-    margin-top: 0px;
-    margin-left: 400px;
+    margin: 20px;
     border: 0;
     border-radius: 15px;
     background-color: #7ACBE5;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     cursor: pointer;
-}
-
-    .container .registerButton:hover {
-        opacity: .8;
-    }
-
-.container form .registerButton p {
+    font-family: Inter-Medium;
     font-size: 17px;
     font-weight: 600;
-    font-family: Inter-Medium;
 }
 
-@media screen and (max-height: 790px) {
-    body {
-        overflow-y: visible;
-    }
+.container #Button:hover {
+    opacity: .8;
 }
+
 @media screen and (max-width: 770px) {
     .container .main .bg {
         width: 450px;
-        height: 550px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -132,13 +125,6 @@ select {
     .container .inputs {
         margin-left: 0;
         margin-top: -80px;
-    }
-
-    .container form .registerButton {
-        width: 355px;
-        height: 35px;
-        margin-top: 40px;
-        margin-left: 0;
     }
 
     .container .header-container {
@@ -156,7 +142,6 @@ select {
 @media screen and (max-width: 420px) {
     .container .main .bg {
         width: 350px;
-        height: 550px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -171,15 +156,33 @@ select {
         width: 300px;
     }
 
-    .container form .registerButton {
+    .container .header {
+        margin-top: -65px;
+        margin-right: 50px;
+    }
+
+    .container form #Button {
+        width: 120px;
+    }
+}
+
+
+@media screen and (max-width: 370px) {
+    .container .main .bg {
         width: 300px;
-        height: 35px;
-        margin-top: 20px;
-        margin-left: 0;
+    }
+
+    .container form input,
+    .container form select {
+        width: 250px;
+    }
+
+    .container form #Button {
+        width: 100px;
     }
 
     .container .header {
-        margin-top: -70px;
-        margin-right: 50px;
+        margin-right: 75px;
     }
+}
 }

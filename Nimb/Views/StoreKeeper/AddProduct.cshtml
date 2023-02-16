@@ -20,27 +20,27 @@
                 </div> 
                 <form asp-action="AddProduct" asp-controller="StoreKeeper">
                     <div class="inputs">
-                        <select class="supplierBox" asp-for=SuppId id="suppselectid">
-                            <option selected>Choose provider</option>
+                    <select required class="supplierBox" asp-for=SuppId id="suppselectid">
+                            <option selected>Choose supplier</option>
                             @foreach (var item in supplierList!)
                             {
                                 <option value=@item.Id>@Html.DisplayFor(items => item.Name)</option>
                             }
                         </select>
                         <div class="namePart">
-                            <input type="text" asp-for="Good.Name" class="nameField" id="nameField" placeholder="Enter the name"></input>
+                        <input required type="text" asp-for="Good.Name" class="nameField" id="nameField" placeholder="Enter the name"></input>
                         </div>
                         <div class="categoryPart">
-                        <input type="text" asp-for="Good.Category" class="categoryField" id="categoryField" placeholder="Enter the category"></input>
+                        <input required type="text" asp-for="Good.Category" class="categoryField" id="categoryField" placeholder="Enter the category"></input>
                         </div>
                         <div class="pricePart">
-                        <input type="number" asp-for="Good.Price" class="priceField" id="priceField" placeholder="Enter the price"></input>
+                        <input required type="number" asp-for="Good.Price" class="priceField" id="priceField" placeholder="Enter the price"></input>
                         </div>
                         <div class="countPart">
-                        <input type="number" asp-for="Good.Count" class="countField" id="countField" placeholder="Enter the count"></input>
+                        <input required type="number" asp-for="Good.Count" class="countField" id="countField" placeholder="Enter the count"></input>
                         </div>
                         <div class="descPart">
-                        <textarea class="descField" asp-for="Good.Description" id="descField" placeholder="Enter the description"></textarea>
+                        <textarea required class="descField" asp-for="Good.Description" id="descField" placeholder="Enter the description"></textarea>
                         </div>
                     </div>
                     <button class="applyButton" type="submit"><p>Apply</p></button>

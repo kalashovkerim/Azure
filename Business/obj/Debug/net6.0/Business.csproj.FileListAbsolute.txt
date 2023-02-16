@@ -14,3 +14,35 @@ C:\Users\kerim\Desktop\Nimb\Business\obj\Debug\net6.0\Business.dll
 C:\Users\kerim\Desktop\Nimb\Business\obj\Debug\net6.0\refint\Business.dll
 C:\Users\kerim\Desktop\Nimb\Business\obj\Debug\net6.0\Business.pdb
 C:\Users\kerim\Desktop\Nimb\Business\obj\Debug\net6.0\ref\Business.dll
+D:\gurba\Nimb-develop\Nimb-develop\Business\bin\Debug\net6.0\configuration.json
+D:\gurba\Nimb-develop\Nimb-develop\Business\bin\Debug\net6.0\Business.deps.json
+D:\gurba\Nimb-develop\Nimb-develop\Business\bin\Debug\net6.0\Business.dll
+D:\gurba\Nimb-develop\Nimb-develop\Business\bin\Debug\net6.0\Business.pdb
+D:\gurba\Nimb-develop\Nimb-develop\Business\bin\Debug\net6.0\NimbRepository.dll
+D:\gurba\Nimb-develop\Nimb-develop\Business\bin\Debug\net6.0\NimbRepository.pdb
+D:\gurba\Nimb-develop\Nimb-develop\Business\obj\Debug\net6.0\Business.csproj.AssemblyReference.cache
+D:\gurba\Nimb-develop\Nimb-develop\Business\obj\Debug\net6.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\gurba\Nimb-develop\Nimb-develop\Business\obj\Debug\net6.0\Business.AssemblyInfoInputs.cache
+D:\gurba\Nimb-develop\Nimb-develop\Business\obj\Debug\net6.0\Business.AssemblyInfo.cs
+D:\gurba\Nimb-develop\Nimb-develop\Business\obj\Debug\net6.0\Business.csproj.CoreCompileInputs.cache
+D:\gurba\Nimb-develop\Nimb-develop\Business\obj\Debug\net6.0\Business.csproj.CopyComplete
+D:\gurba\Nimb-develop\Nimb-develop\Business\obj\Debug\net6.0\Business.dll
+D:\gurba\Nimb-develop\Nimb-develop\Business\obj\Debug\net6.0\refint\Business.dll
+D:\gurba\Nimb-develop\Nimb-develop\Business\obj\Debug\net6.0\Business.pdb
+D:\gurba\Nimb-develop\Nimb-develop\Business\obj\Debug\net6.0\ref\Business.dll
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\bin\Debug\net6.0\configuration.json
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\bin\Debug\net6.0\Business.deps.json
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\bin\Debug\net6.0\Business.dll
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\bin\Debug\net6.0\Business.pdb
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\bin\Debug\net6.0\NimbRepository.dll
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\bin\Debug\net6.0\NimbRepository.pdb
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\obj\Debug\net6.0\Business.csproj.AssemblyReference.cache
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\obj\Debug\net6.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\obj\Debug\net6.0\Business.AssemblyInfoInputs.cache
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\obj\Debug\net6.0\Business.AssemblyInfo.cs
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\obj\Debug\net6.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\obj\Debug\net6.0\Business.csproj.CopyComplete
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\obj\Debug\net6.0\Business.dll
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\obj\Debug\net6.0\refint\Business.dll
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\obj\Debug\net6.0\Business.pdb
+C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\Business\obj\Debug\net6.0\ref\Business.dll

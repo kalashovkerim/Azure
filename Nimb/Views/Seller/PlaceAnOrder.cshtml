@@ -1,0 +1,31 @@
+﻿
+<link href="/css/Seller/place.css" rel="stylesheet" type="text/css" />
+
+<div class="container">
+    <div class="main">
+        <div class="bg">
+            <div class="table">
+                <div class="dataTables_wrapper">
+                    <table id="table_id" class="display nowrap dataTable dtr-inline collapsed" style="width:100%; position: relative;">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Last name</th>
+                                <th>Patronymic name</th>
+                                <th>Number</th>
+                                <th>EmailAddress</th>
+                                <th style="text-align: center;">Edit or Delete</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script defer type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+    <script defer src="/js/place.js"></script>
+}

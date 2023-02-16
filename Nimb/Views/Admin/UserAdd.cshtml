@@ -1,37 +1,65 @@
 ﻿@model NimbRepository.Model.Admin.User
 
 
-    <link href="/css/Admin/Addstyle.css" rel="stylesheet" type="text/css" />
+<link href="/css/Admin/Addstyle.css" rel="stylesheet" type="text/css" />
 
-    <div class="bg">
-        <form asp-controller="Admin" asp-action="UserAdd">
-            <div class="header">
-                <label>User Add</label>
+<div class="container">
+    <div class="main">
+        <div class="bg">
+            <div class="header-container">
+                    <div class="header">Add user</div>
             </div>
-                <input asp-for="FirstName" class="propfield" placeholder="Name"/>
-                <span asp-validation-for="FirstName" class="text-danger"></span>
-                <input asp-for="LastName" class="propfield" placeholder="Surname" />
-                <span asp-validation-for="LastName" class="text-danger"></span>
-                <input asp-for="PatronymicName" class="propfield" placeholder="PatronymicName" />
-                <span asp-validation-for="PatronymicName" class="text-danger"></span>
-                <input id="phone" type="tel" asp-for="Number" class="propfield" placeholder="Number" />
-                <span asp-validation-for="Number" class="text-danger"></span>
-                <input asp-for="EmailAddress" class="propfield" placeholder="Email" />
-                <span asp-validation-for="EmailAddress" class="text-danger"></span>
-                <input asp-for="Address"  class="propfield" placeholder="Address"/>
-                <span asp-validation-for="Address" class="text-danger"></span><div class="alert alert-info" style="display: none;"></div>
-                <select asp-for="Position" class="propbox">
-                    <option value="" disabled selected>Select user's position</option>
-                    <option value="Chief">Chief</option><div class="alert alert-info" style="display: none;"></div>
-                    <option value="Storekeeper">Storekeeper</option>
-                    <option value="Seller">Seller</option>
-                    <option value="Economist">Economist</option>
-                </select>
-                <span asp-validation-for="Position" class="text-danger"></span>
-            <div class="controlbtns">
-                <button asp-controller="Admin" asp-action="AdminPanel" class="ctrl back"><p>Back</p></button>
-                <button type="submit" class="ctrl confirm"><p>Confirm</p></button>
-            </div>
-        </form>
+            <form asp-controller="Admin" asp-action="UserAdd">
+                <div class="inputs">
+                    <div class="namePart">
+                        <input type="text" asp-for="FirstName" class="field" id="nameField" placeholder="Enter name...">
+                        <br />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="surnamePart">
+                        <input type="text" asp-for="LastName" class="field" id="nameField" placeholder="Enter surname">
+                        <br />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="patrnamePart">
+                        <input type="text" asp-for="PatronymicName" class="field" id="nameField" placeholder="Enter patronymic name">
+                        <br />
+                        <span asp-validation-for="PatronymicName" class="text-danger"></span>
+                    </div>
+                    <div class="countPart">
+                        <input class="field" id="countField" type="tel" asp-for="Number" placeholder="Enter the phone number">
+                        <br />
+                        <span asp-validation-for="Number" class="text-danger"></span>
+                    </div>
+                    <div class="mailPart">
+                        <input type="email" asp-for="EmailAddress" class="field" id="mailField" placeholder="Enter the mail">
+                        <br />
+                        <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                    </div>
+                    <div class="addressPart">
+                        <input type="text" asp-for="Address" class="field" id="addressField" placeholder="Enter the address">
+                        <br />
+                        <span asp-validation-for="Address" class="text-danger"></span><div class="alert alert-info" style="display: none;"></div>
+                    </div>
+  
+                    <select asp-for="Position" class="propbox">
+                        <option value="" disabled selected>Select user's position</option>
+                        <option value="Chief">Chief</option><div class="alert alert-info" style="display: none;"></div>
+                        <option value="Storekeeper">Storekeeper</option>
+                        <option value="Seller">Seller</option>
+                        <option value="Economist">Economist</option>
+                    </select>
+                    <br />
+                    <span asp-validation-for="Position" class="text-danger"></span>
+                </div>
+                <div class="btn-group">
+                    <button asp-controller="Admin" asp-action="AdminPanel" class="ctrl back" id="Button" value="back" type="submit">Back</button>
+                    <button class="ctrl confirm" id="Button" value="confirm" type="submit">Confirm</button>
+                </div>
+            </form>
+        </div>
     </div>
+</div>
+
+
 

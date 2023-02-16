@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\NimbRepository.csproj": {}
+    "C:\\Users\\kerim\\Downloads\\Nimb-develop (1)\\Nimb-develop\\NimbRepository\\NimbRepository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\NimbRepository.csproj": {
+    "C:\\Users\\kerim\\Downloads\\Nimb-develop (1)\\Nimb-develop\\NimbRepository\\NimbRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\NimbRepository.csproj",
+        "projectUniqueName": "C:\\Users\\kerim\\Downloads\\Nimb-develop (1)\\Nimb-develop\\NimbRepository\\NimbRepository.csproj",
         "projectName": "NimbRepository",
-        "projectPath": "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\NimbRepository.csproj",
+        "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop (1)\\Nimb-develop\\NimbRepository\\NimbRepository.csproj",
         "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerim\\Desktop\\Nimb\\NimbRepository\\obj\\",
+        "outputPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop (1)\\Nimb-develop\\NimbRepository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",
