@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
   "Hash": "L5a69yS++tFfJccXN8CCa7DQcaq5jhojgKmx6CY7pCc=",
-=======
-  "Hash": "a531I7rY11OjRiNMIUD/gY7BdHJBPLxvx9VyVJcA0bo=",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
   "Source": "Nimb",
   "BasePath": "_content/Nimb",
   "Mode": "Default",
@@ -14,28 +10,17 @@
     {
       "Name": "Nimb\\wwwroot",
       "Source": "Nimb",
-<<<<<<< HEAD
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Nimb.styles.css",
       "SourceId": "Nimb",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Nimb.styles.css",
-      "SourceId": "Nimb",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "Nimb.styles.css",
       "AssetKind": "All",
@@ -46,7 +31,6 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Nimb.styles.css"
     },
     {
@@ -54,15 +38,6 @@
       "SourceId": "Nimb",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-=======
-      "OriginalItemSpec": "C:\\Work\\Nimb\\Nimb\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Nimb.styles.css"
-    },
-    {
-      "Identity": "C:\\Work\\Nimb\\Nimb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Nimb.bundle.scp.css",
-      "SourceId": "Nimb",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "Nimb.bundle.scp.css",
       "AssetKind": "All",
@@ -73,7 +48,6 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Nimb.bundle.scp.css"
     },
     {
@@ -81,15 +55,6 @@
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "OriginalItemSpec": "C:\\Work\\Nimb\\Nimb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Nimb.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Admin\\Addstyle.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Admin/Addstyle.css",
       "AssetKind": "All",
@@ -103,17 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Admin\\Addstyle.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Admin\\Addstyle.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Admin\\Addstyle.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Admin/Addstyle.css.map",
       "AssetKind": "All",
@@ -127,17 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Admin\\Addstyle.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Admin\\Adminstyle.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Admin\\Adminstyle.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Admin/Adminstyle.css",
       "AssetKind": "All",
@@ -151,17 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Admin\\Adminstyle.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Authorization\\Authstyle.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Authorization\\Authstyle.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Authorization/Authstyle.css",
       "AssetKind": "All",
@@ -175,7 +119,6 @@
       "OriginalItemSpec": "wwwroot\\css\\Authorization\\Authstyle.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Error\\Access.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
@@ -197,12 +140,6 @@
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Finance\\statistics.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Finance/statistics.css",
       "AssetKind": "All",
@@ -216,17 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Finance\\statistics.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Seller\\Check.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Seller\\Check.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Seller/Check.css",
       "AssetKind": "All",
@@ -240,17 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Seller\\Check.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Seller\\goods.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Seller\\goods.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Seller/goods.css",
       "AssetKind": "All",
@@ -264,17 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Seller\\goods.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Seller\\indexStyle.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Seller\\indexStyle.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Seller/indexStyle.css",
       "AssetKind": "All",
@@ -288,17 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Seller\\indexStyle.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Seller\\indexStyle.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Seller\\indexStyle.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Seller/indexStyle.css.map",
       "AssetKind": "All",
@@ -312,17 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Seller\\indexStyle.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Seller\\place.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Seller\\place.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Seller/place.css",
       "AssetKind": "All",
@@ -336,17 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Seller\\place.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Seller\\registerUser.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Seller\\registerUser.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Seller/registerUser.css",
       "AssetKind": "All",
@@ -360,17 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Seller\\registerUser.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Seller\\registerUser.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Seller\\registerUser.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Seller/registerUser.css.map",
       "AssetKind": "All",
@@ -384,17 +272,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Seller\\registerUser.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Seller\\registrCompany.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Seller\\registrCompany.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Seller/registrCompany.css",
       "AssetKind": "All",
@@ -408,17 +289,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Seller\\registrCompany.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Seller\\registrCompany.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Seller\\registrCompany.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Seller/registrCompany.css.map",
       "AssetKind": "All",
@@ -432,17 +306,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Seller\\registrCompany.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Seller\\SWin.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Seller\\SWin.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Seller/SWin.css",
       "AssetKind": "All",
@@ -456,17 +323,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Seller\\SWin.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\site.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\site.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -480,17 +340,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Storekeeper\\keeperproduct.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Storekeeper\\keeperproduct.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Storekeeper/keeperproduct.css",
       "AssetKind": "All",
@@ -504,17 +357,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Storekeeper\\keeperproduct.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Storekeeper\\keeperproduct.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Storekeeper\\keeperproduct.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Storekeeper/keeperproduct.css.map",
       "AssetKind": "All",
@@ -528,17 +374,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Storekeeper\\keeperproduct.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Storekeeper\\keeperstyle.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Storekeeper\\keeperstyle.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Storekeeper/keeperstyle.css",
       "AssetKind": "All",
@@ -552,17 +391,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Storekeeper\\keeperstyle.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\css\\Storekeeper\\keeperstyle.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\css\\Storekeeper\\keeperstyle.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "css/Storekeeper/keeperstyle.css.map",
       "AssetKind": "All",
@@ -576,17 +408,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Storekeeper\\keeperstyle.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\favicon.ico",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\favicon.ico",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -600,17 +425,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\js\\adminscript.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\js\\adminscript.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "js/adminscript.js",
       "AssetKind": "All",
@@ -624,17 +442,10 @@
       "OriginalItemSpec": "wwwroot\\js\\adminscript.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\js\\Check.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\js\\Check.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "js/Check.js",
       "AssetKind": "All",
@@ -648,17 +459,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Check.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\js\\Goods.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\js\\Goods.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "js/Goods.js",
       "AssetKind": "All",
@@ -672,17 +476,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Goods.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\js\\keeper.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\js\\keeper.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "js/keeper.js",
       "AssetKind": "All",
@@ -696,17 +493,10 @@
       "OriginalItemSpec": "wwwroot\\js\\keeper.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\js\\place.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\js\\place.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "js/place.js",
       "AssetKind": "All",
@@ -720,17 +510,10 @@
       "OriginalItemSpec": "wwwroot\\js\\place.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\js\\seller.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\js\\seller.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "js/seller.js",
       "AssetKind": "All",
@@ -744,17 +527,10 @@
       "OriginalItemSpec": "wwwroot\\js\\seller.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\js\\site.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\js\\site.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -768,17 +544,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\js\\toast.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\js\\toast.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "js/toast.js",
       "AssetKind": "All",
@@ -792,17 +561,10 @@
       "OriginalItemSpec": "wwwroot\\js\\toast.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\js\\useradd.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\js\\useradd.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "js/useradd.js",
       "AssetKind": "All",
@@ -816,17 +578,10 @@
       "OriginalItemSpec": "wwwroot\\js\\useradd.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -840,17 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -864,17 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -888,17 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -912,17 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -936,17 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -960,17 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -984,17 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1008,17 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1032,17 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1056,17 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1080,17 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1104,17 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1128,17 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1152,17 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1176,17 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1200,17 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1224,17 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1248,17 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1272,17 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1296,17 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1320,17 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1344,17 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1368,17 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1392,17 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1416,17 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1440,17 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1464,17 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1488,17 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1512,17 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1536,17 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1560,17 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1584,17 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1608,17 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1632,17 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1656,17 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1680,17 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1704,17 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1728,17 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1752,17 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1776,17 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1800,17 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1824,17 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1848,17 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1872,17 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1896,17 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1920,17 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1944,17 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1968,17 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1992,17 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2016,17 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2040,17 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2064,17 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2088,17 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2112,17 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2136,17 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2160,17 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2184,17 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-Black.ttf",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-Black.ttf",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "resource/fonts/inter/Inter-Black.ttf",
       "AssetKind": "All",
@@ -2208,17 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\resource\\fonts\\inter\\Inter-Black.ttf"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-Bold.ttf",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-Bold.ttf",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "resource/fonts/inter/Inter-Bold.ttf",
       "AssetKind": "All",
@@ -2232,17 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\resource\\fonts\\inter\\Inter-Bold.ttf"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-ExtraBold.ttf",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-ExtraBold.ttf",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "resource/fonts/inter/Inter-ExtraBold.ttf",
       "AssetKind": "All",
@@ -2256,17 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\resource\\fonts\\inter\\Inter-ExtraBold.ttf"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-ExtraLight.ttf",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-ExtraLight.ttf",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "resource/fonts/inter/Inter-ExtraLight.ttf",
       "AssetKind": "All",
@@ -2280,17 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\resource\\fonts\\inter\\Inter-ExtraLight.ttf"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-Light.ttf",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-Light.ttf",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "resource/fonts/inter/Inter-Light.ttf",
       "AssetKind": "All",
@@ -2304,17 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\resource\\fonts\\inter\\Inter-Light.ttf"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-Medium.ttf",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-Medium.ttf",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "resource/fonts/inter/Inter-Medium.ttf",
       "AssetKind": "All",
@@ -2328,17 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\resource\\fonts\\inter\\Inter-Medium.ttf"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-Regular.ttf",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-Regular.ttf",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "resource/fonts/inter/Inter-Regular.ttf",
       "AssetKind": "All",
@@ -2352,17 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\resource\\fonts\\inter\\Inter-Regular.ttf"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-SemiBold.ttf",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-SemiBold.ttf",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "resource/fonts/inter/Inter-SemiBold.ttf",
       "AssetKind": "All",
@@ -2376,17 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\resource\\fonts\\inter\\Inter-SemiBold.ttf"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-Thin.ttf",
       "SourceId": "Nimb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\wwwroot\\",
-=======
-      "Identity": "C:\\Work\\Nimb\\Nimb\\wwwroot\\resource\\fonts\\inter\\Inter-Thin.ttf",
-      "SourceId": "Nimb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Nimb\\Nimb\\wwwroot\\",
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
       "BasePath": "_content/Nimb",
       "RelativePath": "resource/fonts/inter/Inter-Thin.ttf",
       "AssetKind": "All",

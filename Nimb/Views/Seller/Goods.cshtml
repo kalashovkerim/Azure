@@ -4,11 +4,7 @@
 @model IEnumerable<Supplier>
 
 @{
-<<<<<<< HEAD
 
-=======
-    IEnumerable<Good>? goodsList = ViewData["Goods"] as IEnumerable<Good>;
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
 }
 <link rel="stylesheet" href="/css/Seller/goods.css">
 
@@ -24,25 +20,7 @@
                         <th>Count</th>
                     </tr>
                 </thead>
-<<<<<<< HEAD
                
-=======
-                <tbody>
-                    @if (goodsList != null)
-                    {
-                        foreach (var item in goodsList)
-                        {
-                            <tr>
-                                <td>@Model.Where(sp => sp.Id == item.SupplierId).FirstOrDefault().Name</td>
-                                <td>@item.Name</td>
-                                <td>@item.Category</td>
-                                <td>@item.Price</td>
-                                <td>@item.Count</td>
-                            </tr>
-                        }
-                    }
-                </tbody>
->>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
             </table>
         </div>
     </div>
