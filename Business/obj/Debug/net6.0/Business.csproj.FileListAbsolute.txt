@@ -62,6 +62,7 @@ C:\Work\Nimb\Business\obj\Debug\net6.0\Business.dll
 C:\Work\Nimb\Business\obj\Debug\net6.0\refint\Business.dll
 C:\Work\Nimb\Business\obj\Debug\net6.0\Business.pdb
 C:\Work\Nimb\Business\obj\Debug\net6.0\ref\Business.dll
+<<<<<<< HEAD
 C:\Users\kerim\Downloads\Nimb-develop (3)\Nimb-develop\Business\bin\Debug\net6.0\configuration.json
 C:\Users\kerim\Downloads\Nimb-develop (3)\Nimb-develop\Business\bin\Debug\net6.0\Business.deps.json
 C:\Users\kerim\Downloads\Nimb-develop (3)\Nimb-develop\Business\bin\Debug\net6.0\Business.dll
@@ -78,3 +79,5 @@ C:\Users\kerim\Downloads\Nimb-develop (3)\Nimb-develop\Business\obj\Debug\net6.0
 C:\Users\kerim\Downloads\Nimb-develop (3)\Nimb-develop\Business\obj\Debug\net6.0\refint\Business.dll
 C:\Users\kerim\Downloads\Nimb-develop (3)\Nimb-develop\Business\obj\Debug\net6.0\Business.pdb
 C:\Users\kerim\Downloads\Nimb-develop (3)\Nimb-develop\Business\obj\Debug\net6.0\ref\Business.dll
+=======
+>>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8

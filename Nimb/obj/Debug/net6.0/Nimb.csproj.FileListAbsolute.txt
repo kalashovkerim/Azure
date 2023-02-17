@@ -1348,6 +1348,7 @@ C:\Work\Nimb\Nimb\obj\Debug\net6.0\refint\Nimb.dll
 C:\Work\Nimb\Nimb\obj\Debug\net6.0\Nimb.pdb
 C:\Work\Nimb\Nimb\obj\Debug\net6.0\Nimb.genruntimeconfig.cache
 C:\Work\Nimb\Nimb\obj\Debug\net6.0\ref\Nimb.dll
+<<<<<<< HEAD
 C:\Users\kerim\Downloads\Nimb-develop (3)\Nimb-develop\Nimb\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\kerim\Downloads\Nimb-develop (3)\Nimb-develop\Nimb\bin\Debug\net6.0\appsettings.json
 C:\Users\kerim\Downloads\Nimb-develop (3)\Nimb-develop\Nimb\bin\Debug\net6.0\Nimb.staticwebassets.runtime.json
@@ -1689,3 +1690,5 @@ C:\Users\kerim\Downloads\Nimb-develop (3)\Nimb-develop\Nimb\obj\Debug\net6.0\Nim
 C:\Users\kerim\Downloads\Nimb-develop (3)\Nimb-develop\Nimb\obj\Debug\net6.0\ref\Nimb.dll
 C:\Users\kerim\Downloads\Nimb-develop (3)\Nimb-develop\Nimb\obj\Debug\net6.0\Razor\Views\ErrorPages\AccessDenied.cshtml.g.cs
 C:\Users\kerim\Downloads\Nimb-develop (3)\Nimb-develop\Nimb\obj\Debug\net6.0\Razor\Views\ErrorPages\NotFound.cshtml.g.cs
+=======
+>>>>>>> 31a3447d30bcb350fdaa4df501b585c15dc766b8
