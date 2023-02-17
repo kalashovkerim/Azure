@@ -50,6 +50,13 @@ namespace NimbProjectApp.Controllers
             
             return View();
         }
+        public async Task<IActionResult> Goods()
+        {
+            TempData["Check"] = "Seller";
+            ViewData["Goods"] = await _unitOfwork.Good.GetAll();
+            var suppliers = await  _unitOfwork.Supplier.GetAll();
+            return View(suppliers);
+        }
 
         [HttpDelete]
         public IActionResult Delete(int id)
@@ -86,7 +93,7 @@ namespace NimbProjectApp.Controllers
 
             _unitOfwork.Save();
 
-            return View("SellerMain");
+            return RedirectToAction("SellerMain", "Seller");
         }
         [HttpPost]
         public IActionResult RegisterUser(Client client)
@@ -105,28 +112,9 @@ namespace NimbProjectApp.Controllers
             }
             
         }
-        public async Task<IActionResult> SearchGoodAsync(string request)
-        {
-            var goods = await _unitOfwork.Good.GetAll();
-            var suppliers = await _unitOfwork.Supplier.GetAll();
-
-            if (goods.Contains(goods.Where(good => good.Category.ToUpper() == request.ToUpper()).FirstOrDefault()))
-            {
-                ViewData["Goods"] = goods.Where(good => good.Category.ToUpper() == request.ToUpper());
-            }
-            else if (suppliers!.Contains(suppliers.Where(supp => supp.Name.ToUpper() == request.ToUpper()).FirstOrDefault()))
-            {
-                var currentsupp = suppliers.Where(supp => supp.Name.ToUpper() == request.ToUpper()).FirstOrDefault();
-                ViewData["Goods"] = goods.Where(good => good.SupplierId == currentsupp!.Id);
-            }
-            else
-            {
-                // modal window error not found
-            }
-            return View("Goods", suppliers);
-        }
+       
         [HttpPost]
-        public IActionResult RegisterCompany(Company client)
+        public async Task<IActionResult> RegisterCompany(Company client)
         {
             if (ModelState.IsValid) 
             {
@@ -134,7 +122,7 @@ namespace NimbProjectApp.Controllers
                 _unitOfwork.Save();
             }
                 
-            return View("SellerMain", _unitOfwork.Client.GetAll());
+            return RedirectToAction("SellerMain", "Seller", await _unitOfwork.Client.GetAll());
         }
         public IActionResult PlaceAnOrder()
         {

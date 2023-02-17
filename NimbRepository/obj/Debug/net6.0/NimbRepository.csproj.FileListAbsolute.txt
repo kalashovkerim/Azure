@@ -43,3 +43,18 @@ C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\NimbRepository\obj\Debug\
 C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\NimbRepository\obj\Debug\net6.0\NimbRepository.pdb
 C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\NimbRepository\obj\Debug\net6.0\NimbRepository.genruntimeconfig.cache
 C:\Users\kerim\Downloads\Nimb-develop (1)\Nimb-develop\NimbRepository\obj\Debug\net6.0\ref\NimbRepository.dll
+C:\Work\Nimb\NimbRepository\bin\Debug\net6.0\configuration.json
+C:\Work\Nimb\NimbRepository\bin\Debug\net6.0\NimbRepository.deps.json
+C:\Work\Nimb\NimbRepository\bin\Debug\net6.0\NimbRepository.runtimeconfig.json
+C:\Work\Nimb\NimbRepository\bin\Debug\net6.0\NimbRepository.dll
+C:\Work\Nimb\NimbRepository\bin\Debug\net6.0\NimbRepository.pdb
+C:\Work\Nimb\NimbRepository\obj\Debug\net6.0\NimbRepository.csproj.AssemblyReference.cache
+C:\Work\Nimb\NimbRepository\obj\Debug\net6.0\NimbRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\Nimb\NimbRepository\obj\Debug\net6.0\NimbRepository.AssemblyInfoInputs.cache
+C:\Work\Nimb\NimbRepository\obj\Debug\net6.0\NimbRepository.AssemblyInfo.cs
+C:\Work\Nimb\NimbRepository\obj\Debug\net6.0\NimbRepository.csproj.CoreCompileInputs.cache
+C:\Work\Nimb\NimbRepository\obj\Debug\net6.0\NimbRepository.dll
+C:\Work\Nimb\NimbRepository\obj\Debug\net6.0\refint\NimbRepository.dll
+C:\Work\Nimb\NimbRepository\obj\Debug\net6.0\NimbRepository.pdb
+C:\Work\Nimb\NimbRepository\obj\Debug\net6.0\NimbRepository.genruntimeconfig.cache
+C:\Work\Nimb\NimbRepository\obj\Debug\net6.0\ref\NimbRepository.dll

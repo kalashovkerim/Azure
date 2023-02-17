@@ -31,17 +31,11 @@ namespace Business.Services.Classes
             string password = TxtPassword;
             string subject = TxtSubject;
             string body = TxtBody;
-            //HttpPostedFile postedFile = fuAttachment.PostedFile;
 
             using (MailMessage mm = new MailMessage(from, to))
             {
                 mm.Subject = subject;
                 mm.Body = body;
-                /*if (postedFile.ContentLength > 0)
-                {
-                    string fileName = Path.GetFileName(postedFile.FileName);
-                    mm.Attachments.Add(new Attachment(postedFile.InputStream, fileName));
-                }*/
                 mm.IsBodyHtml = false;
                 SmtpClient smtp = new SmtpClient();
                 smtp.Host = "smtp.gmail.com";
@@ -52,7 +46,6 @@ namespace Business.Services.Classes
                 smtp.Port = 587;
                 smtp.Send(mm);
             }
-            /*ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Email sent.');", true);*/
         }
     }
 }

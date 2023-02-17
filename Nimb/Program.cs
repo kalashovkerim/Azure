@@ -34,9 +34,6 @@ services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     });
 
 
-//services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-//    .AddEntityFrameworkStores<NimbDbContext>();
-
 services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 services.AddMvc();
