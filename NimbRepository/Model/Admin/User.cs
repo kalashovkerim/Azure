@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 namespace NimbRepository.Model.Admin;
 
 
-public partial class User : IEntity
+public partial class User 
 {
     public int Id { get; set; }
     public string FirstName { get; set; } = null!;

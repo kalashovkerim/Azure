@@ -22,7 +22,5 @@ namespace Business.Services.Classes
             }
             return password;
         }
-
-       
     }
 }

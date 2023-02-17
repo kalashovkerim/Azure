@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace NimbRepository.Model.Storekeeper;
 
-public partial class Supplier : IEntity
+public partial class Supplier 
 {
     public int Id { get; set; }
     public string Name { get; set; } = null!;

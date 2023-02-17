@@ -111,7 +111,7 @@ namespace Nimb.Controllers
             AuthViewModel AuthModel = new AuthViewModel();
             TempData["Check"] = "";
             await HttpContext.SignOutAsync();
-            return View("Login", AuthModel);
+            return RedirectToAction("Login", "Auth");
         }
     }
 }

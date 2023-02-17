@@ -1,6 +1,6 @@
 ﻿
 
-const phoneInput = window.intlTelInput(phoneInputField, {
+/*const phoneInput = window.intlTelInput(phoneInputField, {
     initialCountry: "auto",
     geoIpLookup: getIp,
     utilsScript:
@@ -16,10 +16,10 @@ function getIp(callback) {
             };
         })
         .then((resp) => callback(resp.country));
-}
+}*/
 
-$(".iti__country").click(function () { // not working
+/*$(".iti__country").click(function () { // not working
     alert("afdasf");
     console.log("this:" + $(this).children());
 });
-
+*/

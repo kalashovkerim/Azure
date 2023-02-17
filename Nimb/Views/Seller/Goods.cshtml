@@ -1,47 +1,33 @@
 ﻿@using NimbRepository.DbContexts;
 @using NimbRepository.Model.Storekeeper;
 
-@model IEnumerable<NimbRepository.Model.Storekeeper.Supplier>
+@model IEnumerable<Supplier>
 
 @{
-    IEnumerable<string>? categorList = ViewData["Categories"] as IEnumerable<string>;
-    IEnumerable<Good>? goodsList = ViewData["Goods"] as IEnumerable<Good>;
+
 }
 <link rel="stylesheet" href="/css/Seller/goods.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
+
 
     <div class="bg">
         <div class="table">
             <table id="table_id" class="display">
                 <thead>
                     <tr>
-                        <th>Brand</th>
                         <th>Name</th>
                         <th>Category</th>
+                        <th>Price</th>
                         <th>Count</th>
                     </tr>
                 </thead>
-                <tbody>
-                    @if (goodsList != null)
-                    {
-                        foreach (var item in goodsList)
-                        {
-                            <tr>
-                                <td>@Model.Where(sp => sp.Id == item.SupplierId).FirstOrDefault().Name</td>
-                                <td>@item.Name</td>
-                                <td>@item.Category</td>
-                                <td>@item.Count</td>
-                            </tr>
-                        }
-                    }
-                </tbody>
+               
             </table>
         </div>
     </div>
 @section Scripts
 {
-    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-    <script defer type="text/javascript" charset="utf8" src="~/js/Goods.js"></script>
+    <script defer type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script defer type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="/js/Goods.js"></script>
 
 }

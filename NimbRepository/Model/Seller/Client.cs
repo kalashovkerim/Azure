@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace NimbRepository.Model.Seller;
 
-public partial class Client : IEntity
+public partial class Client
 {
     public int Id { get; set; }
 

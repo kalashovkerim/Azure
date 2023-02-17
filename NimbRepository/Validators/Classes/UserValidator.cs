@@ -14,7 +14,7 @@ namespace NimbRepository.Validators.Classes
         {
             RuleFor(x => x.FirstName)
                 .NotNull().WithMessage("First name is required.")
-                .Length(5, 15).WithMessage("First name is required.");
+                .MaximumLength(20).WithMessage("Name cannot be longer than 20 characters");
             RuleFor(x => x.LastName).NotNull().WithMessage("Last name is required.");
             RuleFor(x => x.PatronymicName).NotNull().WithMessage("Patronymic name is required.");
             

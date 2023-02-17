@@ -5,7 +5,7 @@ using NimbRepository.Model.Seller;
 
 namespace NimbRepository.Model.Storekeeper;
 
-public partial class Good : IEntity
+public partial class Good
 {
     public int Id { get; set; }
     [Required]

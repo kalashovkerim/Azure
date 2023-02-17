@@ -29,13 +29,10 @@ services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
         options.Cookie.Name = "AuthToken";
         options.ExpireTimeSpan = TimeSpan.FromHours(5);
         options.SlidingExpiration = true;
-        options.AccessDeniedPath = "/Forbidden/";
+        options.AccessDeniedPath = new PathString("/ErrorPages/AccessDenied");
         options.LogoutPath = "/logout";
     });
 
-
-//services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-//    .AddEntityFrameworkStores<NimbDbContext>();
 
 services.AddScoped<IUnitOfWork, UnitOfWork>();
 

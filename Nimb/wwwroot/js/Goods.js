@@ -14,13 +14,10 @@ function loadDataTable() {
             "url": "/Seller/GetAllGoods"
         },
         "columns": [
-            { "data": "firstName", "width": "15%" },
-            { "data": "lastName", "width": "15%" },
-            { "data": "patronymicName", "width": "15%" },
-            { "data": "number", "width": "15%" },
-            { "data": "address", "width": "15%" },
-            { "data": "emailAddress", "width": "15%" },
-            { "data": "position", "width": "15%" },
+            { "data": "Name", "width": "15%" },
+            { "data": "Category", "width": "15%" },
+            { "data": "Price", "width": "15%" },
+            { "data": "Count", "width": "15%" },
             {
                 "data": "id",
                 "render": function (data) {
@@ -38,6 +35,7 @@ function loadDataTable() {
         ]
     });
 }
+/*
 function Delete(url) {
     Swal.fire({
         title: 'Are you sure?',
@@ -65,3 +63,4 @@ function Delete(url) {
         }
     })
 }
+*/

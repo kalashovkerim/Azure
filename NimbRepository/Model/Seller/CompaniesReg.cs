@@ -4,7 +4,7 @@ using NimbRepository.Model.Storekeeper;
 
 namespace NimbRepository.Model.Seller;
 
-public partial class CompaniesReg : IEntity
+public partial class CompaniesReg
 {
     public int Id { get; set; }
 

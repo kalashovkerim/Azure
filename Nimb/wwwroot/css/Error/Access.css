@@ -1,0 +1,36 @@
+﻿@font-face {
+    font-family: Inter-SemiBold;
+    src: url("/resource/fonts/inter/Inter-SemiBold.ttf");
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #E7E7E7;
+}
+
+
+
+    .container .error-code {
+        font-family: Inter-SemiBold;
+        font-size: 96px;
+        letter-spacing: 18px;
+        margin-top: 30px;
+    }
+
+    .container .alarm-header {
+        font-family: Inter-SemiBold;
+        color: #525252;
+        font-size: 96px;
+        letter-spacing: 15px;
+    }
+
+    .container  .alarm-text {
+        font-family: Inter-SemiBold;
+        font-size: 24px;
+        letter-spacing: 5px;
+        margin-top: 30px;
+        font-weight: 600;
+    }

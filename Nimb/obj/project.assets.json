@@ -11151,11 +11151,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kerim\\Downloads\\Nimb-develop (1)\\Nimb-develop\\Nimb\\Nimb.csproj",
+      "projectUniqueName": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\Nimb.csproj",
       "projectName": "Nimb",
-      "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop (1)\\Nimb-develop\\Nimb\\Nimb.csproj",
+      "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\Nimb.csproj",
       "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop (1)\\Nimb-develop\\Nimb\\obj\\",
+      "outputPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11172,11 +11172,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\kerim\\Downloads\\Nimb-develop (1)\\Nimb-develop\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop (1)\\Nimb-develop\\Business\\Business.csproj"
+            "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Business\\Business.csproj"
             },
-            "C:\\Users\\kerim\\Downloads\\Nimb-develop (1)\\Nimb-develop\\NimbRepository\\NimbRepository.csproj": {
-              "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop (1)\\Nimb-develop\\NimbRepository\\NimbRepository.csproj"
+            "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\NimbRepository\\NimbRepository.csproj": {
+              "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\NimbRepository\\NimbRepository.csproj"
             }
           }
         }

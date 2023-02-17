@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace NimbRepository.Model.Finance;
 
-public partial class Wallet : IEntity
+public partial class Wallet 
 {
     public int Id { get; set; }
 
