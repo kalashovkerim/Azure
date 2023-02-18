@@ -120,34 +120,34 @@ td {
         .container .buttons .thirdButton p,
         .container .buttons .fourthButton p {
             font-size: 17px;
-            font-weight: 600;
+            font-weight: 500;
             font-family: Inter-SemiBold;
-            margin-top:15px;
+            margin-top: 15px;
         }
 
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1000px) {
 
     .container .buttons {
         display: flex;
         flex-direction: column;
     }
 
-    .container .buttons .firstButton,
-    .container .buttons .secondButton,
-    .container .buttons .thirdButton,
-    .container .buttons .fourthButton {
-        width: 350px;
-    }
+        .container .buttons .firstButton,
+        .container .buttons .secondButton,
+        .container .buttons .thirdButton,
+        .container .buttons .fourthButton {
+            width: 350px;
+        }
 }
 
 /* For phones */
 
-@media screen and (max-width: 420px) {
+/*@media screen and (max-width: 420px) {
     .container .buttons .firstButton,
     .container .buttons .secondButton,
     .container .buttons .thirdButton,
     .container .buttons .fourthButton {
         width: 350px;
     }
-}
+}*/

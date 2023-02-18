@@ -56,9 +56,7 @@ namespace NimbProjectApp.Controllers
         public async Task<IActionResult> Goods()
         {
             TempData["Check"] = "Seller";
-            ViewData["Goods"] = await _unitOfwork.Good.GetAll();
-            var suppliers = await  _unitOfwork.Supplier.GetAll();
-            return View(suppliers);
+            return View();
         }
 
         [HttpDelete]
@@ -163,16 +161,9 @@ namespace NimbProjectApp.Controllers
             };
             
             TempData["Check"] = "Seller";
-            var goods = await _unitOfwork.Good.GetAll();
             var suppliers = await _unitOfwork.Supplier.GetAll();
 
-            DataViewModel DW = new();
-
-
-            
-
-
-            return Json(new { data = goods },options);
+            return Json(new { data = suppliers},options);
         }
     }
 }

@@ -14,10 +14,11 @@ function loadDataTable() {
             "url": "/Seller/GetAllGoods"
         },
         "columns": [
+            { "data[0]": '"Goods":{"Name"}', "width": "15%" },
             { "data": "Name", "width": "15%" },
-            { "data": "Category", "width": "15%" },
-            { "data": "Price", "width": "15%" },
-            { "data": "Count", "width": "15%" },
+            { "data": "Name", "width": "15%" },
+            { "data": "Name", "width": "15%" },
+            { "data": "Name", "width": "15%" },
             {
                 "data": "id",
                 "render": function (data) {
@@ -35,7 +36,7 @@ function loadDataTable() {
         ]
     });
 }
-/*
+
 function Delete(url) {
     Swal.fire({
         title: 'Are you sure?',
@@ -63,4 +64,3 @@ function Delete(url) {
         }
     })
 }
-*/

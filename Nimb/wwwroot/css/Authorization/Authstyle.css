@@ -8,6 +8,7 @@
     src: url("../../resource/fonts/inter/Inter-SemiBold.ttf");
 }
 
+
 .validation-summary-errors {
     display: flex;
     justify-content: center;
@@ -30,7 +31,10 @@ li {
 body {
     height: 100%;
     width: 100%;
-    background-color: #E7E7E7;
+    /*  background-color: #E7E7E7;*/
+    background: linear-gradient(-45deg, #E7E7E7, white, #E7E7E7, white);
+    -webkit-animation: gradient 20s ease infinite;
+    animation: gradient 20s ease infinite;
 }
 
 .container {
@@ -42,27 +46,27 @@ body {
         justify-content: center;
     }
 
-    .container .main .bg {
-        justify-content: center;
-        margin-top: 70px;
-        background-color: white;
-        height: 600px;
-        width: 400px;
-        border-radius: 10px;
-        -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        .container .main .bg {
+            justify-content: center;
+            margin-top: 70px;
+            background-color: white;
+            height: 600px;
+            width: 400px;
+            border-radius: 10px;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+    .container .header {
+        margin-top: 50px;
     }
 
-.container .header {
-    margin-top: 50px;
-}
-
-.container .header .nimbLabel {
-    color: black;
-    font-size: 70px;
-    font-family: Inter-Medium;
-    text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
+        .container .header .nimbLabel {
+            color: black;
+            font-size: 70px;
+            font-family: Inter-Medium;
+            text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
 
     .container form {
         display: flex;
@@ -71,60 +75,60 @@ body {
         margin-top: 75px;
     }
 
-.container form .loginpart {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        .container form .loginpart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.container form .loginpart .loginfield {
-    width: 350px;
-    height: 40px;
-    border-radius: 3px;
-    border: 0px;
-    outline-color: rgb(90, 90, 90);
-    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    font-size: 17px;
-}
+            .container form .loginpart .loginfield {
+                width: 350px;
+                height: 40px;
+                border-radius: 3px;
+                border: 0px;
+                outline-color: rgb(90, 90, 90);
+                -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px, rgba(0, 0, 0, 0.23) 0px 2px 4px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px, rgba(0, 0, 0, 0.23) 0px 2px 4px;
+                font-size: 17px;
+            }
 
-.container form .passwordpart {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-}
+        .container form .passwordpart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
 
-.container form .passwordpart .passwordfield {
-    width: 350px;
-    height: 40px;
-    border-radius: 3px;
-    border: 0px;
-    outline-color: rgb(90, 90, 90);
-    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    font-size: 17px;
-}
+            .container form .passwordpart .passwordfield {
+                width: 350px;
+                height: 40px;
+                border-radius: 3px;
+                border: 0px;
+                outline-color: rgb(90, 90, 90);
+                -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px, rgba(0, 0, 0, 0.23) 0px 2px 4px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px, rgba(0, 0, 0, 0.23) 0px 2px 4px;
+                font-size: 17px;
+            }
 
-.container form .signInbtn {
-    width: 355px;
-    height: 35px;
-    margin-top: 220px;
-    border: 0;
-    border-radius: 15px;
-    background-color: #7ACBE5;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 600;
-    font-family: Inter-SemiBold;
-}
+        .container form .signInbtn {
+            width: 355px;
+            height: 35px;
+            margin-top: 220px;
+            border: 0;
+            border-radius: 15px;
+            background-color: #7ACBE5;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 17px;
+            font-weight: 500;
+            font-family: Inter-SemiBold;
+        }
 
-.container form .signInbtn:hover {
-    opacity: .8;
-}
+            .container form .signInbtn:hover {
+                opacity: .8;
+            }
 
 ::placeholder {
     padding: 5px;
@@ -136,6 +140,34 @@ body {
     font-family: Inter-SemiBold;
 }
 
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 /* For phones */
 

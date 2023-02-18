@@ -160,6 +160,22 @@
       "MessagePackAnalyzer/2.1.152": {
         "type": "package"
       },
+      "Microsoft.ApplicationInsights/2.21.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.ApplicationInsights.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ApplicationInsights.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.13": {
         "type": "package",
         "compile": {
@@ -4167,6 +4183,27 @@
         "messagepackanalyzer.nuspec",
         "tools/install.ps1",
         "tools/uninstall.ps1"
+      ]
+    },
+    "Microsoft.ApplicationInsights/2.21.0": {
+      "sha512": "btZEDWAFNo9CoYliMCriSMTX3ruRGZTtYw4mo2XyyfLlowFicYVM2Xszi5evDG95QRYV7MbbH3D2RqVwfZlJHw==",
+      "type": "package",
+      "path": "microsoft.applicationinsights/2.21.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net452/Microsoft.ApplicationInsights.dll",
+        "lib/net452/Microsoft.ApplicationInsights.pdb",
+        "lib/net452/Microsoft.ApplicationInsights.xml",
+        "lib/net46/Microsoft.ApplicationInsights.dll",
+        "lib/net46/Microsoft.ApplicationInsights.pdb",
+        "lib/net46/Microsoft.ApplicationInsights.xml",
+        "lib/netstandard2.0/Microsoft.ApplicationInsights.dll",
+        "lib/netstandard2.0/Microsoft.ApplicationInsights.pdb",
+        "lib/netstandard2.0/Microsoft.ApplicationInsights.xml",
+        "microsoft.applicationinsights.2.21.0.nupkg.sha512",
+        "microsoft.applicationinsights.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.13": {
@@ -11138,6 +11175,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Business >= 1.0.0",
+      "Microsoft.ApplicationInsights >= 2.21.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.13",
@@ -11151,11 +11189,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\Nimb.csproj",
+      "projectUniqueName": "C:\\Users\\kerim\\Downloads\\Nimbtest\\Nimb-develop\\Nimb\\Nimb.csproj",
       "projectName": "Nimb",
-      "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\Nimb.csproj",
+      "projectPath": "C:\\Users\\kerim\\Downloads\\Nimbtest\\Nimb-develop\\Nimb\\Nimb.csproj",
       "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\obj\\",
+      "outputPath": "C:\\Users\\kerim\\Downloads\\Nimbtest\\Nimb-develop\\Nimb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11172,11 +11210,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Business\\Business.csproj"
+            "C:\\Users\\kerim\\Downloads\\Nimbtest\\Nimb-develop\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\kerim\\Downloads\\Nimbtest\\Nimb-develop\\Business\\Business.csproj"
             },
-            "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\NimbRepository\\NimbRepository.csproj": {
-              "projectPath": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\NimbRepository\\NimbRepository.csproj"
+            "C:\\Users\\kerim\\Downloads\\Nimbtest\\Nimb-develop\\NimbRepository\\NimbRepository.csproj": {
+              "projectPath": "C:\\Users\\kerim\\Downloads\\Nimbtest\\Nimb-develop\\NimbRepository\\NimbRepository.csproj"
             }
           }
         }
@@ -11191,6 +11229,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.ApplicationInsights": {
+            "target": "Package",
+            "version": "[2.21.0, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

@@ -25,61 +25,56 @@ body {
     text-align: center;
 }
 
-.container .main {
-    display: flex;
-    justify-content: center;
-    height: auto;
-    width: auto;
-}
+    .container .main {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: auto;
+    }
 
-.container .main .bg {
-    justify-content: center;
-    margin-top: 50px;
-    background-color: white;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    height: auto;
-    width: auto;
-}
+        .container .main .bg {
+            justify-content: center;
+            margin-top: 50px;
+            background-color: white;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            height: auto;
+            width: auto;
+        }
 
-.container .main .bg .table .display {
-    margin-top: 10px;
-}
+            .container .main .bg .table .display {
+                margin-top: 10px;
+            }
 
-.container .buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
+    .container .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 
-.container .buttons .button {
-    width: 1300px;
-    height: 35px;
-    margin-top: 30px;
-    border: 0;
-    border-radius: 15px;
-    background-color: #7ACBE5;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 17px;
-    font-weight: 600;
-    font-family: Inter-SemiBold;
-}
+        .container .buttons .button {
+            width: 1300px;
+            height: 35px;
+            margin-top: 30px;
+            margin-bottom: -30px;
+            border: 0;
+            border-radius: 15px;
+            background-color: #7ACBE5;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 17px;
+            font-weight: 500;
+            font-family: Inter-SemiBold;
+        }
 
-.container .buttons .button:hover {
-    opacity: .8;
-}
-
-.container .buttons .button p {
-    font-size: 17px;
-    font-weight: 600;
-    font-family: Inter-Medium;
-}
+            .container .buttons .button:hover {
+                opacity: .8;
+            }
 
 a {
     text-decoration: none;

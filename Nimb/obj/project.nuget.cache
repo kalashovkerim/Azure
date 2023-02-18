@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T5tozaxJWpTcmQw9PQuZypxDuPQ7V8Cp16jaoCe0nOvKFkTeIdRd7sgU5CAzSKXBReJ8Sl7Dfk6G9QchVF8Yfw==",
+  "dgSpecHash": "zu++/H3nZY9eWfDgNm/EBJlsPG51+ObfApOfPcTrGHV8HqHSRLZDrEV924LhEYhApkDpDZspf/7DTLeeE/BKuA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kerim\\Downloads\\Nimb-develop (3)\\Nimb-develop\\Nimb\\Nimb.csproj",
+  "projectFilePath": "C:\\Users\\kerim\\Downloads\\Nimbtest\\Nimb-develop\\Nimb\\Nimb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kerim\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\kerim\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -14,6 +14,7 @@
     "C:\\Users\\kerim\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\kerim\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\kerim\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\kerim\\.nuget\\packages\\microsoft.applicationinsights\\2.21.0\\microsoft.applicationinsights.2.21.0.nupkg.sha512",
     "C:\\Users\\kerim\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.13\\microsoft.aspnetcore.cryptography.internal.6.0.13.nupkg.sha512",
     "C:\\Users\\kerim\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.13\\microsoft.aspnetcore.cryptography.keyderivation.6.0.13.nupkg.sha512",
     "C:\\Users\\kerim\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.13\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.13.nupkg.sha512",
