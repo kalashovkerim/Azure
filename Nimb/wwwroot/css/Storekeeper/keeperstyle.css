@@ -11,70 +11,64 @@
 body {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
     background-color: #E7E7E7;
 }
 
-.container {
+.container .main {
+    display: flex;
+    justify-content: center;
+}
+
+    .container .main .bg {
+        margin-top: 100px;
+        background-color: white;
+        height: auto;
+        width: 650px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        padding-bottom: 20px;
+    }
+
+.container .header-container {
+    display: flex;
+    justify-content: flex-end;
     text-align: center;
 }
 
-    .container .main {
-        display: flex;
-        justify-content: center;
-    }
 
-        .container .main .bg {
-            justify-content: center;
-            margin-top: 100px;
-            background-color: white;
-            height: auto;
-            width: 650px;
-            border-radius: 10px;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-            padding-bottom:20px;
-        }
+.container .header {
+    background-color: #D9D9D9;
+    border: 0;
+    width: 150px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 10px;
+    height: 25px;
+    font-weight: 500;
+    font-family: Inter-SemiBold;
+}
 
-    .container .header-container {
-        display: flex;
-        justify-content: flex-end;
-    }
+.container .inputs {
+    margin-left: -200px;
+    margin-top: -80px;
+}
 
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 0;
+}
 
-    .container .header {
+    .container form input {
+        width: 350px;
+        height: 35px;
+        border-radius: 5px;
+        margin: 25px;
         background-color: #D9D9D9;
         border: 0;
-        width: 150px;
-        border-bottom-left-radius: 15px;
-        border-top-right-radius: 10px;
-        height: 25px;
-        font-weight: 600;
-        font-family: Inter-SemiBold;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
-
-    .container .inputs {
-        margin-left: -200px;
-        margin-top: -80px;
-    }
-
-    .container form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 100px;
-        margin-left: 0;
-    }
-
-        .container form input {
-            width: 350px;
-            height: 35px;
-            border-radius: 5px;
-            margin: 25px;
-            background-color: #D9D9D9;
-            border: 0;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        }
 
 ::placeholder {
     padding: 5px;
@@ -87,8 +81,9 @@ body {
     margin-top: 0px;
     margin-left: 400px;
     border: 0;
-    border-radius: 15px;
-    background-color: #7ACBE5;
+    border-radius: 5px;
+    background-color: #212529;
+    color: #FFF;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     display: flex;
     align-items: center;
@@ -101,19 +96,13 @@ body {
     }
 
     .container form .applyButton p {
-        margin-top:15px;
+        margin-top: 15px;
         font-size: 17px;
         font-weight: 600;
         font-family: Inter-SemiBold;
     }
 
-@media screen and (max-height: 790px) {
-    body {
-        overflow-y: visible;
-    }
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
     .container .main .bg {
         width: 450px;
         display: flex;
@@ -134,5 +123,38 @@ body {
 
     .container .header-container {
         width: 450px;
+    }
+}
+
+/* For phones */
+
+@media screen and (max-width: 420px) {
+    .container .main .bg {
+        width: 350px;
+    }
+
+    .container form .applyButton,
+    .container form input {
+        width: 300px;
+    }
+
+    .container .header {
+        margin-right: 50px;
+    }
+}
+
+
+@media screen and (max-width: 370px) {
+    .container .main .bg {
+        width: 300px;
+    }
+
+    .container form .applyButton,
+    .container form input {
+        width: 250px;
+    }
+
+    .container .header {
+        margin-right: 75px;
     }
 }

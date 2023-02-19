@@ -1,6 +1,6 @@
 ﻿@font-face {
     font-family: Inter-Medium;
-    src: url("../../resource/fonts/inter/Inter-Medium.ttf");
+    src: url("/resource/fonts/inter/Inter-Medium.ttf");
 }
 
 @font-face {
@@ -21,66 +21,53 @@ body {
     background-color: #E7E7E7;
 }
 
-.container {
-    text-align: center;
+.container .main {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
 }
 
-    .container .main {
-        display: flex;
-        justify-content: center;
+    .container .main .bg {
+        margin-top: 50px;
+        background-color: white;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         height: auto;
         width: auto;
     }
 
-        .container .main .bg {
-            justify-content: center;
-            margin-top: 50px;
-            background-color: white;
-            -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-            height: auto;
-            width: auto;
+        .container .main .bg .table .display {
+            margin-top: 10px;
         }
 
-            .container .main .bg .table .display {
-                margin-top: 10px;
-            }
+.container .buttons .button {
+    width: 1300px;
+    height: 35px;
+    margin-top: 30px;
+    margin-bottom: -30px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #212529;
+    color: #FFF;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Inter-SemiBold;
+}
 
-    .container .buttons {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
+    .container .buttons .button:hover {
+        opacity: .8;
     }
-
-        .container .buttons .button {
-            width: 1300px;
-            height: 35px;
-            margin-top: 30px;
-            margin-bottom: -30px;
-            border: 0;
-            border-radius: 15px;
-            background-color: #7ACBE5;
-            -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            font-size: 17px;
-            font-weight: 500;
-            font-family: Inter-SemiBold;
-        }
-
-            .container .buttons .button:hover {
-                opacity: .8;
-            }
 
 a {
     text-decoration: none;
 }
-
-
 
 #table_id_filter, #table_id_length {
     margin: 20px;
@@ -99,31 +86,13 @@ td {
     font-family: Inter-Regular;
 }
 
-@media screen and (min-width: 765px) and (max-width: 830px) {
+@media screen and (min-width: 690px) and (max-width: 830px) {
     .container .buttons .button {
         width: 600px;
     }
 }
 
-@media screen and (min-width: 690px) and (max-width: 765px) {
-    .container .buttons .button {
-        width: 600px;
-    }
-}
-
-@media screen and (min-width: 670px) and (max-width: 690px) {
-    .container .buttons .button {
-        width: 400px;
-    }
-}
-
-@media screen and (min-width: 580px) and (max-width: 670px) {
-    .container .buttons .button {
-        width: 400px;
-    }
-}
-
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 690px) {
     .container .buttons .button {
         width: 400px;
     }
