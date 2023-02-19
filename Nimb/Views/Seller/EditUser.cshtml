@@ -1,9 +1,9 @@
 ﻿@model NimbRepository.Model.Seller.Client
 @{
-    
+
 }
 
-    <link rel="stylesheet" href="/css/Seller/registerUser.css">
+<link rel="stylesheet" href="/css/Seller/registerUser.css">
 
 
 
@@ -13,27 +13,27 @@
             <div class="header-container">
                 <div class="header">Edit Client</div>
             </div>
-            <form asp-controller="Seller" asp-action="EditUser" asp-route-id = "@Model.Id">
+            <form asp-controller="Seller" asp-action="EditUser" asp-route-id="@Model.Id">
                 <div class="inputs">
                     <div class="part">
-                        <input asp-for="FirstName" type="text" class="field" placeholder="Enter the name"></input>
+                        <input asp-for="FirstName" type="text" class="field" placeholder="Enter name">
                     </div>
                     <div class="part">
-                    <input asp-for="LastName" type="text" class="field" placeholder="Enter the surname"></input>
+                        <input asp-for="LastName" type="text" class="field" placeholder="Enter surname">
                     </div>
                     <div class="part">
-                    <input asp-for="PatronymicName" type="text" class="field" placeholder="Enter the patronymic name"></input>
+                        <input asp-for="PatronymicName" type="text" class="field" placeholder="Enter patronymic name">
                     </div>
                     <div class="part">
-                    <input asp-for="Number" type="text" class="field" placeholder="Enter the phone number"></input>
+                        <input asp-for="Number" type="text" class="field" placeholder="Enter the phone number">
                     </div>
                     <div class="part">
-                    <input asp-for="EmailAddress" type="email" class="field" placeholder="Enter the email"></input>
+                        <input asp-for="EmailAddress" type="email" class="field" placeholder="Enter the email">
                     </div>
                 </div>
                 <div>
-                <button asp-controller="Seller" asp-action="SellerMain" class="ctrl back" id="Button" value="back" type="submit">Back</button>
-                <button class="updateButton" id="Button" value="Update" type="submit">Update</button>
+                    <button asp-controller="Seller" asp-action="SellerMain" class="ctrl back" id="Button" value="back" type="submit">Back</button>
+                    <button class="updateButton" id="Button" value="Update" type="submit">Update</button>
                 </div>
             </form>
         </div>

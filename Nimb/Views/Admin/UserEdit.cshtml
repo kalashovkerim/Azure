@@ -5,11 +5,11 @@
 
 <div class="container">
     <div class="main">
-       <div class="bg">
+        <div class="bg">
             <div class="header-container">
                 <div class="header">Edit user</div>
             </div>
-             <form asp-action="UserEdit" asp-controller="Admin" asp-route-id="@Model.Id">
+            <form asp-action="UserEdit" asp-controller="Admin" asp-route-id="@Model.Id">
                 <div class="inputs">
                     <div class="namePart">
                         <input asp-for=@Model.FirstName type="text" class="field" id="nameField" placeholder="Enter name">
@@ -19,7 +19,7 @@
                     <div class="surnamePart">
                         <input type="text" asp-for=@Model.LastName class="field" id="nameField" placeholder="Enter surname">
                         <br />
-                        <span asp-validation-for=@Model.LastName class ="text-danger"></span>
+                        <span asp-validation-for=@Model.LastName class="text-danger"></span>
                     </div>
                     <div class="patrnamePart">
                         <input type="text" asp-for=@Model.PatronymicName class="field" id="nameField" placeholder="Enter patronymic name">
@@ -50,7 +50,7 @@
                     </select>
                     <br />
                     <span asp-validation-for=@Model.Position class="text-danger"></span>
-                    </div>
+                </div>
                 <div class="btn-group">
                     <button asp-controller="Admin" asp-action="AdminPanel" class="ctrl back" id="Button" value="back" type="submit">Back</button>
                     <button class="ctrl confirm" id="Button" value="confirm" type="submit">Confirm</button>
@@ -62,8 +62,7 @@
 
 
 @section Scripts
-{
+    {
     <script defer src="/js/﻿adminscript.js"></script>
 }
 
-                

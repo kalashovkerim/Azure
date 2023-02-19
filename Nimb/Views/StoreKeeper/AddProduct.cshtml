@@ -7,47 +7,47 @@
     IEnumerable<Supplier>? supplierList = ViewData["Suppliers"] as IEnumerable<Supplier>;
 }
 
-    <link href="~/css/Storekeeper/keeperproduct.css" rel="stylesheet">
+<link href="~/css/Storekeeper/keeperproduct.css" rel="stylesheet">
 
 
 
 
-    <div class="container">
-        <div class="main">
-            <div class="bg">
-                <div class="header-container">
-                    <div class="header">Add product</div>
-                </div> 
-                <form asp-action="AddProduct" asp-controller="StoreKeeper">
-                    <div class="inputs">
-                    <select required class="supplierBox" asp-for=SuppId id="suppselectid">
-                            <option selected>Choose supplier</option>
-                            @foreach (var item in supplierList!)
-                            {
-                                <option value=@item.Id>@Html.DisplayFor(items => item.Name)</option>
-                            }
-                        </select>
-                        <div class="namePart">
-                        <input required type="text" asp-for="Good.Name" class="nameField" id="nameField" placeholder="Enter the name"></input>
-                        </div>
-                        <div class="categoryPart">
-                        <input required type="text" asp-for="Good.Category" class="categoryField" id="categoryField" placeholder="Enter the category"></input>
-                        </div>
-                        <div class="pricePart">
-                        <input required type="number" asp-for="Good.Price" class="priceField" id="priceField" placeholder="Enter the price"></input>
-                        </div>
-                        <div class="countPart">
-                        <input required type="number" asp-for="Good.Count" class="countField" id="countField" placeholder="Enter the count"></input>
-                        </div>
-                        <div class="descPart">
-                        <textarea required class="descField" asp-for="Good.Description" id="descField" placeholder="Enter the description"></textarea>
-                        </div>
-                    </div>
-                    <button class="applyButton" type="submit"><p>Apply</p></button>
-                </form>
+<div class="container">
+    <div class="main">
+        <div class="bg">
+            <div class="header-container">
+                <div class="header">Add product</div>
             </div>
+            <form asp-action="AddProduct" asp-controller="StoreKeeper">
+                <div class="inputs">
+                    <select required class="supplierBox" asp-for=SuppId id="suppselectid">
+                        <option selected>Choose a supplier</option>
+                        @foreach (var item in supplierList!)
+                        {
+                            <option value=@item.Id>@Html.DisplayFor(items => item.Name)</option>
+                        }
+                    </select>
+                    <div class="namePart">
+                        <input required type="text" asp-for="Good.Name" class="nameField" id="nameField" placeholder="Enter name">
+                    </div>
+                    <div class="categoryPart">
+                        <input required type="text" asp-for="Good.Category" class="categoryField" id="categoryField" placeholder="Enter the category">
+                    </div>
+                    <div class="pricePart">
+                        <input required type="number" asp-for="Good.Price" class="priceField" id="priceField" placeholder="Enter the price">
+                    </div>
+                    <div class="countPart">
+                        <input required type="number" asp-for="Good.Count" class="countField" id="countField" placeholder="Enter the count">
+                    </div>
+                    <div class="descPart">
+                        <textarea required class="descField" asp-for="Good.Description" id="descField" placeholder="Enter the description"></textarea>
+                    </div>
+                </div>
+                <button class="applyButton" type="submit"><p>Apply</p></button>
+            </form>
         </div>
     </div>
+</div>
 
 @section Scripts {
     <script defer src="/js/keeper.js"></script>

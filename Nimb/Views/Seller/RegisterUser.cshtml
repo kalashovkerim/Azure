@@ -1,50 +1,50 @@
 ﻿@model NimbRepository.Model.Seller.Client
 
 
-    <link rel="stylesheet" href="/css/Seller/registerUser.css">
+<link rel="stylesheet" href="/css/Seller/registerUser.css">
 
-    
 
-    <div class="container">
-        <div class="main">
-            <div class="bg">
-                <div class="header-container">
-                    <div class="header">Add Client</div>
-                </div>
-                <form asp-controller="Seller" asp-action="RegisterUser">
-                    <div class="inputs">
-                        <div class="part">
-                            <input asp-for="FirstName" type="text" class="field" placeholder="Enter the name"></input>
-                            <br />
-                            <span asp-validation-for="FirstName" class="text-danger"></span>
-                        </div>
-                        <div class="part">
-                            <input asp-for="LastName" type="text" class="field" placeholder="Enter the surname"></input>
+
+<div class="container">
+    <div class="main">
+        <div class="bg">
+            <div class="header-container">
+                <div class="header">Add Client</div>
+            </div>
+            <form asp-controller="Seller" asp-action="RegisterUser">
+                <div class="inputs">
+                    <div class="part">
+                        <input asp-for="FirstName" type="text" class="field" placeholder="Enter name">
+                        <br />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="part">
+                        <input asp-for="LastName" type="text" class="field" placeholder="Enter surname">
                         <br />
                         <span asp-validation-for="LastName" class="text-danger"></span>
-                        </div>
-                        <div class="part">
-                            <input asp-for="PatronymicName" type="text" class="field" placeholder="Enter the patronymic name"></input>
+                    </div>
+                    <div class="part">
+                        <input asp-for="PatronymicName" type="text" class="field" placeholder="Enter patronymic name">
                         <br />
                         <span asp-validation-for="PatronymicName" class="text-danger"></span>
-                        </div>
-                        <div class="part">
-                            <input asp-for="Number" type="text" class="field" placeholder="Enter the phone number"></input>
+                    </div>
+                    <div class="part">
+                        <input asp-for="Number" type="text" class="field" placeholder="Enter the phone number">
                         <br />
                         <span asp-validation-for="Number" class="text-danger"></span>
-                        </div>
-                        <div class="part">
-                            <input asp-for="EmailAddress" type="email" class="field" placeholder="Enter the email"></input>
+                    </div>
+                    <div class="part">
+                        <input asp-for="EmailAddress" type="email" class="field" placeholder="Enter the email">
                         <br />
                         <span asp-validation-for="EmailAddress" class="text-danger"></span>
-                        </div>
                     </div>
-                    <div class="btn-group">
-                        <button asp-controller="Seller" asp-action="SellerMain" class="ctrl back" id="Button" value="back" type="submit">Back</button>
-                        <button class="registerButton" id="Button" value="Register" type="submit">Register</button>
-                    </div>
-                </form>
-            </div>
+                </div>
+                <div class="btn-group">
+                    <button asp-controller="Seller" asp-action="SellerMain" class="ctrl back" id="Button" value="back" type="submit">Back</button>
+                    <button class="registerButton" id="Button" value="Register" type="submit">Register</button>
+                </div>
+            </form>
         </div>
     </div>
+</div>
 

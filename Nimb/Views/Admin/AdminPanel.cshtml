@@ -2,6 +2,11 @@
 <link href="/css/Admin/Adminstyle.css" rel="stylesheet" type="text/css" />
 
 <div class="container">
+    <form>
+        <div class="buttons">
+            <button asp-controller="Admin" asp-action="UserAdd" class="button" value="Add user" type="submit" style="height: 50px;">Create new user</button>
+        </div>
+    </form>
     <div class="main">
         <div class="bg">
             <div class="table">
@@ -24,12 +29,7 @@
             </div>
         </div>
     </div>
-    <form>
-        <div class="buttons">
-            <button asp-controller="Admin" asp-action="UserAdd" class="button" value="Add user" type="submit" style="height: 50px;">Create new user</button>
-        </div>
-    </form>
- </div>
+</div>
 
 @section Scripts {
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>

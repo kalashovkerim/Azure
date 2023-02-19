@@ -1,34 +1,34 @@
 ﻿@model NimbRepository.Model.Seller.Company
 
 
-    <link rel="stylesheet" href="/css/Seller/registrCompany.css">
+<link rel="stylesheet" href="/css/Seller/registrCompany.css">
 
 
-    
 
-    <div class="container">
-        <div class="main">
-            <div class="bg">
-                <div class="header-container">
-                    <div class="header">Add Company</div>
-                </div>
-                <form asp-controller="Seller" asp-action="RegisterCompany">
-                    <div class="inputs">
-                        <div class="part">
-                            <input asp-for="Name" type="text" class="field" placeholder="Enter the company name"></input>
-                        </div>
-                        <div class="part">
-                            <input asp-for="Number" type="text" class="field" placeholder="Enter the phone number"></input>
-                        </div>
-                        <div class="part">
-                            <input asp-for="Address" type="text" class="field" placeholder="Enter the address"></input>
-                        </div>
-                        <div class="part">
-                            <input asp-for="EmailAddress" type="email" class="field" placeholder="Enter the email"></input>
-                        </div>
-                    </div>
-                    <button class="registerButton" value="Register" type="submit"><p>Register</p></button>
-                </form>
+
+<div class="container">
+    <div class="main">
+        <div class="bg">
+            <div class="header-container">
+                <div class="header">Add Company</div>
             </div>
+            <form asp-controller="Seller" asp-action="RegisterCompany">
+                <div class="inputs">
+                    <div class="part">
+                        <input asp-for="Name" type="text" class="field" placeholder="Enter the company name">
+                    </div>
+                    <div class="part">
+                        <input asp-for="Number" type="text" class="field" placeholder="Enter the phone number">
+                    </div>
+                    <div class="part">
+                        <input asp-for="Address" type="text" class="field" placeholder="Enter the address">
+                    </div>
+                    <div class="part">
+                        <input asp-for="EmailAddress" type="email" class="field" placeholder="Enter the email">
+                    </div>
+                </div>
+                <button class="registerButton" value="Register" type="submit">Register</button>
+            </form>
         </div>
     </div>
+</div>

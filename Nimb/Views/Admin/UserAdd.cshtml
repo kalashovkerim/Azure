@@ -7,12 +7,12 @@
     <div class="main">
         <div class="bg">
             <div class="header-container">
-                    <div class="header">Add user</div>
+                <div class="header">Add user</div>
             </div>
             <form asp-controller="Admin" asp-action="UserAdd">
                 <div class="inputs">
                     <div class="namePart">
-                        <input type="text" asp-for="FirstName" class="field" id="nameField" placeholder="Enter name...">
+                        <input type="text" asp-for="FirstName" class="field" id="nameField" placeholder="Enter name" />
                         <br />
                         <span asp-validation-for="FirstName" class="text-danger"></span>
                     </div>
@@ -41,10 +41,11 @@
                         <br />
                         <span asp-validation-for="Address" class="text-danger"></span><div class="alert alert-info" style="display: none;"></div>
                     </div>
-  
+
                     <select asp-for="Position" class="propbox">
                         <option value="" disabled selected>Select user's position</option>
-                        <option value="Chief">Chief</option><div class="alert alert-info" style="display: none;"></div>
+                        <option value="Chief">Chief</option>
+                        <div class="alert alert-info" style="display: none;"></div>
                         <option value="Storekeeper">Storekeeper</option>
                         <option value="Seller">Seller</option>
                         <option value="Economist">Economist</option>

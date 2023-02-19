@@ -21,7 +21,7 @@
                         <option>Choose the good</option>
                         @foreach (var item in goods)
                         {
-                        <option value=@item.Name>@item.Name</option>
+                            <option value=@item.Name>@item.Name</option>
                         }
                     </select>
                 </div>
@@ -31,20 +31,16 @@
                 </div>
                 <div class="part">
                     <label class="label">Count:</label>
-                    <input type="number" class="field" id="countField" name="countField"></input>
+                    <input type="number" class="field" id="countField" name="countField">
                 </div>
                 <div class="part">
                     <label id="total" class="label">Total:</label>
                 </div>
             </div>
             <button asp-controller="Seller" asp-action="SWin" class="applyButton" value="Apply" type="submit"><p>Apply</p></button>
-
-            
-
         </form>
-        
     </div>
-</div>   
+</div>
 
 @section Scripts
     {
