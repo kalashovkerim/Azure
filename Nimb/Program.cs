@@ -70,7 +70,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Auth}/{action=Login}/{id?}");
 
-app.Use(async (ctx, next) =>
+/*app.Use(async (ctx, next) =>
 {
     await next();
 
@@ -82,6 +82,6 @@ app.Use(async (ctx, next) =>
         ctx.Request.Path = "/error/404";
         await next();
     }
-});
+});*/
 
 app.Run();

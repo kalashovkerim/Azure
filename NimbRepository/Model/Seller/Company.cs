@@ -15,7 +15,7 @@ public partial class Company
 
     public string Address { get; set; } = null!;
 
-    public DateTime? Date { get; set; } = DateTime.Now;
+    public DateTime Date { get; set; } = DateTime.Now;
 
     public virtual ICollection<CompaniesReg> CompaniesRegs { get; } = new List<CompaniesReg>();
 }

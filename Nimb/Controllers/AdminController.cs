@@ -75,7 +75,7 @@ namespace NimbApp.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var user = await _unitOfwork.User.FindById(id);
-            if (user != null) // check
+            if (user != null) 
             {
                 _unitOfwork.User.Remove(user);
                 _unitOfwork.Save();
@@ -98,16 +98,22 @@ namespace NimbApp.Controllers
             {
                 
                 var login = GenerateUserLogin.FromName(user.FirstName);
-
                 var password = GenerateUserPassword.Generate();
-                var hashedPassword = new HashData(password).DoHash();
 
+                var hashedPassword = new HashData(password).DoHash();
+              
                 var users = await _unitOfwork.User.GetAll();
 
-                while (users!.Contains(users!.Where(us => us.Login == login).FirstOrDefault()))
+                if (users != null)
                 {
-                    login = GenerateUserLogin.FromName(user.FirstName);
+                    var existingUsers = users.Select(s => s.Login);
+
+                    while (existingUsers.Contains(login))
+                    {
+                        login = GenerateUserLogin.FromName(user.FirstName);
+                    }
                 }
+
                 user.Login = login;
                 user.Password = hashedPassword;
 
@@ -119,7 +125,7 @@ namespace NimbApp.Controllers
                 GmailSender gs = new GmailSender(user.EmailAddress, "test1nimb@gmail.com", "kysmphuibjqpvrfz", "Login/Password", $"Login:{login}\nPassword:{password}\nDon't say your login and password to others!");
                 gs.SendAsyncEmail();
 
-                return RedirectToAction("AdminPanel", _unitOfwork!.User!.GetAll());
+                return RedirectToAction("AdminPanel", users);
             }
             return View();
         }

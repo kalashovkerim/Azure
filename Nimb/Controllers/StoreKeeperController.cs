@@ -34,26 +34,19 @@ namespace Nimb.Controllers
         public async Task<IActionResult> AddProduct()
         {
             TempData["Check"] = "keeper";
-            var suppliers = new List<Supplier>();
-            var supps = await _unitOfwork.Supplier.GetAll();
-            foreach (var supplier in supps)
-            {
-                suppliers.Add(supplier);
-            }
+            var suppliers = new List<Supplier>(await _unitOfwork.Supplier.GetAll());
+
             ViewData["Suppliers"] = suppliers.Distinct();
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> AddProductAsync(ProductViewModel product)
+        public async Task<IActionResult> AddProduct(ProductViewModel product)
         {
             TempData["Check"] = "keeper";
             var result = await _goodvalidator.ValidateAsync(product.Good);
-            var suppliers = new List<Supplier>();
-            var supps = await _unitOfwork.Supplier.GetAll();
-            foreach (var supplier in supps)
-            {
-                suppliers.Add(supplier);
-            }
+
+            var suppliers = new List<Supplier>(await _unitOfwork.Supplier.GetAll());
+
             ViewData["Suppliers"] = suppliers.Distinct();
 
             if (result.IsValid)
@@ -64,6 +57,7 @@ namespace Nimb.Controllers
 
                     _unitOfwork.Good.Add(product.Good);
                     _unitOfwork.Save();
+
                     return View("AddProduct",product);
                 }
             }
@@ -79,14 +73,13 @@ namespace Nimb.Controllers
             {
                 var check = await _unitOfwork.Supplier.GetAll()!;
 
-                var existingSuppliers = new HashSet<string>(check!.Select(s => s.Name.ToUpperInvariant()));
+                var existingSuppliers = check.Select(s => s.Name.ToUpperInvariant());
 
                 var supplierName = supp.Name.ToUpperInvariant();
 
                 if (existingSuppliers.Contains(supplierName))
                 {
                     Console.WriteLine("Supplier already taken");
-                    // modal window error
                 }
                 else
                 {
