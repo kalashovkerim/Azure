@@ -79,9 +79,13 @@ namespace Nimb.Controllers
             {
                 var check = await _unitOfwork.Supplier.GetAll()!;
 
-                if (check!.Contains(check!.Where(supl => supl.Name.ToUpper() == supp.Name.ToUpper()).FirstOrDefault()))
+                var existingSuppliers = new HashSet<string>(check!.Select(s => s.Name.ToUpperInvariant()));
+
+                var supplierName = supp.Name.ToUpperInvariant();
+
+                if (existingSuppliers.Contains(supplierName))
                 {
-                    Console.WriteLine("Supllier already taken");
+                    Console.WriteLine("Supplier already taken");
                     // modal window error
                 }
                 else
