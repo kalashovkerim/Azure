@@ -89,7 +89,7 @@ namespace Nimb.Controllers
                         else if (userlog.Position == "Economist")
                         {
                             identity.AddClaims(new[] { new Claim(ClaimTypes.Name, authModel.UserName), new Claim(ClaimTypes.Role, "Economist") });
-                            controller = "Finance";
+                            controller = "Economist";
                             action = "Statistics";
 
                         }

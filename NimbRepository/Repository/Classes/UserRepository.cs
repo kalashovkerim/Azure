@@ -1,19 +1,14 @@
 ﻿using NimbRepository.DbContexts;
 using NimbRepository.Model.Admin;
 using NimbRepository.Repository.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NimbRepository.Repository.Classes
 {
     public class UserRepository : Repository<User> , IUserRepository
     {
-        private NimbDbContext _context;
+        private NimbDataBaseContext _context;
 
-        public UserRepository(NimbDbContext context) : base(context)
+        public UserRepository(NimbDataBaseContext context) : base(context)
         {
             _context = context;
         }

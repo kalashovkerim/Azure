@@ -1,5 +1,4 @@
-﻿using NimbRepository.Model.Admin;
-using NimbRepository.Model.Storekeeper;
+﻿using NimbRepository.Model.Storekeeper;
 
 namespace NimbRepository.Repository.Interfaces
 {

@@ -1,10 +1,5 @@
 ﻿using NimbRepository.DbContexts;
 using NimbRepository.Repository.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NimbRepository.Repository.Classes
 {
@@ -15,10 +10,9 @@ namespace NimbRepository.Repository.Classes
         public IGoodRepository Good { get; private set; }
         public IClientRepository Client { get; private set; }
 
-        public ICompanyRepository Company { get; private set; }
 
-        private NimbDbContext _context;
-        public UnitOfWork(NimbDbContext context)
+        private NimbDataBaseContext _context;
+        public UnitOfWork(NimbDataBaseContext context)
         {
             _context = context;
 
@@ -26,7 +20,6 @@ namespace NimbRepository.Repository.Classes
             Supplier = new SupplierRepository(_context);
             Good = new GoodRepository(_context);
             Client = new ClientRepository(_context);
-            Company = new CompanyRepository(_context);
         }
         public void Save()
         {

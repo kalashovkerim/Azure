@@ -8,20 +8,20 @@ namespace Business.Services.Classes
 {
     public class GenerateUserLogin
     {
-        public static string FromName(string _name)
+        public static StringBuilder FromName(string _name)
         {
-            string login = "";
+            StringBuilder login = new();
             var random = new Random();
 
             for (int i = 0; i < _name.Length / 2; i++)
             {
-                login += _name[i];
+                login.Append(_name[i]);
             }
             
             for (int i = 0; i < 4; i++)
             {
                 int num = random.Next(0, 10);
-                login += num.ToString();
+                login.Append(num.ToString());
             }
             return login; 
         }

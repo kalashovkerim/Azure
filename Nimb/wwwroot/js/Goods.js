@@ -14,11 +14,12 @@ function loadDataTable() {
             "url": "/Seller/GetAllGoods"
         },
         "columns": [
-            { "data[0]": '"Goods":{"Name"}', "width": "15%" },
-            { "data": "Name", "width": "15%" },
-            { "data": "Name", "width": "15%" },
-            { "data": "Name", "width": "15%" },
-            { "data": "Name", "width": "15%" },
+            { "data": "supplierId", "width": "15%" },
+            { "data": "name", "width": "15%" },
+            { "data": "category", "width": "15%" },
+            { "data": "purchasePrice", "width": "15%" },
+            { "data": "rate", "width": "15%" },
+            { "data": "count", "width": "15%" },
             {
                 "data": "id",
                 "render": function (data) {

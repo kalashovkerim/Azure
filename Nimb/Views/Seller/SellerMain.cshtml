@@ -1,14 +1,9 @@
-﻿@model IEnumerable<NimbRepository.Model.Seller.Client>
-
-
-
-<link href="/css/Seller/indexStyle.css" rel="stylesheet" type="text/css">
+﻿<link href="/css/Seller/indexStyle.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
 
 <form class="buttons">
     <button asp-controller="Seller" asp-action="Goods" class="firstButton" value="Goods" type="submit"><p>Goods</p></button>
     <button asp-controller="Seller" asp-action="RegisterUser" class="secondButton" value="Add client" type="submit"><p>Add client</p></button>
-    <button asp-controller="Seller" asp-action="RegisterCompany" class="thirdButton" value="Add company" type="submit"><p>Add company</p></button>
     <button asp-controller="Seller" asp-action="PlaceAnOrder" class="fourthButton" value="Place an order" type="submit"><p>Place an order</p></button>
 </form>
 

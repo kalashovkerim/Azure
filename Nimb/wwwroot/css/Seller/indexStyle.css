@@ -84,10 +84,7 @@ td {
     margin: 30px;
 }
 
-    .container .buttons .firstButton,
-    .container .buttons .secondButton,
-    .container .buttons .thirdButton,
-    .container .buttons .fourthButton {
+       .buttons {
         width: 200px;
         height: 35px;
         margin-top: 30px;
@@ -102,22 +99,16 @@ td {
         cursor: pointer;
     }
 
-        .container .buttons .firstButton:hover,
-        .container .buttons .secondButton:hover,
-        .container .buttons .thirdButton:hover,
-        .container .buttons .fourthButton:hover {
+        .buttons:hover {
             opacity: .8;
         }
-
-        .container .buttons .firstButton p,
-        .container .buttons .secondButton p,
-        .container .buttons .thirdButton p,
-        .container .buttons .fourthButton p {
-            font-size: 17px;
-            font-weight: 500;
-            font-family: Inter-SemiBold;
-            margin-top: 15px;
-        }
+ 
+.buttons p {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Inter-SemiBold;
+    margin-top: 15px;
+}
 
 
 @media screen and (max-width: 1000px) {
@@ -127,10 +118,7 @@ td {
         flex-direction: column;
     }
 
-        .container .buttons .firstButton,
-        .container .buttons .secondButton,
-        .container .buttons .thirdButton,
-        .container .buttons .fourthButton {
-            width: 350px;
-        }
+    .buttons {
+        width: 350px;
+    }
 }

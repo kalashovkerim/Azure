@@ -1,19 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.EntityFrameworkCore.ValueGeneration.Internal;
-using NimbRepository.DbContexts;
-using NimbRepository.Model;
 using NimbRepository.Model.Admin;
 using NimbRepository.Repository.Interfaces;
-using NimbRepository.Repository.Classes;
 using FluentValidation;
-using System;
-using System.ComponentModel.DataAnnotations;
-using FluentValidation.AspNetCore;
 using Business.Services.Classes;
 using Microsoft.AspNetCore.Authorization;
 using System.Data;
-using NimbRepository.Model.Seller;
 
 namespace NimbApp.Controllers
 {
@@ -100,7 +91,7 @@ namespace NimbApp.Controllers
                 var login = GenerateUserLogin.FromName(user.FirstName);
                 var password = GenerateUserPassword.Generate();
 
-                var hashedPassword = new HashData(password).DoHash();
+                var hashedPassword = new HashData(password.ToString()).DoHash();
               
                 var users = await _unitOfwork.User.GetAll();
 
@@ -108,13 +99,13 @@ namespace NimbApp.Controllers
                 {
                     var existingUsers = users.Select(s => s.Login);
 
-                    while (existingUsers.Contains(login))
+                    while (existingUsers.Contains(login.ToString()))
                     {
                         login = GenerateUserLogin.FromName(user.FirstName);
                     }
                 }
 
-                user.Login = login;
+                user.Login = login.ToString();
                 user.Password = hashedPassword;
 
                 _unitOfwork.User.Add(user);

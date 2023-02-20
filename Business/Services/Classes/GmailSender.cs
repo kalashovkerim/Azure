@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mail;
+﻿using System.Net.Mail;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Business.Services.Classes
 {
@@ -15,6 +10,8 @@ namespace Business.Services.Classes
         public string TxtPassword { get; set; }
         public string TxtSubject { get; set; }
         public string TxtBody { get; set; }
+
+        public string TxtConfirmationUrl { get; set; }
 
         public GmailSender(string _txtTo, string _txtFrom, string _password, string _txtSubject, string _body)
         {
@@ -32,11 +29,11 @@ namespace Business.Services.Classes
             string subject = TxtSubject;
             string body = TxtBody;
 
-            using (MailMessage mm = new MailMessage(from, to))
+            using (MailMessage message = new MailMessage(from, to))
             {
-                mm.Subject = subject;
-                mm.Body = body;
-                mm.IsBodyHtml = false;
+                message.Subject = subject;
+                message.Body = body;
+                message.IsBodyHtml = false;
                 SmtpClient smtp = new SmtpClient();
                 smtp.Host = "smtp.gmail.com";
                 smtp.EnableSsl = true;
@@ -44,7 +41,25 @@ namespace Business.Services.Classes
                 smtp.UseDefaultCredentials = false;
                 smtp.Credentials = NetworkCred;
                 smtp.Port = 587;
-                smtp.Send(mm);
+                smtp.Send(message);
+            }
+            // Send the email confirmation message
+            string confirmationUrl = TxtConfirmationUrl;
+            string confirmationLink = "<a href='" + confirmationUrl + "'>Confirm your email address</a>";
+
+            using (MailMessage message = new MailMessage(from, to))
+            {
+                message.Subject = "Please confirm your email address";
+                message.Body = "Thank you for registering. To complete your registration, please click the following link: " + confirmationLink;
+                message.IsBodyHtml = true;
+                SmtpClient smtp = new SmtpClient();
+                smtp.Host = "smtp.gmail.com";
+                smtp.EnableSsl = true;
+                NetworkCredential NetworkCred = new NetworkCredential(from, password);
+                smtp.UseDefaultCredentials = false;
+                smtp.Credentials = NetworkCred;
+                smtp.Port = 587;
+                smtp.Send(message);
             }
         }
     }

@@ -1,21 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NimbRepository.DbContexts;
 using NimbRepository.Repository.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace NimbRepository.Repository.Classes
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        private readonly NimbDbContext _context;
+        private readonly NimbDataBaseContext _context;
         internal DbSet<T> contextSet;
 
-        public Repository(NimbDbContext? context)
+        public Repository(NimbDataBaseContext? context)
         {
             _context = context;
             this.contextSet = _context.Set<T>();

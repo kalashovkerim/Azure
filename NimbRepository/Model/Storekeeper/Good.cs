@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿
 using NimbRepository.Model.Seller;
 
 namespace NimbRepository.Model.Storekeeper;
@@ -17,19 +15,15 @@ public partial class Good
 
     public int Count { get; set; }
 
-    public decimal? Price { get; set; }
+    public decimal PurchasePrice { get; set; }
+
+    public decimal Rate { get; set; }
 
     public int SupplierId { get; set; }
 
     public DateTime DateAdd { get; set; } = DateTime.Now;
 
-    public DateTime? DateSold { get; set; }
-
-    public virtual ICollection<ClientsNotReg> ClientsNotRegs { get; } = new List<ClientsNotReg>();
-
-    public virtual ICollection<ClientsReg> ClientsRegs { get; } = new List<ClientsReg>();
-
-    public virtual ICollection<CompaniesReg> CompaniesRegs { get; } = new List<CompaniesReg>();
+    public virtual ICollection<GoodsSold> GoodsSolds { get; } = new List<GoodsSold>();
 
     public virtual Supplier Supplier { get; set; } = null!;
 }

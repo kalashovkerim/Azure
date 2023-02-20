@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿
 
 namespace NimbRepository.Model.Seller;
 
@@ -16,9 +14,7 @@ public partial class Client
 
     public string Number { get; set; } = null!;
 
+    public string Company { get; set; } = null!;
+
     public string EmailAddress { get; set; } = null!;
-
-    public DateTime Date { get; set; } = DateTime.Now;
-
-    public virtual ICollection<ClientsReg> ClientsRegs { get; } = new List<ClientsReg>();
 }

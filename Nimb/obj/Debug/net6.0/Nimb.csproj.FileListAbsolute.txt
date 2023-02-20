@@ -311,9 +311,7 @@ C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Admin\AdminPanel.c
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Admin\UserAdd.cshtml.g.cs
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Admin\UserEdit.cshtml.g.cs
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Auth\Login.cshtml.g.cs
-C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Finance\Statistics.cshtml.g.cs
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Seller\Goods.cshtml.g.cs
-C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Seller\RegisterCompany.cshtml.g.cs
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Seller\RegisterUser.cshtml.g.cs
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Seller\SellerMain.cshtml.g.cs
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Shared\Error.cshtml.g.cs
@@ -2037,3 +2035,4 @@ C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\ErrorPages\NotFoun
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Seller\Check.cshtml.g.cs
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Seller\PlaceAnOrder.cshtml.g.cs
 C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Seller\SWin.cshtml.g.cs
+C:\Users\kerim\Desktop\Nimb\Nimb\obj\Debug\net6.0\Razor\Views\Economist\Statistics.cshtml.g.cs

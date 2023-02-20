@@ -1,19 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Routing;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
-using System;
-using System.Linq;
-using System.Threading.Tasks.Dataflow;
 using NimbRepository.Model.Seller;
-using NimbRepository.Model.Storekeeper;
-using NimbRepository.Model.Admin;
 using NimbRepository.Repository.Interfaces;
-using System.Globalization;
-using NimbRepository.Repository.Classes;
 using Microsoft.AspNetCore.Authorization;
-using NuGet.Packaging.Signing;
 using FluentValidation;
-using Nimb.Models;
 using System.Text.Json.Serialization;
 using System.Text.Json;
 
@@ -31,10 +20,10 @@ namespace NimbProjectApp.Controllers
             _validator = validator;
         }
 
-        public async Task<IActionResult> SellerMainAsync()
+        public async Task<IActionResult> SellerMain()
         {
             TempData["Check"] = "Seller";
-            return View(await _unitOfwork.Client.GetAll());
+            return View();
         }
         
         public IActionResult RegisterCompany()
@@ -83,7 +72,7 @@ namespace NimbProjectApp.Controllers
             else
             {
                 var client = _unitOfwork.Client.GetFirstOrDefault(cl => cl.Id == id);
-                return View(client);
+                return View();
             }
         }
         [HttpPost]
@@ -97,7 +86,7 @@ namespace NimbProjectApp.Controllers
             return RedirectToAction("SellerMain", "Seller");
         }
         [HttpPost]
-        public IActionResult RegisterUser(Client client)
+        public async Task<IActionResult> RegisterUser(Client client)
         {
             TempData["Check"] = "Seller";
             var result = _validator.Validate(client);
@@ -109,27 +98,17 @@ namespace NimbProjectApp.Controllers
             }
             else 
             {
-                return View(client);
+                return View();
             }
             
         }
        
-        [HttpPost]
-        public async Task<IActionResult> RegisterCompany(Company client)
-        {
-            if (ModelState.IsValid) 
-            {
-                _unitOfwork.Company.Add(client);
-                _unitOfwork.Save();
-            }
-                
-            return RedirectToAction("SellerMain", "Seller", await _unitOfwork.Client.GetAll());
-        }
         public IActionResult PlaceAnOrder()
         {
             TempData["Check"] = "Seller";
             return View();
         }
+
         public IActionResult SWin()
         {
             TempData["Check"] = "Seller";
@@ -161,9 +140,10 @@ namespace NimbProjectApp.Controllers
             };
             
             TempData["Check"] = "Seller";
-            var suppliers = await _unitOfwork.Supplier.GetAll();
 
-            return Json(new { data = suppliers},options);
+            var goods = await _unitOfwork.Good.GetAll();
+
+            return Json(new { data = goods },options);
         }
     }
 }

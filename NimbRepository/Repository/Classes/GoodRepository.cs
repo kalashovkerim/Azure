@@ -1,20 +1,14 @@
 ﻿using NimbRepository.DbContexts;
-using NimbRepository.Model.Admin;
 using NimbRepository.Model.Storekeeper;
 using NimbRepository.Repository.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NimbRepository.Repository.Classes
 {
     public class GoodRepository : Repository<Good>, IGoodRepository
     {
-        private NimbDbContext _context;
+        private NimbDataBaseContext _context;
 
-        public GoodRepository(NimbDbContext context) : base(context)
+        public GoodRepository(NimbDataBaseContext context) : base(context)
         {
             _context = context;
         }
@@ -41,7 +35,8 @@ namespace NimbRepository.Repository.Classes
 
                     objFromDb.SupplierId = obj.SupplierId;
                     objFromDb.Name = obj.Name;
-                    objFromDb.Price = obj.Price;
+                    objFromDb.PurchasePrice = obj.PurchasePrice;
+                    objFromDb.Rate = obj.Rate;
                     objFromDb.Count = obj.Count;
                     objFromDb.Category = obj.Category;
                     objFromDb.Description = obj.Description;

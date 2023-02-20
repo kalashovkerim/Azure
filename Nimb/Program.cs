@@ -20,14 +20,14 @@ var services = builder.Services;
 
 services.AddControllersWithViews();
 
-services.AddDbContext<NimbDbContext>();
+services.AddDbContext<NimbDataBaseContext>();
 
 
 services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
         options.Cookie.Name = "AuthToken";
-        options.ExpireTimeSpan = TimeSpan.FromHours(5);
+        options.ExpireTimeSpan = TimeSpan.FromHours(2);
         options.SlidingExpiration = true;
         options.AccessDeniedPath = new PathString("/ErrorPages/AccessDenied");
         options.LogoutPath = "/logout";
@@ -45,7 +45,7 @@ services.AddScoped<IValidator<Client>, ClientValidator>();
 
 var app = builder.Build();
 
-app.UseDeveloperExceptionPage();
+//app.UseDeveloperExceptionPage();
 
 if (!app.Environment.IsDevelopment())
 {
