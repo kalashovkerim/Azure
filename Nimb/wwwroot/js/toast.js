@@ -1,6 +1,6 @@
 ﻿var toastshow = false;
 $(document).ready(function () {
-    $(".confirm").click(function () { //toast ne otkrivaetsa
+    $(".confirm").click(function () { 
         toastshow = true;
     });
     if (toastshow) {

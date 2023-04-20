@@ -1,6 +1,6 @@
 ﻿$("#lblBrendSelectId").change(function () {
-    window.location.href = window.location.href + '?' + $("#lblBrendSelectId").val();
-    $(".pprice").text("200");
+    window.location.href = "GetPrice?name=" + $("#lblBrendSelectId").val();
+
 })
 $("#countField").change(function () {
     var count = parseInt($(this).val())

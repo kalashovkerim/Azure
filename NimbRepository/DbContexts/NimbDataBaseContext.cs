@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using NimbRepository.Model.Seller;
 using NimbRepository.Model.Admin;
 using NimbRepository.Model.Storekeeper;
+using Microsoft.Extensions.Configuration;
+
 namespace NimbRepository.DbContexts;
 
 public partial class NimbDataBaseContext : DbContext
@@ -27,9 +29,17 @@ public partial class NimbDataBaseContext : DbContext
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("workstation id=NimbDataBase.mssql.somee.com;packet size=4096;user id=kerimkalash_SQLLogin_1;pwd=tvqlktet83;data source=NimbDataBase.mssql.somee.com;Encrypt=False;persist security info=False;initial catalog=NimbDataBase;");
+    {
+        var builder = new ConfigurationBuilder();
 
+        builder.AddJsonFile("configuration.json", reloadOnChange: true, optional: false);
+
+        var config = builder.Build();
+
+        optionsBuilder.UseSqlServer(config.GetConnectionString("SNimbDb"));
+
+        base.OnConfiguring(optionsBuilder);
+    }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.UseCollation("Latin1_General_CI_AS");

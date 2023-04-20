@@ -112,7 +112,6 @@ namespace NimbApp.Controllers
 
                 _unitOfwork.Save();
 
-
                 GmailSender gs = new GmailSender(user.EmailAddress, "test1nimb@gmail.com", "kysmphuibjqpvrfz", "Login/Password", $"Login:{login}\nPassword:{password}\nDon't say your login and password to others!");
                 gs.SendAsyncEmail();
 

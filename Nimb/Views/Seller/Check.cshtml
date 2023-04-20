@@ -3,9 +3,15 @@
 
 <link rel="stylesheet" href="/css/Seller/Check.css">
 
-@model Client
+@model IEnumerable<Good>
 @{
-    var goods = ViewData["Goods"] as IEnumerable<Good>;
+    decimal? price = 0;
+    var client = ViewData["Client"] as Client;
+    if(ViewData["CurrentGood"] != null)
+    {
+        Good good = ViewData["CurrentGood"] as Good;
+        price = good.PurchasePrice;
+    }
 }
 <div class="main">
     <div class="bg">
@@ -13,21 +19,21 @@
             <div class="inputs">
                 <div class="part">
                     <label class="label">Client: </label>
-                    <div class="field" id="clientField" name="clientField">@Model.FirstName @Model.LastName</div>
+                    <div class="field" id="clientField" name="clientField">@client.FirstName @client.LastName</div>
                 </div>
                 <div class="part">
                     <label class="label">Product: </label>
                     <select style="width:280px;" required class="comboBox" id="lblBrendSelectId">
                         <option>Choose the good</option>
-                        @foreach (var item in goods)
+                        @foreach (var item in Model)
                         {
-                            <option value=@item.Id>@item.Name</option>
+                            <option value=@item.Name>@item.Name</option>
                         }
                     </select>
                 </div>
                 <div class="part">
                     <label class="label">Price:</label>
-                    <div class="field" id="priceField" name="priceField"><p class="pprice"></p></div>
+                    <div class="field" id="priceField" name="priceField"><p class="pprice">@price</p></div>
                 </div>
                 <div class="part">
                     <label class="label">Count:</label>

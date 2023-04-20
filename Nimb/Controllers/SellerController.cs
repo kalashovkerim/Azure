@@ -114,13 +114,33 @@ namespace NimbProjectApp.Controllers
             TempData["Check"] = "Seller";
             return View();
         }
+
         public async Task<IActionResult> Check(int id)
         {
             TempData["Check"] = "Seller";
             var goods = await _unitOfwork.Good.GetAll();
-            ViewData["Goods"] = goods;
-            var client = _unitOfwork.Client.GetFirstOrDefault(cl => cl.Id == id);
-            return View(client);
+            if (id !=0)
+            {
+
+                ViewData["Client"] = _unitOfwork.Client.GetFirstOrDefault(cl => cl.Id == id);
+            }
+            
+            
+            return View(goods);
+        }
+        public async Task<IActionResult> GetPrice(string name)
+        {
+            TempData["Check"] = "Seller";
+            var goods = await _unitOfwork.Good.GetAll();
+
+            var good = _unitOfwork.Good.GetFirstOrDefault(gd => gd.Name == name);
+
+            if (good != null)
+            {
+                ViewData["CurrentGood"] = good;
+            }
+
+            return RedirectToAction("Check", goods);
         }
 
         [HttpGet]
